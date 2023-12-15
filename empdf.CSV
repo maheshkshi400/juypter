@@ -1,10 +1,10 @@
 id,name,gender,age,salary,dept,deptno,doj
 1,mahesh,male,20,5000,IT,50,2002
 2,shruthi,female,None,6000,HR,20,2008
-3,ganesh,male,25,7000,FINANCE,30,2010
+3,ganesh,male,25,None,FINANCE,30,2010
 4,pooja,female,None,8000,PAYROLL,40,2005
 5,kamini,female,31,6000,IT,50,2007
-,,,,,,,
+6,mukesh,None,32,7000,None,None,2011
 7,shweta,female,30,6000,HR,20,1998
 8,suresh,male,25,10000,FINANCE,30,2011
 9,shivani,female,34,None,PAYROLL,40,2013
