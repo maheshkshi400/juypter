@@ -2,5 +2,8 @@
     "editor.defaultFoldingRangeProvider": "vscode.git",
     "databricks.connection.default.apiRootUrl": "",
     "databricks.connection.default.displayName": "Mahesh kshirsagar",
-    "databricks.sensitiveValueStore": "VSCodeSettings"
+    "databricks.sensitiveValueStore": "VSCodeSettings",
+    "files.watcherExclude": {
+        "**/target": true
+    }
 }
