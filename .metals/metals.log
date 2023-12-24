@@ -10,3 +10,12 @@ WARNING: Unmatched cancel notification for request id 2
 2023.12.24 21:27:27 INFO  time: code lens generation in 31s
 Dec 24, 2023 9:30:00 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2023.12.24 22:02:56 WARN  no build target for: C:\Users\Pc\juypter\SCALA\date&time.scala
+2023.12.24 22:03:19 WARN  no build target for: C:\Users\Pc\juypter\SCALA\date&time.scala
+2023.12.24 22:04:06 WARN  no build target for: C:\Users\Pc\juypter\SCALA\new.scala
+2023.12.24 22:05:24 WARN  no build target for: C:\Users\Pc\juypter\SCALA\new.scala
+2023.12.24 22:05:25 WARN  no build target for: C:\Users\Pc\juypter\SCALA\date&time.scala
+2023.12.24 22:05:25 WARN  no build target for: C:\Users\Pc\juypter\SCALA\new.scala
+2023.12.24 22:11:35 INFO  Shutting down server
+2023.12.24 22:11:35 INFO  shutting down Metals
+2023.12.24 22:11:35 INFO  Exiting server
