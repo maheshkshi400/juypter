@@ -1,0 +1,4 @@
+[debug] [scala-native-test] Classpath dependencies List()
+[debug] [scala-native-test] Dependencies from configurations List(scala-native)
+[debug] Bloop wrote the configuration of project 'scala-native-test' to 'E:\python\scala\demodb\SCALA\scala-native\.bloop\scala-native-test.json'
+[success] Generated .bloop\scala-native-test.json

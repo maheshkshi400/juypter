@@ -1,0 +1,4 @@
+[debug] [scala-native-build] Classpath dependencies List()
+[debug] [scala-native-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'scala-native-build' to 'E:\python\scala\demodb\SCALA\scala-native\project\.bloop\scala-native-build.json'
+[success] Generated .bloop\scala-native-build.json

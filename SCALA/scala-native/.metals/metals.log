@@ -1,0 +1,66 @@
+2023.10.07 23:02:10 INFO  Started: Metals version 1.0.1 in folders 'E:\python\scala\demodb\SCALA\scala-native' for client Visual Studio Code 1.82.3.
+Oct 07, 2023 11:02:10 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Oct 07, 2023 11:02:10 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Oct 07, 2023 11:02:10 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Oct 07, 2023 11:02:11 PM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:E:\python\scala\demodb\SCALA\scala-native\.metals\metals (H2 2.1)
+Oct 07, 2023 11:02:11 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+Oct 07, 2023 11:02:11 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.067s)
+Oct 07, 2023 11:02:11 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+Oct 07, 2023 11:02:11 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+Oct 07, 2023 11:02:11 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+Oct 07, 2023 11:02:11 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+Oct 07, 2023 11:02:12 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+Oct 07, 2023 11:02:12 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+Oct 07, 2023 11:02:12 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.129s)
+2023.10.07 23:02:12 INFO  time: initialize in 1.93s
+2023.10.07 23:02:18 WARN  Build server is not auto-connectable.
+2023.10.07 23:02:26 INFO  running 'C:\Program Files\Java\jdk-19\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Pc\AppData\Local\Temp\metals10501492716017570225\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.10.07 23:02:38 INFO  [info] welcome to sbt 1.9.6 (Oracle Corporation Java 19.0.1)
+2023.10.07 23:02:54 INFO  [info] loading settings for project scala-native-build-build-build from metals.sbt ...
+2023.10.07 23:02:59 INFO  [info] loading project definition from E:\python\scala\demodb\SCALA\scala-native\project\project\project
+2023.10.07 23:03:12 INFO  [info] loading settings for project scala-native-build-build from metals.sbt ...
+2023.10.07 23:03:13 INFO  [info] loading project definition from E:\python\scala\demodb\SCALA\scala-native\project\project
+2023.10.07 23:03:35 INFO  [success] Generated .bloop\scala-native-build-build.json
+2023.10.07 23:03:35 INFO  [success] Total time: 21 s, completed Oct 7, 2023, 11:03:35 PM
+2023.10.07 23:03:44 INFO  [info] loading settings for project scala-native-build from metals.sbt,plugins.sbt ...
+2023.10.07 23:03:46 INFO  [info] loading project definition from E:\python\scala\demodb\SCALA\scala-native\project
+2023.10.07 23:04:10 INFO  [success] Generated .bloop\scala-native-build.json
+2023.10.07 23:04:10 INFO  [success] Total time: 24 s, completed Oct 7, 2023, 11:04:10 PM
+2023.10.07 23:04:19 INFO  [info] loading settings for project scala-native from build.sbt ...
+2023.10.07 23:04:21 INFO  [info] set current project to scala-native (in build file:/E:/python/scala/demodb/SCALA/scala-native/)
+2023.10.07 23:04:53 INFO  [success] Generated .bloop\scala-native-test.json
+2023.10.07 23:04:53 INFO  [success] Generated .bloop\scala-native.json
+2023.10.07 23:04:53 INFO  [success] Total time: 32 s, completed Oct 7, 2023, 11:04:54 PM
+2023.10.07 23:04:54 INFO  time: ran 'sbt bloopInstall' in 2m27s
+2023.10.07 23:04:54 INFO  Attempting to connect to the build server...
+2023.10.07 23:04:54 INFO  Bloop uses C:\Program Files\Java\jdk-19 defined at C:\Users\Pc\.bloop\bloop.json
+2023.10.07 23:05:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\python\scala\demodb\SCALA\scala-native\.metals\bsp.trace.json or C:\Users\Pc\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.10.07 23:05:11 INFO  Attempting to connect to the build server...
+2023.10.07 23:05:11 INFO  Bloop uses C:\Program Files\Java\jdk-19 defined at C:\Users\Pc\.bloop\bloop.json
+2023.10.07 23:05:11 INFO  Attempting to connect to the build server...
+2023.10.07 23:05:11 INFO  Bloop uses C:\Program Files\Java\jdk-19 defined at C:\Users\Pc\.bloop\bloop.json
+2023.10.07 23:05:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\python\scala\demodb\SCALA\scala-native\project\.metals\bsp.trace.json or C:\Users\Pc\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.10.07 23:05:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\python\scala\demodb\SCALA\scala-native\project\project\.metals\bsp.trace.json or C:\Users\Pc\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.10.07 23:05:11 INFO  time: Connected to build server in 18s
+2023.10.07 23:05:11 INFO  Connected to Build server: Bloop v1.5.8
+2023.10.07 23:05:13 INFO  time: Imported build in 1.06s
+2023.10.07 23:05:48 INFO  time: indexed workspace in 34s
+2023.10.07 23:20:00 INFO  Shutting down server
+2023.10.07 23:20:00 INFO  shutting down Metals
+2023.10.07 23:20:01 INFO  Shut down connection with build server.
+2023.10.07 23:20:01 INFO  Shut down connection with build server.
+2023.10.07 23:20:02 INFO  Shut down connection with build server.
+2023.10.07 23:20:03 INFO  Exiting server

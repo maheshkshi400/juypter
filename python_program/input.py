@@ -1,0 +1,5 @@
+x = input("please enter an input")
+print("the entered value is {}".format(x))
+print(type(x))
+y = int(x)
+print(type(y))

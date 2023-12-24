@@ -1,0 +1,262 @@
+2023.09.30 04:27:15 INFO  Started: Metals version 1.0.1 in folders 'E:\python\scala\demodb\SCALA\hello-world' for client Visual Studio Code 1.82.2.
+Sep 30, 2023 4:27:15 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 30, 2023 4:27:15 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 30, 2023 4:27:15 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 30, 2023 4:27:19 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:E:\python\scala\demodb\SCALA\hello-world\.metals\metals (H2 2.1)
+Sep 30, 2023 4:27:19 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+Sep 30, 2023 4:27:19 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.165s)
+Sep 30, 2023 4:27:19 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+Sep 30, 2023 4:27:19 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+Sep 30, 2023 4:27:19 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+Sep 30, 2023 4:27:19 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+Sep 30, 2023 4:27:19 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+Sep 30, 2023 4:27:19 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+Sep 30, 2023 4:27:19 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.066s)
+2023.09.30 04:27:19 INFO  time: initialize in 4.66s
+2023.09.30 04:27:27 WARN  Build server is not auto-connectable.
+2023.09.30 04:33:16 INFO  Shutting down server
+2023.09.30 04:33:16 INFO  shutting down Metals
+2023.09.30 04:33:16 INFO  Exiting server
+2023.09.30 04:51:30 INFO  Started: Metals version 1.0.1 in folders 'E:\python\scala\demodb\SCALA\hello-world' for client Visual Studio Code 1.82.2.
+Sep 30, 2023 4:51:31 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 30, 2023 4:51:31 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 30, 2023 4:51:31 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 30, 2023 4:51:34 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:E:\python\scala\demodb\SCALA\hello-world\.metals\metals (H2 2.1)
+Sep 30, 2023 4:51:35 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.122s)
+Sep 30, 2023 4:51:35 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 30, 2023 4:51:35 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.30 04:51:35 INFO  time: initialize in 5.01s
+2023.09.30 04:51:56 WARN  Build server is not auto-connectable.
+2023.09.30 04:52:05 INFO  running 'C:\Program Files\Java\jdk-19\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Pc\AppData\Local\Temp\metals2621503526126873541\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.09.30 04:52:10 ERROR [info] [launcher] getting org.scala-sbt sbt 1.9.6  (this may take some time)...
+2023.09.30 04:53:02 INFO  [info] welcome to sbt 1.9.6 (Oracle Corporation Java 19.0.1)
+2023.09.30 04:53:26 INFO  [info] loading settings for project hello-world-build-build from metals.sbt ...
+2023.09.30 04:53:32 INFO  [info] loading project definition from E:\python\scala\demodb\SCALA\hello-world\project\project
+2023.09.30 04:53:48 INFO  [info] loading settings for project hello-world-build from metals.sbt ...
+2023.09.30 04:53:48 INFO  [info] loading project definition from E:\python\scala\demodb\SCALA\hello-world\project
+2023.09.30 04:54:17 INFO  [success] Generated .bloop\hello-world-build.json
+2023.09.30 04:54:17 INFO  [success] Total time: 28 s, completed Sep 30, 2023, 4:54:18 AM
+2023.09.30 04:54:31 INFO  [info] loading settings for project hello-world from build.sbt ...
+2023.09.30 04:54:31 INFO  [info] set current project to hello-world (in build file:/E:/python/scala/demodb/SCALA/hello-world/)
+2023.09.30 04:54:47 INFO  [success] Generated .bloop\hello-world-test.json
+2023.09.30 04:54:47 INFO  [success] Generated .bloop\hello-world.json
+2023.09.30 04:54:47 INFO  [success] Total time: 15 s, completed Sep 30, 2023, 4:54:48 AM
+2023.09.30 04:54:48 INFO  time: ran 'sbt bloopInstall' in 2m43s
+2023.09.30 04:54:48 INFO  Attempting to connect to the build server...
+2023.09.30 04:54:48 INFO  Bloop uses C:\Program Files\Java\jdk-19 defined at C:\Users\Pc\.bloop\bloop.json
+2023.09.30 04:55:07 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\python\scala\demodb\SCALA\hello-world\.metals\bsp.trace.json or C:\Users\Pc\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.30 04:55:21 INFO  Attempting to connect to the build server...
+2023.09.30 04:55:21 INFO  Bloop uses C:\Program Files\Java\jdk-19 defined at C:\Users\Pc\.bloop\bloop.json
+2023.09.30 04:55:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\python\scala\demodb\SCALA\hello-world\project\.metals\bsp.trace.json or C:\Users\Pc\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.30 04:55:22 INFO  time: Connected to build server in 33s
+2023.09.30 04:55:22 INFO  Connected to Build server: Bloop v1.5.8
+2023.09.30 04:55:24 INFO  time: Imported build in 1.36s
+Sep 30, 2023 4:55:26 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.30 04:56:15 INFO  time: indexed workspace in 51s
+2023.09.30 04:58:29 INFO  compiling hello-world (2 scala sources)
+Sep 30, 2023 4:59:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+	at scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$.<clinit>(DebugProvider.scala:923)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$resolveInFile$1(DebugProvider.scala:341)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugProvider.resolveInFile(DebugProvider.scala:342)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:476)
+	at scala.meta.internal.metals.MetalsLspService.debugDiscovery(MetalsLspService.scala:1803)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:869)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+Sep 30, 2023 4:59:22 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$: Build misconfiguration. No semanticdb can be found for you file, please check the doctor.
+	at scala.meta.internal.metals.debug.DebugProvider$SemanticDbNotFoundException$.<clinit>(DebugProvider.scala:923)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$resolveInFile$1(DebugProvider.scala:341)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugProvider.resolveInFile(DebugProvider.scala:342)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:476)
+	at scala.meta.internal.metals.MetalsLspService.debugDiscovery(MetalsLspService.scala:1803)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:869)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.09.30 04:59:23 INFO  time: compiled hello-world in 53s
+2023.09.30 04:59:23 INFO  compiling hello-world (2 scala sources)
+2023.09.30 04:59:23 INFO  time: compiled hello-world in 0.5s
+Sep 30, 2023 4:59:23 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.09.30 04:59:40 INFO  compiling hello-world (2 scala sources)
+2023.09.30 04:59:40 INFO  time: compiled hello-world in 0.44s
+2023.09.30 05:04:57 INFO  file:///E:/python/scala/demodb/SCALA/hello-world/src/main/scala/datetime.scala:3:1: stale bloop error: expected class or object definition
+val now = Calendar.getInstance.getTime
+^
+2023.09.30 05:04:57 INFO  file:///E:/python/scala/demodb/SCALA/hello-world/src/main/scala/datetime.scala:4:1: stale bloop error: expected class or object definition
+println(now)
+^
+2023.09.30 05:05:37 INFO  compiling hello-world (2 scala sources)
+2023.09.30 05:05:37 INFO  time: compiled hello-world in 0.29s
+Sep 30, 2023 5:05:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$.<clinit>(DebugProvider.scala:915)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:468)
+	at scala.meta.internal.metals.MetalsLspService.debugDiscovery(MetalsLspService.scala:1803)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:869)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.09.30 05:05:39 INFO  compiling hello-world (2 scala sources)
+2023.09.30 05:05:39 INFO  time: compiled hello-world in 0.36s
+2023.09.30 05:15:47 INFO  compiling hello-world (2 scala sources)
+2023.09.30 05:15:47 INFO  time: compiled hello-world in 0.22s
+2023.09.30 05:17:42 INFO  Disconnecting from Bloop session...
+2023.09.30 05:17:42 INFO  Shut down connection with build server.
+2023.09.30 05:17:42 INFO  Shut down connection with build server.
+2023.09.30 05:17:42 INFO  Attempting to connect to the build server...
+2023.09.30 05:17:42 INFO  Bloop uses C:\Program Files\Java\jdk-19 defined at C:\Users\Pc\.bloop\bloop.json
+2023.09.30 05:17:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\python\scala\demodb\SCALA\hello-world\.metals\bsp.trace.json or C:\Users\Pc\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.30 05:17:42 INFO  Attempting to connect to the build server...
+2023.09.30 05:17:42 INFO  Bloop uses C:\Program Files\Java\jdk-19 defined at C:\Users\Pc\.bloop\bloop.json
+2023.09.30 05:17:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\python\scala\demodb\SCALA\hello-world\project\.metals\bsp.trace.json or C:\Users\Pc\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.30 05:17:42 INFO  time: Connected to build server in 0.2s
+2023.09.30 05:17:42 INFO  Connected to Build server: Bloop v1.5.8
+2023.09.30 05:17:43 INFO  time: Imported build in 0.2s
+2023.09.30 05:17:46 INFO  Disconnecting from Bloop session...
+2023.09.30 05:17:46 INFO  Shut down connection with build server.
+2023.09.30 05:17:46 INFO  Shut down connection with build server.
+2023.09.30 05:17:46 INFO  Attempting to connect to the build server...
+2023.09.30 05:17:46 INFO  Bloop uses C:\Program Files\Java\jdk-19 defined at C:\Users\Pc\.bloop\bloop.json
+2023.09.30 05:17:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\python\scala\demodb\SCALA\hello-world\.metals\bsp.trace.json or C:\Users\Pc\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.30 05:17:46 INFO  Attempting to connect to the build server...
+2023.09.30 05:17:46 INFO  Bloop uses C:\Program Files\Java\jdk-19 defined at C:\Users\Pc\.bloop\bloop.json
+2023.09.30 05:17:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at E:\python\scala\demodb\SCALA\hello-world\project\.metals\bsp.trace.json or C:\Users\Pc\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.09.30 05:17:46 INFO  time: Connected to build server in 0.21s
+2023.09.30 05:17:46 INFO  Connected to Build server: Bloop v1.5.8
+2023.09.30 05:17:46 INFO  time: Imported build in 0.18s
+2023.09.30 05:17:48 INFO  time: indexed workspace in 5.06s
+2023.09.30 05:17:52 INFO  time: indexed workspace in 5.89s
+2023.09.30 05:19:50 INFO  compiling hello-world (2 scala sources)
+2023.09.30 05:19:50 INFO  time: compiled hello-world in 0.39s
+2023.09.30 05:27:01 INFO  compiling hello-world (2 scala sources)
+2023.09.30 05:27:01 INFO  time: compiled hello-world in 0.27s
+2023.09.30 05:38:06 INFO  compiling hello-world (2 scala sources)
+2023.09.30 05:38:06 INFO  time: compiled hello-world in 0.27s
+2023.09.30 05:38:13 ERROR Failed to tokenize input for semantic tokens for E:\python\scala\demodb\SCALA\hello-world\src\main\scala\datetime.scala
+scala.meta.tokenizers.TokenizeException: <input>:1: error: unclosed string literal
+val x ="5
+       ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:591)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:407)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:411)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:246)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1047)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:511)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1589)
+
+2023.09.30 05:41:50 INFO  Shutting down server
+2023.09.30 05:41:50 INFO  shutting down Metals
+2023.09.30 05:41:50 INFO  Shut down connection with build server.
+2023.09.30 05:41:50 INFO  Shut down connection with build server.
+2023.09.30 05:41:50 INFO  Exiting server
