@@ -4,8 +4,6 @@ opr =input("Enter the operation (+,-,*,/):  ")
 
 num2 =int(input("Enter a num2:  "))
 
-
-
 if (opr=="+"):
     print(num1+num2)
 elif (opr=="-"):
