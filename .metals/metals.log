@@ -3,3 +3,10 @@ Dec 24, 2023 9:26:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellat
 WARNING: Unmatched cancel notification for request id 1
 Dec 24, 2023 9:26:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 2
+2023.12.24 21:26:56 WARN  Build server is not auto-connectable.
+2023.12.24 21:26:56 WARN  no build target for: C:\Users\Pc\juypter\SCALA\new.scala
+2023.12.24 21:26:56 WARN  no build tool detected in workspace 'C:\Users\Pc\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.12.24 21:27:19 INFO  no build target found for C:\Users\Pc\juypter\SCALA\new.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2023.12.24 21:27:27 INFO  time: code lens generation in 31s
+Dec 24, 2023 9:30:00 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
