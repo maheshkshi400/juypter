@@ -1,6 +1,6 @@
 {
     "editor.defaultFoldingRangeProvider": "vscode.git",
-    "databricks.connection.default.apiRootUrl": "https://portal.azure.com/?quickstart=true#view/HubsExtension/BrowseResource/resourceType/Microsoft.Databricks%2Fworkspaces",
+    "databricks.connection.default.apiRootUrl": "https://adb-6388011672876123.3.azuredatabricks.net/onboarding?o=6388011672876123#",
     "databricks.connection.default.displayName": "Mahesh kshirsagar",
     "databricks.sensitiveValueStore": "VSCodeSettings",
     "files.watcherExclude": {
