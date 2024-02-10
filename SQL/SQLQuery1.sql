@@ -24,9 +24,18 @@ insert into employee values(7,'Dhani','Devdhar','female',28000);
 insert into employee values(8,'Karishma','Katwe','female',13000);
 insert into employee values(9,'Vaibhav','Shinde','male',15000);
 insert into employee values(10,'Dhani','Devdhar','female',28000);
+insert into employee values(10,'Dhani','Devdhar','female',28000);
 
 
-select * from employee2;
+select * from employee;
+
+-- FIND OUT DUPLICATE RECORDS IN THE TABLE BY USING CLAUSES
+
+SELECT empid,COUNT(empid) FROM employee GROUP BY empid 
+HAVING COUNT(empid)>1;
+
+
+-- Delete Duplicate records from table by using CTE
 
 with employee_CTE as
 (select employee.*,
@@ -34,3 +43,6 @@ rank() over (partition by Firstname,Lastaname
 order by empid desc) as rank from employee)
 
 delete from employee_CTE where rank > 1
+
+
+

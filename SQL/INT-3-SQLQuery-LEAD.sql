@@ -1,4 +1,4 @@
-CREATE TABLE Quaterly_sales(Year INT,QUARTER VARCHAR(2),CURRENTSALE INT);
+CREATE TABLE Quaterly_sales(Year INT,QuarterName VARCHAR(2),Sales INT);
 
 INSERT INTO Quaterly_sales VALUES(2018,'Q1',25000)
 INSERT INTO Quaterly_sales VALUES(2018,'Q2',23000)
