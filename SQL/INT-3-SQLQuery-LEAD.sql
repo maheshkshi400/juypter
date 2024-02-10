@@ -1,3 +1,15 @@
+CREATE TABLE Quaterly_sales(Year INT,QUARTER VARCHAR(2),CURRENTSALE INT);
+
+INSERT INTO Quaterly_sales VALUES(2018,'Q1',25000)
+INSERT INTO Quaterly_sales VALUES(2018,'Q2',23000)
+INSERT INTO Quaterly_sales VALUES(2018,'Q3',22000)
+INSERT INTO Quaterly_sales VALUES(2018,'Q4',18000)
+INSERT INTO Quaterly_sales VALUES(2019,'Q1',28000)
+INSERT INTO Quaterly_sales VALUES(2019,'Q2',15000)
+INSERT INTO Quaterly_sales VALUES(2019,'Q3',15000)
+INSERT INTO Quaterly_sales VALUES(2019,'Q4',20000)
+
+
 SELECT * FROM Quaterly_sales
 
 
@@ -15,9 +27,10 @@ FROM Quaterly_sales
 
 -- LEAD FUNCTION
 
-
+SELECT 
+Year,
 QuarterName as QUARTER,
 Sales AS CURRENTSALE,
-LEAD(Sales) OVER (partition BY Year ORDER BY QuarterName) 
+LEAD(Sales) OVER (PARTITION BY Year ORDER BY QuarterName DESC) 
 AS PREVIOUS_QTR_SALE
-FROM Quaterly_sales
+FROM Quaterly_sales;
