@@ -26,7 +26,7 @@ insert into employee values(9,'Vaibhav','Shinde','male',15000);
 insert into employee values(10,'Dhani','Devdhar','female',28000);
 
 
-select * from employee;
+select * from employee2;
 
 with employee_CTE as
 (select employee.*,
