@@ -70,3 +70,9 @@ INSERT INTO EMP3 VALUES
     (24, 'Laura Wood', 62000.00, 'Marketing', 'laura.wood@example.com', '2121 Cedar St', 'Austin', 'TX', 'USA', '+1 (456) 789-0123')
     INSERT INTO EMP3 VALUES
     (25, 'Kevin Scott', 58000.00, 'IT', 'kevin.scott@example.com', '2222 Walnut St', 'Denver', 'CO', 'USA', '+1 (567) 890-1234');
+
+
+SELECT *,
+SUM(emp_salary) OVER (PARTITION BY emp_department ORDER BY emp_name) FROM emp3
+
+SELECT COUNT(*) FROM emp3 group by emp_department
