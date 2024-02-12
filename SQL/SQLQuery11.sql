@@ -1,0 +1,2 @@
+create database SALES
+GO
