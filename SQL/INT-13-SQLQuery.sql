@@ -25,15 +25,15 @@ INSERT INTO EMP4 VALUES(3, 'Michael', 'Johnson', 'Sales', 55000,23,'1995-10-23')
 
 INSERT INTO EMP4 VALUES(4, 'Emily', 'Brown', 'Finance', 65000,24,'1992-10-22')
 INSERT INTO EMP4 VALUES(5, 'David', 'Williams', 'IT', 70000,25,'1992-09-15')
-INSERT INTO EMP4 VALUES(6, 'Sarah', 'Jones', 'HR', 48000,21,'1992-10-22')
+INSERT INTO EMP4 VALUES(6, 'Sarah', 'Jones', 'HR', 48000,21,'1999-10-22')
 
 INSERT INTO EMP4 VALUES(7, 'Christopher', 'Wilson', 'Marketing', 62000,22,'1991-08-20')
 INSERT INTO EMP4 VALUES(8, 'Jennifer', 'Martinez', 'Sales', 58000,23,'1991-08-20')
-INSERT INTO EMP4 VALUES(9, 'Matthew', 'Taylor', 'Finance', 68000,24,'1992-10-22')
+INSERT INTO EMP4 VALUES(9, 'Matthew', 'Taylor', 'Finance', 68000,24,'1998-10-22')
 
 INSERT INTO EMP4 VALUES(10, 'Jessica', 'Anderson', 'IT', 72000,25,'1992-10-22')
-INSERT INTO EMP4 VALUES(11, 'Andrew', 'Thomas', 'HR', 52000,21,'1991-08-20')
-INSERT INTO EMP4 VALUES(12, 'Elizabeth', 'Hernandez', 'Marketing',61000,22,'1991-08-20')
+INSERT INTO EMP4 VALUES(11, 'Andrew', 'Thomas', 'HR', 52000,21,'2003-08-20')
+INSERT INTO EMP4 VALUES(12, 'Elizabeth', 'Hernandez', 'Marketing',61000,22,'2001-08-20')
 
 INSERT INTO EMP4 VALUES(13, 'Daniel', 'Young', 'Sales', 57000,23,'1992-10-22')
 INSERT INTO EMP4 VALUES(14, 'Linda', 'King', 'Finance', 66000,24,'1995-10-23')
@@ -41,7 +41,7 @@ INSERT INTO EMP4 VALUES(15, 'Mark', 'Garcia', 'IT', 74000,25,'1980-03-15')     -
 
 INSERT INTO EMP4 VALUES(16, 'Karen', 'Lee', 'HR', 49000,21,'1995-10-23')
 INSERT INTO EMP4 VALUES(17, 'Steven', 'Lopez', 'Marketing', 63000,22,'1995-10-23')
-INSERT INTO EMP4 VALUES(18, 'Amanda', 'Perez', 'Sales', 59000,23,'1992-10-22')
+INSERT INTO EMP4 VALUES(18, 'Amanda', 'Perez', 'Sales', 59000,23,'2007-10-22')
 
 INSERT INTO EMP4 VALUES(19, 'Jason', 'Scott', 'Finance', 67000,15,'1991-08-20')
 INSERT INTO EMP4 VALUES(20, 'Michelle', 'Nguyen', 'IT', 76000,25,'1980-12-24')     --1 ST
