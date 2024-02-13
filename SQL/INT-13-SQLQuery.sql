@@ -1,49 +1,57 @@
 
-CREATE TABLE EMP4(
-EMPKEY INT,
-FIRST_NAME VARCHAR(20),
-LAST_NAME VARCHAR(20),
-EMP_DEPT VARCHAR(10),
-EMP_SALARY INT
-)
+
+USE MK_DB
+
+CREATE TABLE EMP4 (
+    EMPKEY INT PRIMARY KEY,
+    FIRST_NAME VARCHAR(20),
+    LAST_NAME VARCHAR(20),
+    EMP_DEPT VARCHAR(10),
+    EMP_SALARY INT,
+    MGR_KEY INT,
+    HIRE_DATE DATE,
+);
+
 
 SELECT * FROM EMP4
 
 DROP TABLE EMP4
 
-INSERT INTO EMP4 VALUES(1, 'John', 'Doe', 'HR', 50000)
-INSERT INTO EMP4 VALUES(2, 'Jane', 'Smith', 'Marketing', 60000)
-INSERT INTO EMP4 VALUES(3, 'Michael', 'Johnson', 'Sales', 55000)
+SELECT 
 
-INSERT INTO EMP4 VALUES(4, 'Emily', 'Brown', 'Finance', 65000)
-INSERT INTO EMP4 VALUES(5, 'David', 'Williams', 'IT', 70000)
-INSERT INTO EMP4 VALUES(6, 'Sarah', 'Jones', 'HR', 48000)
+INSERT INTO EMP4 VALUES(1, 'John', 'Doe', 'HR', 50000,21,'1991-08-20')
+INSERT INTO EMP4 VALUES(2, 'Jane', 'Smith', 'Marketing', 60000,22,'1992-10-22')
+INSERT INTO EMP4 VALUES(3, 'Michael', 'Johnson', 'Sales', 55000,23,'1995-10-23')
 
-INSERT INTO EMP4 VALUES(7, 'Christopher', 'Wilson', 'Marketing', 62000)
-INSERT INTO EMP4 VALUES(8, 'Jennifer', 'Martinez', 'Sales', 58000)
-INSERT INTO EMP4 VALUES(9, 'Matthew', 'Taylor', 'Finance', 68000)
+INSERT INTO EMP4 VALUES(4, 'Emily', 'Brown', 'Finance', 65000,24,'1992-10-22')
+INSERT INTO EMP4 VALUES(5, 'David', 'Williams', 'IT', 70000,25,'1992-09-15')
+INSERT INTO EMP4 VALUES(6, 'Sarah', 'Jones', 'HR', 48000,21,'1992-10-22')
 
-INSERT INTO EMP4 VALUES(10, 'Jessica', 'Anderson', 'IT', 72000)
-INSERT INTO EMP4 VALUES(11, 'Andrew', 'Thomas', 'HR', 52000)
-INSERT INTO EMP4 VALUES(12, 'Elizabeth', 'Hernandez', 'Marketing', 61000)
+INSERT INTO EMP4 VALUES(7, 'Christopher', 'Wilson', 'Marketing', 62000,22,'1991-08-20')
+INSERT INTO EMP4 VALUES(8, 'Jennifer', 'Martinez', 'Sales', 58000,23,'1991-08-20')
+INSERT INTO EMP4 VALUES(9, 'Matthew', 'Taylor', 'Finance', 68000,24,'1992-10-22')
 
-INSERT INTO EMP4 VALUES(13, 'Daniel', 'Young', 'Sales', 57000)
-INSERT INTO EMP4 VALUES(14, 'Linda', 'King', 'Finance', 66000)
-INSERT INTO EMP4 VALUES(15, 'Mark', 'Garcia', 'IT', 74000)
+INSERT INTO EMP4 VALUES(10, 'Jessica', 'Anderson', 'IT', 72000,25,'1992-10-22')
+INSERT INTO EMP4 VALUES(11, 'Andrew', 'Thomas', 'HR', 52000,21,'1991-08-20')
+INSERT INTO EMP4 VALUES(12, 'Elizabeth', 'Hernandez', 'Marketing',61000,22,'1991-08-20')
 
-INSERT INTO EMP4 VALUES(16, 'Karen', 'Lee', 'HR', 49000)
-INSERT INTO EMP4 VALUES(17, 'Steven', 'Lopez', 'Marketing', 63000)
-INSERT INTO EMP4 VALUES(18, 'Amanda', 'Perez', 'Sales', 59000)
+INSERT INTO EMP4 VALUES(13, 'Daniel', 'Young', 'Sales', 57000,23,'1992-10-22')
+INSERT INTO EMP4 VALUES(14, 'Linda', 'King', 'Finance', 66000,24,'1995-10-23')
+INSERT INTO EMP4 VALUES(15, 'Mark', 'Garcia', 'IT', 74000,25,'1980-03-15')     -- 2ND
 
-INSERT INTO EMP4 VALUES(19, 'Jason', 'Scott', 'Finance', 67000)
-INSERT INTO EMP4 VALUES(20, 'Michelle', 'Nguyen', 'IT', 76000)
-INSERT INTO EMP4 VALUES(21, 'Ryan', 'Rodriguez', 'HR', 53000)
+INSERT INTO EMP4 VALUES(16, 'Karen', 'Lee', 'HR', 49000,21,'1995-10-23')
+INSERT INTO EMP4 VALUES(17, 'Steven', 'Lopez', 'Marketing', 63000,22,'1995-10-23')
+INSERT INTO EMP4 VALUES(18, 'Amanda', 'Perez', 'Sales', 59000,23,'1992-10-22')
 
-INSERT INTO EMP4 VALUES(22, 'Melissa', 'Mills', 'Marketing', 64000)
-INSERT INTO EMP4 VALUES(23, 'Kevin', 'Lee', 'Sales', 60000)
-INSERT INTO EMP4 VALUES(24, 'Patricia', 'Gonzalez', 'Finance', 69000)
+INSERT INTO EMP4 VALUES(19, 'Jason', 'Scott', 'Finance', 67000,15,'1991-08-20')
+INSERT INTO EMP4 VALUES(20, 'Michelle', 'Nguyen', 'IT', 76000,25,'1980-12-24')     --1 ST
+INSERT INTO EMP4 VALUES(21, 'Ryan', 'Rodriguez', 'HR', 53000,25,'1991-08-20')----HR1
 
-INSERT INTO EMP4 VALUES(25, 'Brian', 'Baker', 'IT', 78000)
+INSERT INTO EMP4 VALUES(22, 'Melissa', 'Mills', 'Marketing', 64000,25,'1992-10-22')----MARKETING1
+INSERT INTO EMP4 VALUES(23, 'Kevin', 'Lee', 'Sales', 60000,25,'1995-10-23')  ----SALES 1
+INSERT INTO EMP4 VALUES(24, 'Patricia', 'Gonzalez', 'Finance', 69000,25,'1982-07-21')----FINANCE1
+
+INSERT INTO EMP4 VALUES(25, 'Brian', 'Baker', 'IT', 78000,NULL,'1972-11-23')    --BOSS IT1
 
 
 --Query-employees having less than avg. slary 
