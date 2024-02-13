@@ -68,6 +68,65 @@ SUM(total_due) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date ROWS
 BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS YTD_FRAME
 FROM SalesOrders
 
+
+
+SELECT  salesordernumber,order_date,total_due,
+SUM(total_due) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date) AS YTD,
+SUM(total_due) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date ROWS 
+BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS YTD_FRAME,
+SUM(total_due) OVER (PARTITION BY YEAR(order_date),MONTH(order_date) ORDER BY order_date) AS YTD,
+SUM(total_due) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date ROWS 
+BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS MTD_FRAME
+FROM SalesOrders;
+
+
+
+SELECT  salesordernumber,order_date,total_due,
+SUM(total_due) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date ROWS 
+BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS YTD_FRAME,
+SUM(total_due) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date ROWS 
+BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS MTD_FRAME,
+SUM(total_due) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date ROWS 
+BETWEEN 2 PRECEDING AND CURRENT ROW) AS MTD_3
+FROM SalesOrders;
+
+
+-- METHOD 2 bY USINGG FIRST VALUE AND LAST VALUE
+
+SELECT  
+    salesordernumber,
+    order_date,
+    total_due,
+    FIRST_VALUE(salesordernumber) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date) AS 
+    FIRST_ORDER,
+    FIRST_VALUE(salesordernumber) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date ROWS 
+    BETWEEN 2 PRECEDING AND CURRENT ROW) AS FIRST_ORDER
+FROM 
+    SalesOrders;
+
+
+
+-- BY USING LAST VALUE 
+
+SELECT  
+    salesordernumber,
+    order_date,
+    total_due,
+    FIRST_VALUE(salesordernumber) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date) AS 
+    FIRST_ORDER,
+    FIRST_VALUE(salesordernumber) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date ROWS 
+    BETWEEN 2 PRECEDING AND CURRENT ROW) AS FIRST_ORDER_FRM,
+    LAST_VALUE(salesordernumber) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date) AS 
+    LAST_ORDER,
+    LAST_VALUE(salesordernumber) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date ROWS 
+    BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING) AS LAST_ORDER_FRM
+FROM 
+    SalesOrders;
+
+
+
+
+
     
     
    
