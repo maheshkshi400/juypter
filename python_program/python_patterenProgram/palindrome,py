@@ -1,0 +1,14 @@
+def is_palindrome(s):
+    # Convert the string to lowercase and remove non-alphanumeric characters
+    s = ''.join(char.lower() for char in s if char.isalnum())
+    
+    # Compare the original string with its reverse
+    return s == s[::-1]
+
+# Test the function
+if __name__ == "__main__":
+    string = input("Enter a string: ")
+    if is_palindrome(string):
+        print("The string is a palindrome.")
+    else:
+        print("The string is not a palindrome.")
