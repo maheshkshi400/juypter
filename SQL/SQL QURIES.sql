@@ -442,7 +442,83 @@ SELECT E.ENAME, E.JOB, M.ENAME FROM MK_DB.dbo.EMP5 E LEFT OUTER JOIN MK_DB.dbo.E
 
 OR
 
-SELECT E.ENAME, E.JOB, ISNULL(M.ENAME,'NO MANAGER') AS MANAGER FROM MK_DB.dbo.EMP5 E LEFT OUTER JOIN  MK_DB.dbo.EMP5 M ON E.MGR = M.EMPNO;
+SELECT E.ENAME, E.JOB, ISNULL(M.ENAME,'NO MANAGER') AS MANAGER FROM MK_DB.dbo.EMP5 E 
+
+LEFT OUTER JOIN  MK_DB.dbo.EMP5 M ON E.MGR = M.EMPNO;
+
+
+--97 Fetch the employees who are having same salary from each department 
+
+WITH DepartmentSalaries AS (
+    SELECT 
+        DepartmentID,
+        Salary,
+        COUNT(DISTINCT Salary) AS DistinctSalaryCount
+    FROM 
+        Employees
+    GROUP BY 
+        DepartmentID
+)
+
+SELECT 
+    E.EmployeeID,
+    E.EmployeeName,
+    E.Salary,
+    E.DepartmentID
+FROM 
+    Employees E
+JOIN 
+    DepartmentSalaries DS ON E.DepartmentID = DS.DepartmentID
+WHERE 
+    DS.DistinctSalaryCount > 1;
+
+--98 
+2022,5,5-4
+2021,4,4-7
+2020,7,7
+Write the code to get the difference current year revenue- minus 
+previous year revenue  
+
+WITH RevenueComparison AS (
+    SELECT 
+        t1.Year AS CurrentYear, 
+        t1.Revenue AS CurrentRevenue,
+        ISNULL(t2.Revenue, 0) AS PreviousRevenue,
+        t1.Revenue - ISNULL(t2.Revenue, 0) AS RevenueDiff
+    FROM 
+        YourTableName t1
+    LEFT JOIN 
+        YourTableName t2 ON t1.Year = t2.Year + 1
+)
+
+SELECT 
+    CurrentYear,
+    CurrentRevenue,
+    PreviousRevenue,
+    RevenueDiff
+FROM 
+    RevenueComparison;
+
+
+    --99.Fetch the employees who are having same salary from each department
+
+
+    SELECT 
+    c.ename,
+    c.sal,
+    c.deptno
+FROM 
+    emp c
+JOIN 
+    emp d ON c.deptno = d.deptno
+WHERE 
+    c.sal = d.sal
+    AND c.empno <> d.empno -- Ensures that we're not comparing the same employee with themselves
+ORDER BY 
+    c.deptno, c.sal;
+
+
+
 
 104
 

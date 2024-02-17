@@ -1,3 +1,7 @@
+CREATE DATABASE SALES
+
+USE SALES
+
 CREATE TABLE Quaterly_sales(Year INT,QuarterName VARCHAR(2),Sales INT);
 
 INSERT INTO Quaterly_sales VALUES(2018,'Q1',25000)
