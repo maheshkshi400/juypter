@@ -1,3 +1,10 @@
+
+--USE DATABASE 
+
+USE EMPLOYEE;
+
+--CREATE TABLE
+
 CREATE TABLE EMP3 (
     emp_id INT PRIMARY KEY,
     emp_name VARCHAR(50),
@@ -15,12 +22,11 @@ SELECT * FROM DEPT
 
 select * from emp3
 
-drop table emp3
 
 
 
-INSERT INTO EMP3 VALUES
 
+    INSERT INTO EMP3 VALUES
     (1, 'John Doe', 50000.00, 'IT', 'john.doe@example.com', '123 Main St', 'New York', 'NY', 'USA', '+1 (123) 456-7890')
     INSERT INTO EMP3 VALUES
     (2, 'Jane Smith', 60000.00, 'HR', 'jane.smith@example.com', '456 Elm St', 'Los Angeles', 'CA', 'USA', '+1 (234) 567-8901')
