@@ -1,3 +1,6 @@
+
+USE EMPLOYEE
+
 create table EMPLOYEE1(employeeId int,Name varchar(20));
 
 insert into EMPLOYEE1 values(1,'adnan,shaikh')

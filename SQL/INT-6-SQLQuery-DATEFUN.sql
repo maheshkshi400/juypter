@@ -1,3 +1,10 @@
+
+--USE DATABASE
+ USE SALES
+ GO
+
+--CREATING TABLE
+
 create table SALES1(
 OrderNumber vARCHAR(15),
 OrderDate date,
@@ -9,7 +16,11 @@ unitprice float,
 DiscountAmount float,
 Promotioncode varchar(15));
 
+-- VERIFYING THE TABLE
+
 select * from SALES1;
+
+-- INSERTING RECORDS IN THE TABLE
 
 insert into SALES1 values
 ('TT00013765','2013-10-15','2013-10-25',14,3,1,70.95,0.00,NULL);
@@ -25,7 +36,7 @@ insert into SALES1 values
 
 insert into SALES1 values
 ('TT00013708','2013-09-23','2013-10-01',5,3,1,70.95,9.00,'SALE20137');
-#
+
 insert into SALES1 values
 ('TT00013121','2013-11-27','2013-12-07',40,3,1,127.95,0.00,NULL);
 
@@ -46,9 +57,8 @@ insert into SALES1 values
 insert into SALES1 values
 ('TT00013227','2013-10-23','2013-11-18',5,3,1,70.95,0.00,NULL);
 
-delete from SALES1 WHERE OrderNumber='TT00013527'
 
-select * from SALES1;
+
 
 select DATENAME(DW,OrderDate),OrderDate FROM SALES1;
 

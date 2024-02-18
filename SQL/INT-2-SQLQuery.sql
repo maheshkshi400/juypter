@@ -1,3 +1,8 @@
+--USE DATABASE
+USE EMPLOYEE
+
+--CREATE TABLE 
+
 Create table Employees
 (
  EmployeeID int primary key identity,
@@ -5,6 +10,8 @@ Create table Employees
  ManagerID int foreign key references Employees(EmployeeID)
 )
 GO
+
+--INSERT RECORDS IN THE CREATED TABLE Employees
 
 Insert into Employees values ('John', NULL)
 Insert into Employees values ('Mark', NULL)
@@ -16,7 +23,8 @@ Insert into Employees values ('David', NULL)
 Insert into Employees values ('Ben', NULL)
 Insert into Employees values ('Stacy', NULL)
 Insert into Employees values ('Sam', NULL)
-GO
+
+-- UPDATE MGRIDS IN THE TABLE
 
 Update Employees Set ManagerID = 8 Where EmployeeName IN ('Mark', 'Steve', 'Lara')
 Update Employees Set ManagerID = 2 Where EmployeeName IN ('Stacy', 'Simon')
@@ -25,7 +33,10 @@ Update Employees Set ManagerID = 5 Where EmployeeName IN ('John', 'Sam')
 Update Employees Set ManagerID = 4 Where EmployeeName IN ('David')
 GO
 
+--VERIFING THE RECORDS  IN THE TABLE
+
 SELECT * FROM Employees;
+
 
 
 DECLARE @ID INT;
@@ -51,4 +62,6 @@ WITH EmployeesCTE AS
     FROM  EmployeesCTE E1 
     JOIN EmployeesCTE E2
     ON E1.ManagerID=E2.EmployeeID
+
+
 

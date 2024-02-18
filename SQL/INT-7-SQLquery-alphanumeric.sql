@@ -1,7 +1,21 @@
+
+-- CREATE DATABASE
+
+CREATE DATABASE OTHER
+
+-- USE DATABASE
+
+USE OTHER
+
+--CREATNG TABLE
+
 CREATE TABLE UserData (
     id INT PRIMARY KEY,
     username VARCHAR(50)
 );
+
+
+-- INSERT DATA NTO TABLE
 
 INSERT INTO UserData VALUES (1, 'john123')
 insert into UserData values(2,'04888KELLY59')

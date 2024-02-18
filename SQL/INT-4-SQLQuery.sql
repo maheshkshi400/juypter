@@ -1,3 +1,8 @@
+
+
+
+USE  SALES
+
 Create Table Countries
 (
  Country nvarchar(50),
