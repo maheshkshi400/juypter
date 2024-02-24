@@ -313,14 +313,14 @@ SELECT DATEPART()
 
 SELECT CONVERT(TIME, GETDATE()) AS CurrentTime;
 
-
+EMPLOYEE.dbo.
 --71.Display the date three months before the current date.
 
 SELECT DATEADD(MM,-3,GETDATE())
 
 --72. Display the common jobs from department number 10 and 20.
 
-SELECT * FROM MK_DB.dbo.EMP5 WHERE DEPTNO=10 AND JOB IN (SELECT JOB FROM MK_DB.dbo.EMP5 WHERE DEPTNO=20);
+SELECT * FROM EMPLOYEE.dbo.EMP5 WHERE DEPTNO=10 AND JOB IN (SELECT JOB FROM EMPLOYEE.dbo.EMP5 WHERE DEPTNO=20);
 
 --73. Display the jobs found in department 10 and 20 Eliminate duplicate jobs.
 
@@ -504,18 +504,49 @@ FROM
 
 
     SELECT 
-    c.ename,
+    c.Ename,
     c.sal,
     c.deptno
 FROM 
-    emp c
+    dbo.EMP5 c
 JOIN 
-    emp d ON c.deptno = d.deptno
+    dbo.EMP5 d ON c.deptno = d.deptno
 WHERE 
     c.sal = d.sal
     AND c.empno <> d.empno -- Ensures that we're not comparing the same employee with themselves
 ORDER BY 
     c.deptno, c.sal;
+
+
+-- 99.SECOND HIGHEST SALARY FROM EMP TABLE
+--Method1
+select max(eMP_salary) from EMPLOYEE.dbo.EMP4
+where emp_salary not in (select max(emp_salary) 
+from EMPLOYEE.dbo.EMP4)
+
+--Method2 by using cte
+
+WITH RankedEmployees AS (
+    SELECT EMP4.*, DENSE_RANK() OVER (ORDER BY emp_salary DESC) AS RANK 
+    FROM EMPLOYEE.dbo.EMP4
+)
+SELECT * 
+FROM RankedEmployees 
+WHERE RANK = 2;
+
+--Method3 by using dense rank
+
+SELECT * FROM (SELECT EMP4.*,DENSE_RANK() OVER
+(ORDER BY emp_salary DESC) AS RANK FROM EMPLOYEE.dbo.EMP4) AS EMPRANK WHERE RANK =2
+
+--100.Display the names of salesman who earns a salary more than the highest salary of any clerk.
+
+SELECT ENAME FROM EMPLOYEE.dbo.EMP5 WHERE JOB='SALESMAN'
+AND SAL > ANY(SELECT MAX(SAL) FROM EMPLOYEE.dbo.EMP5 WHERE JOB='CLERK')
+
+
+
+
 
 
 

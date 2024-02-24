@@ -26,20 +26,21 @@ Insert into Countries values ('UK','Birmingham')
 Insert into Countries values ('UK','Manchester')
 
 
+select Country,city1,city2,city3
+FROM
+(select Country,city,
+'city' + CAST(ROW_NUMBER() OVER (PARTITION BY Country ORDER BY Country)AS VARCHAR(10))COLUMNSEQUENCE 
+FROM Countries)
+ temp
 
-
-
-Select Country, City1, City2, City3
-From
+PIVOT
 (
-  Select Country, City,
-    'City'+
-      cast(row_number() over(partition by Country order by Country) 
-     as varchar(10)) ColumnSequence
-  from Countries
-) Temp
-pivot
-(
-  max(City)
-  for ColumnSequence in (City1, City2, City3)
-) Piv
+MAX(City) for COLUMNSEQUENCE IN (City1,City2,City3)
+)
+ PIV
+
+
+
+
+
+

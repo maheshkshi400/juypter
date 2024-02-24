@@ -58,10 +58,11 @@ WITH EmployeesCTE AS
     on Employees.EmployeeID=Employees.ManagerID
 )
 
-    SELECT E1.EmployeeName,E2.EmployeeName AS MANAGERNAME
-    FROM  EmployeesCTE E1 
-    JOIN EmployeesCTE E2
-    ON E1.ManagerID=E2.EmployeeID
+    
+SELECT E1.EmployeeName,E2.EmployeeName AS MANAGERNAME
+FROM  EmployeesCTE E1 
+JOIN EmployeesCTE E2
+ON E1.ManagerID=E2.EmployeeID
 
 
 

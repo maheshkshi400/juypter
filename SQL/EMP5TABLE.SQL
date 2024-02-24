@@ -11,15 +11,23 @@ CREATE TABLE EMP5 (
     JOB  CHAR(20),
     MGR INT,
     HIREDATE DATE,
-    SAL INT,
+    SAL MONEY,
     COMM INT,
     DEPTNO INT  
 );
 
 
+elect emp,empname,dept,sal,mgrid,select max(sal) from emp where sal<5 and dept='HR';
+
+
 -- VERIFY THE CREATED TABLE
 
 SELECT * FROM EMP5;
+
+SELECT * FROM DEPT1
+
+-- DROP TABLE
+DROP TABLE EMP5
 
 --INSERT THE RECORDS IN EMP5 YABLE
 
@@ -76,5 +84,57 @@ INSERT INTO SALGRADE VALUES(5,3001,9999)
 
 
 
+WITH FirstRecordCTE AS (
+    SELECT *,
+           ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS RowNum
+    FROM EMP5),
+
+LastRecordCTE AS (
+    SELECT *,
+           ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS RowNumDesc
+    FROM EMP5
+)
+SELECT *
+FROM FirstRecordCTE
+WHERE RowNum = 1
+UNION ALL
+SELECT *
+FROM LastRecordCTE
+WHERE RowNumDesc = 1;
 
 
+
+CREATE TABLE NEW_EMP
+AS
+SELECT * FROM EMP5 WHERE 1=2;
+
+
+SELECT ENAME, REVERSE (ENAME) AS REVERSE_ENAME FROM EMP5;
+
+
+SELECT DATENAME(day, '2021/09/10') AS Result1,  
+DATENAME(month, '2021/09/10') AS Result2,  
+DATENAME(year, '2021/09/10') AS Result3;  
+
+
+CREATE TABLE testdate(  
+ ColDTO DATETIMEOFFSET    
+);    
+INSERT INTO testdate    
+VALUES ('2020-09-20 7:45:50.71345 -5:00'); 
+
+SELECT SWITCHOFFSET(ColDTO, '-08:00') AS Result FROM testdate; 
+
+SELECT ISDATE('2020-06-15') AS Result1,  
+ISDATE('2020-15-06') AS Result2;   
+
+
+
+SELECT *
+INTO NEW_EMP
+FROM EMP5;
+
+
+SELECT * FROM dbo.NEW_EMP
+
+DROP TABLE DBO.NEW_EMP

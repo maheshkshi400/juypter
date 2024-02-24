@@ -56,8 +56,8 @@ INSERT INTO EMP4 VALUES(24, 'Patricia', 'Gonzalez', 'Finance', 69000,25,'1982-07
 INSERT INTO EMP4 VALUES(25, 'Brian', 'Baker', 'IT', 78000,NULL,'1972-11-23')    --BOSS IT1
 
 
---Query-employees having less than avg. slary 
---of the depatement but greater than the avg. salary of the anyother dept.
+--Query-employees having less than avg. salary 
+--of the depatement but greater than the avg. salary of the any other dept.
 
 SELECT EMPKEY,FIRST_NAME,LAST_NAME,EMP_DEPT,EMP_SALARY FROM EMP4 AS EM
 
@@ -89,6 +89,7 @@ WHERE EM.EMP_SALARY < (AVGEMPSAL.AVG_SAL)
 
 
 ----
+
 SELECT EM.EMPKEY, EM.FIRST_NAME, EM.LAST_NAME, EM.EMP_DEPT, EM.EMP_SALARY
 FROM EMP4 AS EM
 INNER JOIN (
