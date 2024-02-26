@@ -334,5 +334,58 @@ ALTER TABLE StudentCourses ADD CONSTRAINT PK_StudentCourses
 PRIMARY KEY CLUSTERED (StudentId,CourseId)
 
 
+--11.
+
+CREATE TABLE EMP7(EMPID INT, EMPNAME VARCHAR(20), GENDER VARCHAR(6), BIRTHDATE DATE, SALARY MONEY, DEPARTMENT CHAR(10))
+
+
+
+INSERT INTO EMP7 VALUES(1, 'John Doe', 'Male', '1980-01-05', 60000, 'IT');
+INSERT INTO EMP7 VALUES(2, 'Jane Smith', 'Female', '1985-03-15', 55000, 'HR');
+INSERT INTO EMP7 VALUES(3, 'Michael Johnson', 'Male', '1978-07-20', 65000, 'Finance');
+INSERT INTO EMP7 VALUES(4, 'Emily Brown', 'Female', '1990-11-10', 50000, 'Marketing');
+INSERT INTO EMP7 VALUES(5, 'William Wilson', 'Male', '1982-04-25', 70000, 'IT');
+INSERT INTO EMP7 VALUES(6, 'Elizabeth Taylor', 'Female', '1987-09-30', 75000, 'HR');
+INSERT INTO EMP7 VALUES(7, 'Christopher Lee', 'Male', '1975-12-12', 80000, 'Finance');
+INSERT INTO EMP7 VALUES(8, 'Mary White', 'Female', '1984-06-08', 62000, 'Marketing');
+INSERT INTO EMP7 VALUES(9, 'James Green', 'Male', '1989-10-18', 67000, 'IT');
+INSERT INTO EMP7 VALUES(10, 'Jennifer Martinez', 'Female', '1983-02-28', 58000, 'HR');
+INSERT INTO EMP7 VALUES(11, 'Robert Anderson', 'Male', '1977-05-22', 72000, 'Finance');
+INSERT INTO EMP7 VALUES(12, 'Susan Clark', 'Female', '1986-08-14', 69000, 'Marketing');
+INSERT INTO EMP7 VALUES(13, 'David Baker', 'Male', '1981-09-09', 63000, 'IT');
+INSERT INTO EMP7 VALUES(14, 'Patricia Carter', 'Female', '1979-04-03', 71000, 'HR');
+INSERT INTO EMP7 VALUES(15, 'Richard Garcia', 'Male', '1988-11-29', 68000, 'Finance');
+INSERT INTO EMP7 VALUES(16, 'Linda Perez', 'Female', '1982-07-17', 59000, 'Marketing');
+INSERT INTO EMP7 VALUES(17, 'Thomas Evans', 'Male', '1983-03-12', 64000, 'IT');
+INSERT INTO EMP7 VALUES(18, 'Karen Hernandez', 'Female', '1976-06-26', 66000, 'HR');
+INSERT INTO EMP7 VALUES(19, 'Daniel Murphy', 'Male', '1984-08-09', 70000, 'Finance');
+INSERT INTO EMP7 VALUES(20, 'Linda Collins', 'Female', '1991-01-01', 56000, 'Marketing');
+INSERT INTO EMP7 VALUES(21, 'Mark Johnson', 'Male', '1980-01-05', 58000, 'IT');
+INSERT INTO EMP7 VALUES(22, 'Jessica Williams', 'Female', '1980-01-05', 59000, 'Marketing');
+
+SELECT * FROM EMP7
+
+--12. Sql function to get number from string
+
+use OTHER
+
+Create table TestTable
+(
+	IDName nvarchar(25)
+)
+Go
+DROP TABLE dbo.TestTable
+Insert into TestTable values('Nir10ma0la1')
+Insert into TestTable values('1A0ru0na2')
+Insert into TestTable values('S1h00ashi3')
+Insert into TestTable values('N100aga4raj')
+Insert into TestTable values('Sruj100a5n')
+Insert into TestTable values('Sr1u0s0h6ti')
+Insert into TestTable values('Ha1n0u0man7th')
+Insert into TestTable values('Sh10iva08mma')
+Insert into TestTable values('10Sonu09')
+Insert into TestTable values('Nim10m1u0')
+Go
+
 
 
