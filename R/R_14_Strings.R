@@ -7,7 +7,7 @@ print(d)
 e <- 'Mixed quotes"'
 print(e)
 
-f <- 'single quote \'\' inside single quote'
+f <- 'single quote \'\' inside single quote' # nolint
 print(f)
 
 
@@ -15,7 +15,7 @@ print(f)
 
 abc <- "hello man"
 def <- "How"
-hij <- 'are you feeling? '
+hij <- 'are you feeling? ' # nolint: quotes_linter.
 
 print(paste(abc, def, hij))
 
