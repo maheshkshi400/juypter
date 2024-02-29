@@ -5,5 +5,6 @@
     "databricks.sensitiveValueStore": "VSCodeSettings",
     "files.watcherExclude": {
         "**/target": true
-    }
+    },
+    "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }
