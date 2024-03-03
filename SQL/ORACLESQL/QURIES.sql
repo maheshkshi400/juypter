@@ -121,27 +121,5 @@ SELECT * FROM (SELECT DISTINCT SAL FROM EMP ORDER BY SAL DESC)
 WHERE ROWNUM <= 3;
 
 
---
-CREATE TABLE [dbo].[Transaction_Tbl](
- [CustID] [int] ,
- [TranID] [int] ,
- [TranAmt] [float] ,
- [TranDate] [date] 
-) ;
-
-INSERT [dbo].[Transaction_Tbl] ([CustID], [TranID], [TranAmt], [TranDate]) VALUES (1001, 20001, 10000, CAST('2020-04-25' AS Date))
-INSERT [dbo].[Transaction_Tbl] ([CustID], [TranID], [TranAmt], [TranDate]) VALUES (1001, 20002, 15000, CAST('2020-04-25' AS Date))
-INSERT [dbo].[Transaction_Tbl] ([CustID], [TranID], [TranAmt], [TranDate]) VALUES (1001, 20003, 80000, CAST('2020-04-25' AS Date))
-INSERT [dbo].[Transaction_Tbl] ([CustID], [TranID], [TranAmt], [TranDate]) VALUES (1001, 20004, 20000, CAST('2020-04-25' AS Date))
-INSERT [dbo].[Transaction_Tbl] ([CustID], [TranID], [TranAmt], [TranDate]) VALUES (1002, 30001, 7000, CAST('2020-04-25' AS Date))
-INSERT [dbo].[Transaction_Tbl] ([CustID], [TranID], [TranAmt], [TranDate]) VALUES (1002, 30002, 15000, CAST('2020-04-25' AS Date))
-INSERT [dbo].[Transaction_Tbl] ([CustID], [TranID], [TranAmt], [TranDate]) VALUES (1002, 30003, 22000, CAST('2020-04-25' AS Date))
-
-SELECT * FROM Transaction_Tbl;
-
-SELECT A.CustID,TranID,A.TranAmt,MaxTranAmt,(TranAmt/MaxTranAmt)as Ratio,TranDate FROM dbo.Transaction_Tbl A
-INNER JOIN
-(SELECT CustID,MAX(TranAmt) as MaxTranAmt FROM Transaction_Tbl GROUP BY CustID) B ON
-A.CustID=B.CustID
 
 
