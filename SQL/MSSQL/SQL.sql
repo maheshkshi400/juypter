@@ -385,7 +385,3 @@ Insert into TestTable values('Ha1n0u0man7th')
 Insert into TestTable values('Sh10iva08mma')
 Insert into TestTable values('10Sonu09')
 Insert into TestTable values('Nim10m1u0')
-Go
-
-
-

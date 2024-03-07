@@ -1,3 +1,7 @@
+
+
+USE SALES;
+
 Create Table Inventory(
 ProdName Varchar(20),
 ProductCode Varchar(15),
@@ -19,3 +23,7 @@ Insert Into Inventory values('Monitor','M5005',20,'2020-03-02');
 
 --write an sql query to get running total or cumulative sum of quantity for each product code
 
+SELECT * FROM dbo.Inventory
+
+SELECT ProdName,ProductCode,Quantity,InventoryDate,SUM(Quantity) OVER 
+(PARTITION BY ProductCode ORDER BY InventoryDate) AS RUNIING_TOTAL FROM Inventory;
