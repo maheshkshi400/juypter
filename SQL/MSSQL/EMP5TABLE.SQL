@@ -17,7 +17,7 @@ CREATE TABLE EMP5 (
 );
 
 
-elect emp,empname,dept,sal,mgrid,select max(sal) from emp where sal<5 and dept='HR';
+select emp,empname,dept,sal,mgrid,select max(sal) from emp where sal<5 and dept='HR';
 
 
 -- VERIFY THE CREATED TABLE
@@ -130,11 +130,12 @@ ISDATE('2020-15-06') AS Result2;
 
 
 
-SELECT *
-INTO NEW_EMP
-FROM EMP5;
+--find out the same salary employees
+
+SELECT * FROM EMP5 E1,EMP5 E2 
+WHERE E1.SAL=E2.SAL 
+AND E1.EMPNO != E2.EMPNO;
 
 
-SELECT * FROM dbo.NEW_EMP
 
-DROP TABLE DBO.NEW_EMP
+
