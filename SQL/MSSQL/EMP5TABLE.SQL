@@ -17,7 +17,11 @@ CREATE TABLE EMP5 (
 );
 
 
-select emp,empname,dept,sal,mgrid,select max(sal) from emp where sal<5 and dept='HR';
+select ENAME,JOB,MGR,HIREDATE,MAX(SAL) from EMP5 aINNER JOIN EMP5 b ON a.EMPNO=b.EMPNO WHERE SAL=(SELECT MAX(SAL) FROM EMP5)
+
+WITH EMP_CTE AS(
+    SELECT TOP 1 SAL 
+)
 
 
 -- VERIFY THE CREATED TABLE
