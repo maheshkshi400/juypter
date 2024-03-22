@@ -19,11 +19,9 @@ SELECT * FROM Match_Result;
 -- TOTAL NUMBER OF MATCHES PLAYED BY EACH TEAM
 
 
-WITH CTE_Matches_played AS
-(
+WITH CTE_Matches_played AS (
     SELECT Team, SUM(Match_played) AS Total_Matches_Played 
-    FROM
-    (
+    FROM (
         SELECT Team_1 as Team, COUNT(*) AS Match_played FROM Match_Result
         GROUP BY Team_1
 

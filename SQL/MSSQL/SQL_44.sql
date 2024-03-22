@@ -25,3 +25,19 @@ WITH CTE_EMP AS (
     INNER JOIN CTE_EMP AS MGR ON EMP.ManagerID=MGR.EmployeeID
 )
 SELECT * FROM CTE_EMP ORDER BY Employee_level;
+
+
+SELECT E1.EMP5 AS 'EMPLOYEE',E1.EMP5 AS 'MANAGER' FROM EMP5 A  JOIN  EMP5 B ON A.deptno=B.deptno
+
+
+select  repoerting_date, Account_Status, Transaction_Amt,case 
+when repoerting_datepart(dd,) =31 then 1  else 0 END as 'month_end_date',
+ROW_NUMBER() over (partition by Cust_Name order by repoerting_date)as rank 
+from Reporting_Table where rank<7
+
+
+
+
+SELECT * FROM EMP5
+
+

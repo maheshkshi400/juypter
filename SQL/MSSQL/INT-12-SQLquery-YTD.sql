@@ -62,11 +62,16 @@ INSERT INTO SalesOrders  VALUES(1030, '2024-02-05', 670.0000) -- Duplicate recor
 
 --cumulative sum of total_due
 
-SELECT  salesordernumber,order_date,total_due,
-SUM(total_due) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date) AS YTD,
-SUM(total_due) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date ROWS 
-BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS YTD_FRAME
-FROM SalesOrders
+SELECT
+    salesordernumber,
+    order_date,
+    total_due,
+    SUM(total_due) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date) AS YTD,
+    SUM(total_due) OVER (PARTITION BY YEAR(order_date) ORDER BY order_date ROWS BETWEEN UNBOUNDED PRECEDING AND 
+    CURRENT ROW) AS YTD_FRAME
+FROM
+    SalesOrders;
+
 
 
 

@@ -17,8 +17,11 @@ select Name,LEFT(Name,CHARINDEX(',',Name)-1) AS FIRST_NAME,
 RIGHT(Name, LEN(Name)- CHARINDEX(',',Name)) AS LAST_NAME
 from EMPLOYEE1
 
-select value from string_split('adnan,shaikh',',')
 
+
+
+select value from string_split('adnan,shaikh',',')
+--
 with NAME_CTE AS 
 (select employeeId,value
 ,ROW_NUMBER() OVER (PARTITION BY employeeId ORDER BY employeeId) AS Rownum
@@ -26,7 +29,6 @@ from EMPLOYEE1
 CROSS APPLY
 string_split(Name,',')
 )
-
 SELECT employeeId,
 [1] AS FIRST_NAME,[2] AS LAST_NAME 
 FROM NAME_CTE

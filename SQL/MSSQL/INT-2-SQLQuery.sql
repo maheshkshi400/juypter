@@ -38,31 +38,49 @@ GO
 SELECT * FROM Employees;
 
 
+-- FIND OUT EMPLOYEENAME AND HIS MANAGER
 
 DECLARE @ID INT;
-SET @ID =7;
+SET @ID = 7;
 
 WITH EmployeesCTE AS
 (
-    SELECT EmployeeID,EmployeeName,ManagerID 
+    SELECT EmployeeID, EmployeeName, ManagerID 
     FROM Employees
-    WHERE EmployeeID= @ID
+    WHERE EmployeeID = @ID
 
-    union ALL
+    UNION ALL
 
-    SELECT Employees.EmployeeID,Employees.EmployeeName,
-    Employees.ManagerID FROM Employees 
-    
-    JOIN 
-    EmployeesCTE
-    on Employees.EmployeeID=Employees.ManagerID
+    SELECT Employees.EmployeeID, Employees.EmployeeName,
+    Employees.ManagerID 
+    FROM Employees 
+    JOIN EmployeesCTE
+    ON EmployeesCTE.ManagerID = Employees.EmployeeID
 )
 
-    
-SELECT E1.EmployeeName,E2.EmployeeName AS MANAGERNAME
-FROM  EmployeesCTE E1 
+SELECT E1.EmployeeName, E2.EmployeeName AS MANAGERNAME
+FROM EmployeesCTE E1 
 JOIN EmployeesCTE E2
-ON E1.ManagerID=E2.EmployeeID
+ON E1.ManagerID = E2.EmployeeID;
+
+
+
+SELECT emp.EmployeeID, emp.EmployeeName,Mgr.EmployeeName AS ManagerName 
+FROM Employees emp
+LEFT OUTER JOIN Employees mgr
+ON emp.ManagerID = mgr.EmployeeID
+
+
+--SECOND METHOD FIND OUT HIEARCHY
+
+WITH CTE_EMP AS (
+    SELECT EmployeeID,EmployeeName,ManagerID,0 AS Employee_level FROM dbo.Employee_Table WHERE ManagerID IS NULL 
+    UNION ALL
+    SELECT EMP.EmployeeID,EMP.EmployeeName,EMP.ManagerID,Employee_level+1 FROM dbo.Employee_Table AS EMP
+    INNER JOIN CTE_EMP AS MGR ON EMP.ManagerID=MGR.EmployeeID
+)
+SELECT * FROM CTE_EMP ORDER BY Employee_level;
+
 
 
 
