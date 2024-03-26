@@ -63,9 +63,9 @@ FROM EmployeesCTE E1
 JOIN EmployeesCTE E2
 ON E1.ManagerID = E2.EmployeeID;
 
+--write an sql query to see employee name and his manager
 
-
-SELECT emp.EmployeeID, emp.EmployeeName,Mgr.EmployeeName AS ManagerName 
+SELECT emp.EmployeeID, emp.EmployeeName,emp.EmployeeName AS ManagerName 
 FROM Employees emp
 LEFT OUTER JOIN Employees mgr
 ON emp.ManagerID = mgr.EmployeeID
@@ -80,6 +80,28 @@ WITH CTE_EMP AS (
     INNER JOIN CTE_EMP AS MGR ON EMP.ManagerID=MGR.EmployeeID
 )
 SELECT * FROM CTE_EMP ORDER BY Employee_level;
+
+
+
+
+--write sql query for employee and his manager with employee level
+
+WITH EmployeeHierarchy AS (
+    SELECT EmployeeID, EmployeeName, ManagerID, 0 AS EmployeeLevel
+    FROM Employees
+    WHERE ManagerID IS NULL -- Assuming top-level managers have NULL ManagerID
+
+    UNION ALL
+
+    SELECT emp.EmployeeID, emp.EmployeeName, emp.ManagerID, eh.EmployeeLevel + 1 AS EmployeeLevel
+    FROM Employees emp
+    INNER JOIN EmployeeHierarchy eh ON emp.ManagerID = eh.EmployeeID
+)
+
+SELECT eh.EmployeeID, eh.EmployeeName, eh.EmployeeLevel, mgr.EmployeeName AS ManagerName
+FROM EmployeeHierarchy eh
+LEFT JOIN Employees mgr ON eh.ManagerID = mgr.EmployeeID;
+
 
 
 
