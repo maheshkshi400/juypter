@@ -1,0 +1,1 @@
+"insert into Error_Logs values ('"+ @[System::MachineName] +"','"+ @[System::PackageName] +"', '"+ @[System::SourceName] +"', "+ (DT_WSTR,12)@[System::ErrorCode] +", '"+ replace(@[System::ErrorDescription],"'","") +"', getdate())"

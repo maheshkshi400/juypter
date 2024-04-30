@@ -1,0 +1,13 @@
+This package is created in Visual Studio 2013. Its corresponding video can be seen from here
+
+https://youtu.be/i8mfy2xoBSQ
+
+1. Copy the downloaded Zip file to a new drive, and then UnZip it there. I am unzipping it to D drive.
+2. To configure the SSIS package. Open the Solution in Visual Studio 2013 or in SQL Server Data Tools 2013.
+3. Right Click "(local).Testing" OLE DB Connection Manager, Select Edit. Provide (local) under Server Name and enter a valid database name from your sql server.
+4. Right Click in Control Flow and select Variables. Under "FilePath" SSIS variable, set the value to a valid path where you want to import data from. I have set it to "D:\Executing Package from command line\File\TestData_1.CSV"
+5. To set the path of XML Configuration file, Right Click on SSIS package "LoadCSVFile.dtsx" and select "View Code". You will see some XML code there.
+6. Search the text "ConfigurationString", next to it there will be older path of XML configuration file, change it to correct\valid path of XML configuration file at your system. I am setting it to "D:\XML Configuration in SSIS\SSIS Package\Executing Package from batch file\MyConfigFile.dtsConfig". Save and close the "LoadCSVFile.dtsx" SSIS package.
+7. Navigate to "D:\XML Configuration in SSIS\SSIS Package\Executing Package from batch file" location and open the "MyConfigFile.dtsConfig" XML Configuration file in notepad\notepad++ and under "ConfiguredValue" set the path to D:\XML Configuration in SSIS\File\TestData_2.CSV.
+8. Now you should be good to execute the SSIS package. Hit F5 to execute the SSIS package. 
+9. The SSIS package will create "TestData"\"tblLogs" SQL tables in the configured database in step 3 and then it will read the value of "FilePath" SSIS variable from XML Configuration file and and currently as it is set to "TestData_2.csv" so it will fetch data from "TestData_2.CSV" file and will import it to "TestData" SQL table.

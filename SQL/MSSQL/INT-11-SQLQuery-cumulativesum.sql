@@ -97,7 +97,7 @@ SELECT
     COUNT(CASE WHEN emp_gender = 'male' THEN 1 END) AS male_count,
     COUNT(CASE WHEN emp_gender = 'female' THEN 1 END) AS female_count
 FROM 
-    EMPLOYEE.dbo.EMP3
+    EMPLOYEE.dbo.EMP5
 GROUP BY 
     emp_department;
 

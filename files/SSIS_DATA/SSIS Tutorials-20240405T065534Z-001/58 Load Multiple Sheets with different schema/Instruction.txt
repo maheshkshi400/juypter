@@ -1,0 +1,16 @@
+The package is created in Visual Studio 2013.
+Do not run the package in production environment
+
+1. Unzip the downloaded zip file.
+2. Open the solution ~\54_Load Multiple Sheets with different schema\SSIS Package\Load Multiple Sheets with different schema.sln in 
+   Visual Studio 2013 or in SQL Server Data Tools 2013.
+3. Right Click "(local).Testing" OLE DB Connection Manager, Select Edit. 
+   Provide a SQL Server instanse name under the Server Name and enter a valid database name.
+4. The package loads "D:\54_Load Multiple Sheets with different schema\File\File_20190125.xlsx" file to "tblEmployee"\"tblCity" SQL tables. File_20190125.xlsx exists in the unzipped folder. 
+5. Right Click on for each loop container "Loop through all excel files" | Select Edit. Navigate to Collection Tab. Under Folder, provide the path of the folder where File_20190125.xlsx exists. Click Ok.
+6. Right Click on Control Flow and Select Variables | There is an SSIS variable FilePath, provide the valid file path similar to ~54_Load Multiple Sheets with different schema\File\File_20190125.xlsx
+7. Under Solution explorer Right Click on Package.dtsx and Click execute package. 
+8. The SSIS package will create the "tblEmployee"\"tblCity" SQL tables in the provided database.
+   Then package will load the data from ~54_Load Multiple Sheets with different schema\File\File_20190125.xlsx file to "tblEmployee"\"tblCity" SQL tables.
+
+For any support or feedback, add a comment on the lesson page.

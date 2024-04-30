@@ -1,0 +1,20 @@
+--Lookup query
+SELECT [CustomerID]
+      ,[CustomerFirstName]
+      ,[CustomerLastName]
+      ,[PhoneNumber]
+      ,[FaxNumber]
+      ,[Email]
+      ,[Address]
+      ,[City]
+      ,[State]
+      ,[Zip]
+      ,[Country]
+      ,[StartDate]
+  FROM [FameSellDW].[Dimension].[Customer] WHERE ENDDATE IS NULL
+
+--Conditional split transformation
+i) New Records: ISNULL(Dest_CustomerID)
+ii) SCD Type 1: Address != Dest_Address || City != Dest_City || State != Dest_State || Zip != Dest_Zip
+iii) SCD Type 2: PhoneNumber != Dest_PhoneNumber || FaxNumber != Dest_FaxNumber || Email != Dest_Email
+

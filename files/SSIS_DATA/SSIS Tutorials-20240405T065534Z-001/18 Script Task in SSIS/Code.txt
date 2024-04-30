@@ -1,0 +1,16 @@
+public void Main()
+		{
+            string DirPath = Dts.Variables["DirPath"].Value.ToString();
+            string FileNewPath = Dts.Variables["FileNewPath"].Value.ToString();
+            string FilePath = Dts.Variables["FilePath"].Value.ToString();
+            string Content = "This is my text inside the Flat file using script component";
+
+            File.WriteAllText(FilePath, Content);
+
+            if (!Directory.Exists(DirPath))
+                Directory.CreateDirectory(DirPath);
+
+            File.Move(FilePath, FileNewPath);
+
+            Dts.TaskResult = (int)ScriptResults.Success;
+		}

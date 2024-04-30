@@ -1,0 +1,1 @@
+"exec [dbo].[sp_readCurrency] '"+ @[User::CurrencyName] +"' "

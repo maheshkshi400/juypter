@@ -1,0 +1,21 @@
+ public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+
+        Row.FullName = Row.firstname + " " + Row.lastname;
+        Row.Gender1 = Row.Gender.Substring(0, 1);
+
+        if (Row.Gender == "Male")
+        {
+
+            Row.Gender2 = "M";
+        }
+        else if (Row.Gender == "Female")
+        {
+
+            Row.Gender2 = "F";
+        }
+
+        Row.Company2 = Row.CompanyName.ToUpper();
+        Row.firstname = Row.firstname.Trim();
+
+    }

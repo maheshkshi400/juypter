@@ -1,0 +1,1 @@
+Salary_Desc: (DT_STR,20,1252)(Salary > 0 && Salary < 101 ? "Low Salary" : (Salary > 100 && Salary < 201 ? "Average Salary" : (Salary > 200 ? "Good Salary" : "")))

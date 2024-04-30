@@ -1,0 +1,44 @@
+bool HashSpecialChar = false;
+        var regexItem = new Regex("^[a-zA-Z0-9-@. ]*$");
+
+        string firstname = Row.firstname;
+        if (regexItem.IsMatch(firstname))
+        {
+
+        }
+        else
+        {
+            HashSpecialChar = true;
+        }
+
+        string lastname = Row.lastname;
+        if (regexItem.IsMatch(lastname))
+        {
+
+        }
+        else
+        {
+            HashSpecialChar = true;
+        }
+
+        string email = Row.email;
+        if (regexItem.IsMatch(email))
+        {
+
+        }
+        else
+        {
+            HashSpecialChar = true;
+        }
+
+        string gender = Row.gender;
+        if (regexItem.IsMatch(gender))
+        {
+
+        }
+        else
+        {
+            HashSpecialChar = true;
+        }
+
+        Row.HasSpecialChar = HashSpecialChar;

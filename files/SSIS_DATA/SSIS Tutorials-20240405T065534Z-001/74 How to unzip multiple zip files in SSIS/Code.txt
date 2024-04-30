@@ -1,0 +1,3 @@
+Executable: D:\Files\7z1900-extra\x64\7za.exe
+Working Directory: D:\Files
+Arguments: "e "+ @[User::FilePath] +" "

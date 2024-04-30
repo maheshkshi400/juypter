@@ -1,4 +1,6 @@
 select * from EMPLOYEE.dbo.EMP4
+
+
 select max(eMP_salary) from EMPLOYEE.dbo.EMP4
 where emp_salary not in (select max(emp_salary) 
 from EMPLOYEE.dbo.EMP4)

@@ -1,0 +1,9 @@
+"insert into test
+select 'this is my hard coded value'
+union
+select '"+ @[User::ServerName] +"'
+"
+
+---------------------------------
+
+MaritalStatusText:             (DT_STR,10,1252)(MaritalStatus == "S" ? "Single" : (MaritalStatus == "M" ? "Married" : ""))

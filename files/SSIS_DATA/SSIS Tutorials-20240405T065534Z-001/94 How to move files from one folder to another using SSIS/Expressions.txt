@@ -1,0 +1,1 @@
+@[User::DestFolder]+"\\"+ RIGHT(  @[User::SourceFilePath] , FINDSTRING(REVERSE( @[User::SourceFilePath] ) , "\\", 1) - 1)

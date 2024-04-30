@@ -1,0 +1,31 @@
+public override void CreateNewOutputRows()
+    {
+        /*
+          Add rows by calling the AddRow method on the member variable named "<Output Name>Buffer".
+          For example, call MyOutputBuffer.AddRow() if your output was named "MyOutput".
+        */
+        String jsonFileContent = File.ReadAllText(@"D:\Files\email data.json");
+        JavaScriptSerializer js = new JavaScriptSerializer();
+        List < Email > obj = js.Deserialize<List<Email>>(jsonFileContent);
+        foreach (Email obj2 in obj)
+        {
+            Output0Buffer.AddRow();
+            Output0Buffer.id = obj2.id;
+            Output0Buffer.firstname = obj2.first_name;
+            Output0Buffer.lastname = obj2.last_name;
+            Output0Buffer.email = obj2.email;
+            Output0Buffer.gender = obj2.gender;
+        }
+
+    }
+
+----------------------------------------------------
+
+ class Email
+    {
+        public int id { get; set; }
+        public string first_name { get; set; }
+        public string last_name { get; set; }
+        public string email { get; set; }
+        public string gender { get; set; }
+    }

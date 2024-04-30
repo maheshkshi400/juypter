@@ -37,7 +37,7 @@ GO
 
 SELECT * FROM Employees;
 
-
+-- ind aout the organizations hiearchy
 
 DECLARE @ID INT;
 SET @ID =7;

@@ -1,0 +1,5 @@
+CUSTID,NAME,SALARY
+1,suresh,6000
+2,Ganesh,8000
+3,savita,10000
+4,shreya,5000

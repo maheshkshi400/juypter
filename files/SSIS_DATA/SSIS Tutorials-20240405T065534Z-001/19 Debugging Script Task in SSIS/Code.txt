@@ -1,0 +1,1 @@
+"INSERT INTO FILEINFO VALUES('"+ @[User::FilePath] +"','"+ @[User::FileName] +"',"+ (DT_WSTR,12)@[User::RecordCount] +", getdate( )"

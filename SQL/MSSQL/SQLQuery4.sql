@@ -29,6 +29,7 @@ group by id
 # Method 2 pivot table
 
 Select * from emp;
+
 select id,[name],[gender],[salary]
 from 
 

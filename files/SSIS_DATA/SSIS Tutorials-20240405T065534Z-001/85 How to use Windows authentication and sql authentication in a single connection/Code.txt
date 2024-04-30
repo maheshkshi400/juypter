@@ -1,0 +1,23 @@
+// TODO: Add your code here User::Database,User::Pwd,User::ServerName,User::User
+            // 
+
+            string User = Dts.Variables["User"].Value.ToString();
+            string Pwd = Dts.Variables["Pwd"].Value.ToString();
+            string ServerName = Dts.Variables["ServerName"].Value.ToString();
+            string Database = Dts.Variables["Database"].Value.ToString();
+            string ConnectionString = Dts.Variables["ConnectionString"].Value.ToString();
+
+            if (User.Length > 0 && Pwd.Length > 0)
+            {
+                //Provider=MSOLEDBSQL;Server=myServerAddress;Database=myDataBase;UID=myUsername;PWD=myPassword;
+                ConnectionString = "Provider=MSOLEDBSQL;Server="+ ServerName + ";Database="+ Database + ";UID="+ User + ";PWD="+ Pwd + ";";
+            }
+
+            else
+            {
+                ConnectionString = "Provider=MSOLEDBSQL;Server=" + ServerName + ";Database=" + Database + ";Trusted_Connection=yes;";
+            }
+
+            Dts.Variables["ConnectionString"].Value = ConnectionString;
+
+            Dts.TaskResult = (int)ScriptResults.Success;

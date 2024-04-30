@@ -1,0 +1,7 @@
+CustId CustumerName        CustumerCity   CustomerPhone Subscription
+1      Tom Nicolas         New York       1254856200    Free        
+101    Abhishek Sinha      Dehradun       8477068142    Paid        
+140    Bob                 Salt Lake City 4785214520    Paid        
+250    Sarah Tom           Florida        4781254250    Free        
+7820   Mohd Naeem          Amroha         1250145205    Paid        
+102450 Ashish Raghav       New Delhi      1025856205    Paid        

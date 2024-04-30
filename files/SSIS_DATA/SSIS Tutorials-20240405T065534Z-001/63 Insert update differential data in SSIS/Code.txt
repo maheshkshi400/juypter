@@ -1,0 +1,18 @@
+--update existing data
+
+UPDATE A
+SET A.[first_name] = B.[first_name],
+A.[last_name] = B.[last_name],
+A.[Gender] = B.[Gender],
+A.[Company_Name] = B.[Company_Name]
+FROM EmpMaster A INNER JOIN Emp_Staging B
+ON A.ID = B.ID
+select @@rowcount
+----------------------------------------
+--do logging
+
+"insert into logs values ('"+ @[System::PackageName] +"',"+(DT_WSTR,12) @[User::CntInsertedRecords] +","+(DT_WSTR,12) @[User::CntUpdatedRecords] +",getdate())"
+
+-- derived column transformation(replace NULL with 0)
+
+ISNULL(id2) ? "0" : id2

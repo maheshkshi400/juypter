@@ -1,0 +1,5 @@
+This package is created in Visual Studio 2013. Its corresponding video can be seen from here
+
+https://youtu.be/jaqb9vV7R4M
+
+1. You can use this SSIS Project to convert from Project deployment model to package deployment model.

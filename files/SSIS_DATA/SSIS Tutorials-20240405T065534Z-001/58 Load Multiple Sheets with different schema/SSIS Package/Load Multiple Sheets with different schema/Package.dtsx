@@ -1,0 +1,1267 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/26/2019 2:16:56 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DEVELOPER"
+  DTS:CreatorName="DEVELOPER\developer"
+  DTS:DelayValidation="True"
+  DTS:DTSID="{0A7451E8-BD4C-498B-908C-F73AA3B4319A}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3008.28"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{1C09ED06-8691-46F2-B803-C5219764E28C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[C:\Files\File_20190125.xlsx]"
+      DTS:CreationName="ADO.NET:OLEDB"
+      DTS:DTSID="{88B93FD3-5E45-43E8-9185-71E8EE40B9F7}"
+      DTS:ObjectName="C:\Files\File_20190125.xlsx">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">"Data Source="+ @[User::FilePath] +";Provider=Microsoft.ACE.OLEDB.12.0;Extended Properties=Excel 12.0;"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=D:\49_Load Multiple Sheets with different schema\File\File_20190125.xlsx;Provider=Microsoft.ACE.OLEDB.12.0;Extended Properties=Excel 12.0;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{A2C54BA8-1276-4E5C-9183-CAFA93690C88}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:PropertyExpression
+        DTS:Name="ExcelFilePath">@[User::FilePath]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\49_Load Multiple Sheets with different schema\File\File_20190125.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.Testing]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5862F5AD-0AC1-4561-BC14-6FF179B756AF}"
+      DTS:ObjectName="LocalHost.Testing">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=.;Initial Catalog=Testing;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B246DE2B-39F9-482C-AB59-0336FB38E312}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FilePath">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\49_Load Multiple Sheets with different schema\File\File_20190125.xlsx</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C7B2A72D-42C1-46D5-9589-D78B6054BF97}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SheetName">
+      <DTS:VariableValue
+        DTS:DataType="8">City$</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Create req tables"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{D5343A28-C904-4749-BAC0-3555ED60AC85}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create req tables"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{5862F5AD-0AC1-4561-BC14-6FF179B756AF}"
+          SQLTask:SqlStatementSource="IF OBJECT_ID('tblEmployee', 'U') IS NOT NULL &#xA;drop table tblEmployee&#xA;CREATE TABLE [dbo].[tblEmployee](&#xA;&#x9;[Id] [int] NULL,&#xA;&#x9;[first_name] [nvarchar](255) NULL,&#xA;&#x9;[last_name] [nvarchar](255) NULL,&#xA;&#x9;[email] [nvarchar](255) NULL,&#xA;&#x9;[gender] [nvarchar](255) NULL,&#xA;&#x9;[phone_number] [nvarchar](255) NULL&#xA;) ON [PRIMARY]&#xA;GO&#xA;IF OBJECT_ID('tblCity', 'U') IS NOT NULL &#xA;drop table tblCity&#xA;CREATE TABLE [dbo].[tblCity](&#xA;&#x9;[Id] [int] NULL,&#xA;&#x9;[City] [nvarchar](255) NULL,&#xA;&#x9;[State] [nvarchar](255) NULL,&#xA;&#x9;[Zip] [nvarchar](255) NULL,&#xA;&#x9;[Country] [nvarchar](255) NULL&#xA;) ON [PRIMARY]&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Loop through all excel files"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{AA67C49C-ED32-4411-85DE-8B631DCB2F3E}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loop through all excel files">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{20C33160-2330-469C-AC35-A98E719E3C37}"
+        DTS:ObjectName="{20C33160-2330-469C-AC35-A98E719E3C37}">
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="D:\49_Load Multiple Sheets with different schema\File" />
+            <FEFEProperty
+              FileSpec="*.xlsx" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Loop through all excel files\Loop through all sheets in a file"
+          DTS:CreationName="STOCK:FOREACHLOOP"
+          DTS:Description="Foreach Loop Container"
+          DTS:DTSID="{34929B2B-1E28-48AA-A05D-B4A0E0F33349}"
+          DTS:ExecutableType="STOCK:FOREACHLOOP"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Loop through all sheets in a file">
+          <DTS:ForEachEnumerator
+            DTS:CreationName="Microsoft.ForEachSchemaRowsetEnumerator"
+            DTS:DTSID="{0C85F779-06C9-4E47-9086-0947FF1D9778}"
+            DTS:ObjectName="{0C85F779-06C9-4E47-9086-0947FF1D9778}">
+            <DTS:ObjectData>
+              <FEESchemaRowset
+                Connection="C:\Files\File_20190125.xlsx"
+                Schema="c8b52229-5cf3-11ce-ade5-00aa0044773d" />
+            </DTS:ObjectData>
+          </DTS:ForEachEnumerator>
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Loop through all excel files\Loop through all sheets in a file\Dummy"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:Description="Data Flow Task"
+              DTS:DTSID="{DCA12ED3-B17B-4432-9C3D-0B8809D0835D}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Dummy"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:Description="Data Flow Task"
+              DTS:DTSID="{9AFA28A6-93D8-43B7-BF64-B3C861AE039D}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Load City Data"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1">
+                  <components>
+                    <component
+                      refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source"
+                      componentClassID="Microsoft.ExcelSource"
+                      contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                      description="Excel Source"
+                      name="Excel Source"
+                      usesDispositions="true"
+                      version="1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">0</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of the database object used to open a rowset."
+                          name="OpenRowset"></property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the variable that contains the name of the database object used to open a rowset."
+                          name="OpenRowsetVariable">User::SheetName</property>
+                        <property
+                          dataType="System.String"
+                          description="The SQL command to be executed."
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                        <property
+                          dataType="System.String"
+                          description="The variable that contains the SQL command to be executed."
+                          name="SqlCommandVariable"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the mode used to access the database."
+                          name="AccessMode"
+                          typeConverter="AccessMode">1</property>
+                        <property
+                          dataType="System.String"
+                          description="The mapping from parameters in the SQL command to variables."
+                          name="ParameterMapping"></property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Connections[OleDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
+                          connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                          description="The OLE DB runtime connection used to access the database."
+                          name="OleDbConnection" />
+                      </connections>
+                      <outputs>
+                        <output
+                          refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output]"
+                          name="Excel Source Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[id]"
+                              dataType="r8"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[id]"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[id]"
+                              name="id"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[City]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[City]"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[City]"
+                              name="City"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[State]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[State]"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[State]"
+                              name="State"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[Zip]"
+                              dataType="r8"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[Zip]"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[Zip]"
+                              name="Zip"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[Country]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[Country]"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[Country]"
+                              name="Country"
+                              truncationRowDisposition="FailComponent" />
+                          </outputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[id]"
+                              dataType="r8"
+                              name="id" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[City]"
+                              dataType="wstr"
+                              length="255"
+                              name="City" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[State]"
+                              dataType="wstr"
+                              length="255"
+                              name="State" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[Zip]"
+                              dataType="r8"
+                              name="Zip" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[Country]"
+                              dataType="wstr"
+                              length="255"
+                              name="Country" />
+                          </externalMetadataColumns>
+                        </output>
+                        <output
+                          refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output]"
+                          isErrorOut="true"
+                          name="Excel Source Error Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output].Columns[id]"
+                              dataType="r8"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output].Columns[id]"
+                              name="id" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output].Columns[City]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output].Columns[City]"
+                              name="City" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output].Columns[State]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output].Columns[State]"
+                              name="State" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output].Columns[Zip]"
+                              dataType="r8"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output].Columns[Zip]"
+                              name="Zip" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output].Columns[Country]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output].Columns[Country]"
+                              name="Country" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination"
+                      componentClassID="Microsoft.OLEDBDestination"
+                      contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                      description="OLE DB Destination"
+                      name="OLE DB Destination"
+                      usesDispositions="true"
+                      version="4">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">0</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of the database object used to open a rowset."
+                          name="OpenRowset">[dbo].[tblCity]</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the variable that contains the name of the database object used to open a rowset."
+                          name="OpenRowsetVariable"></property>
+                        <property
+                          dataType="System.String"
+                          description="The SQL command to be executed."
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the column code page to use when code page information is unavailable from the data source."
+                          name="DefaultCodePage">1252</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Forces the use of the DefaultCodePage property value when describing character data."
+                          name="AlwaysUseDefaultCodePage">false</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the mode used to access the database."
+                          name="AccessMode"
+                          typeConverter="AccessMode">3</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                          name="FastLoadKeepIdentity">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                          name="FastLoadKeepNulls">false</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                          name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                          name="FastLoadMaxInsertCommitSize">2147483647</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Connections[OleDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[LocalHost.Testing]"
+                          connectionManagerRefId="Package.ConnectionManagers[LocalHost.Testing]"
+                          description="The OLE DB runtime connection used to access the database."
+                          name="OleDbConnection" />
+                      </connections>
+                      <inputs>
+                        <input
+                          refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                          errorOrTruncationOperation="Insert"
+                          errorRowDisposition="FailComponent"
+                          hasSideEffects="true"
+                          name="OLE DB Destination Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
+                              cachedDataType="r8"
+                              cachedName="id"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[id]" />
+                            <inputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[City]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="City"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City]"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[City]" />
+                            <inputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[State]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="State"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[State]" />
+                            <inputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Zip]"
+                              cachedDataType="r8"
+                              cachedName="Zip"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Zip]"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[Zip]" />
+                            <inputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Country]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="Country"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output].Columns[Country]" />
+                          </inputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                              dataType="i4"
+                              name="Id" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[City]"
+                              dataType="wstr"
+                              length="255"
+                              name="City" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[State]"
+                              dataType="wstr"
+                              length="255"
+                              name="State" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Zip]"
+                              dataType="wstr"
+                              length="255"
+                              name="Zip" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Country]"
+                              dataType="wstr"
+                              length="255"
+                              name="Country" />
+                          </externalMetadataColumns>
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="OLE DB Destination Error Output"
+                          synchronousInputId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                  </components>
+                  <paths>
+                    <path
+                      refId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data.Paths[Excel Source Output]"
+                      endId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      name="Excel Source Output"
+                      startId="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source.Outputs[Excel Source Output]" />
+                  </paths>
+                </pipeline>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:Description="Data Flow Task"
+              DTS:DTSID="{F814994A-C45A-4C4D-8DA0-E77F2098BD32}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Load Employee Data"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1">
+                  <components>
+                    <component
+                      refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source"
+                      componentClassID="Microsoft.ExcelSource"
+                      contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                      description="Excel Source"
+                      name="Excel Source"
+                      usesDispositions="true"
+                      version="1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">0</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of the database object used to open a rowset."
+                          name="OpenRowset"></property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the variable that contains the name of the database object used to open a rowset."
+                          name="OpenRowsetVariable">User::SheetName</property>
+                        <property
+                          dataType="System.String"
+                          description="The SQL command to be executed."
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                        <property
+                          dataType="System.String"
+                          description="The variable that contains the SQL command to be executed."
+                          name="SqlCommandVariable"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the mode used to access the database."
+                          name="AccessMode"
+                          typeConverter="AccessMode">1</property>
+                        <property
+                          dataType="System.String"
+                          description="The mapping from parameters in the SQL command to variables."
+                          name="ParameterMapping"></property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Connections[OleDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
+                          connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                          description="The OLE DB runtime connection used to access the database."
+                          name="OleDbConnection" />
+                      </connections>
+                      <outputs>
+                        <output
+                          refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output]"
+                          name="Excel Source Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[id]"
+                              dataType="r8"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[id]"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[id]"
+                              name="id"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[first_name]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[first_name]"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[first_name]"
+                              name="first_name"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[last_name]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[last_name]"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[last_name]"
+                              name="last_name"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[email]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[email]"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[email]"
+                              name="email"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[gender]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[gender]"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[gender]"
+                              name="gender"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[phone_number]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[phone_number]"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[phone_number]"
+                              name="phone_number"
+                              truncationRowDisposition="FailComponent" />
+                          </outputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[id]"
+                              dataType="r8"
+                              name="id" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[first_name]"
+                              dataType="wstr"
+                              length="255"
+                              name="first_name" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[last_name]"
+                              dataType="wstr"
+                              length="255"
+                              name="last_name" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[email]"
+                              dataType="wstr"
+                              length="255"
+                              name="email" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[gender]"
+                              dataType="wstr"
+                              length="255"
+                              name="gender" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].ExternalColumns[phone_number]"
+                              dataType="wstr"
+                              length="255"
+                              name="phone_number" />
+                          </externalMetadataColumns>
+                        </output>
+                        <output
+                          refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output]"
+                          isErrorOut="true"
+                          name="Excel Source Error Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[id]"
+                              dataType="r8"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[id]"
+                              name="id" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[first_name]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[first_name]"
+                              name="first_name" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[last_name]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[last_name]"
+                              name="last_name" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[email]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[email]"
+                              name="email" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[gender]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[gender]"
+                              name="gender" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[phone_number]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[phone_number]"
+                              name="phone_number" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination"
+                      componentClassID="Microsoft.OLEDBDestination"
+                      contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                      description="OLE DB Destination"
+                      name="OLE DB Destination"
+                      usesDispositions="true"
+                      version="4">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">0</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of the database object used to open a rowset."
+                          name="OpenRowset">[dbo].[tblEmployee]</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the variable that contains the name of the database object used to open a rowset."
+                          name="OpenRowsetVariable"></property>
+                        <property
+                          dataType="System.String"
+                          description="The SQL command to be executed."
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the column code page to use when code page information is unavailable from the data source."
+                          name="DefaultCodePage">1252</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Forces the use of the DefaultCodePage property value when describing character data."
+                          name="AlwaysUseDefaultCodePage">false</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the mode used to access the database."
+                          name="AccessMode"
+                          typeConverter="AccessMode">3</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                          name="FastLoadKeepIdentity">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                          name="FastLoadKeepNulls">false</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                          name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                          name="FastLoadMaxInsertCommitSize">2147483647</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Connections[OleDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[LocalHost.Testing]"
+                          connectionManagerRefId="Package.ConnectionManagers[LocalHost.Testing]"
+                          description="The OLE DB runtime connection used to access the database."
+                          name="OleDbConnection" />
+                      </connections>
+                      <inputs>
+                        <input
+                          refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                          errorOrTruncationOperation="Insert"
+                          errorRowDisposition="FailComponent"
+                          hasSideEffects="true"
+                          name="OLE DB Destination Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
+                              cachedDataType="r8"
+                              cachedName="id"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[id]" />
+                            <inputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[first_name]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="first_name"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[first_name]"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[first_name]" />
+                            <inputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[last_name]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="last_name"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[last_name]"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[last_name]" />
+                            <inputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[email]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="email"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[email]"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[email]" />
+                            <inputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[gender]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="gender"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[gender]"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[gender]" />
+                            <inputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[phone_number]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="phone_number"
+                              externalMetadataColumnId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[phone_number]"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output].Columns[phone_number]" />
+                          </inputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                              dataType="i4"
+                              name="Id" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[first_name]"
+                              dataType="wstr"
+                              length="255"
+                              name="first_name" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[last_name]"
+                              dataType="wstr"
+                              length="255"
+                              name="last_name" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[email]"
+                              dataType="wstr"
+                              length="255"
+                              name="email" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[gender]"
+                              dataType="wstr"
+                              length="255"
+                              name="gender" />
+                            <externalMetadataColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[phone_number]"
+                              dataType="wstr"
+                              length="255"
+                              name="phone_number" />
+                          </externalMetadataColumns>
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="OLE DB Destination Error Output"
+                          synchronousInputId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                  </components>
+                  <paths>
+                    <path
+                      refId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data.Paths[Excel Source Output]"
+                      endId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      name="Excel Source Output"
+                      startId="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source.Outputs[Excel Source Output]" />
+                  </paths>
+                </pipeline>
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:PrecedenceConstraints>
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Loop through all excel files\Loop through all sheets in a file.PrecedenceConstraints[Constraint]"
+              DTS:CreationName=""
+              DTS:DTSID="{B6E215CD-3E13-4A38-ABFB-AAF86DDFC01D}"
+              DTS:EvalOp="3"
+              DTS:Expression="@[User::SheetName] == &quot;City$&quot;"
+              DTS:From="Package\Loop through all excel files\Loop through all sheets in a file\Dummy"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint"
+              DTS:To="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data" />
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Loop through all excel files\Loop through all sheets in a file.PrecedenceConstraints[Constraint 1]"
+              DTS:CreationName=""
+              DTS:DTSID="{1562481D-2D08-4717-9ADF-0A001DD64DFA}"
+              DTS:EvalOp="3"
+              DTS:Expression="@[User::SheetName] == &quot;Employee$&quot;"
+              DTS:From="Package\Loop through all excel files\Loop through all sheets in a file\Dummy"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint 1"
+              DTS:To="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data" />
+          </DTS:PrecedenceConstraints>
+          <DTS:ForEachVariableMappings>
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{1A783E3A-937D-4314-828E-796A77D06F16}"
+              DTS:ObjectName="{1A783E3A-937D-4314-828E-796A77D06F16}"
+              DTS:ValueIndex="2"
+              DTS:VariableName="User::SheetName" />
+          </DTS:ForEachVariableMappings>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{5C6D0555-6514-4E4E-AF2D-CEC0D2C36E8C}"
+          DTS:ObjectName="{5C6D0555-6514-4E4E-AF2D-CEC0D2C36E8C}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::FilePath" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{F23176D1-4C19-4053-9A62-D3E5CF611E64}"
+      DTS:From="Package\Create req tables"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Loop through all excel files" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="115.2,41.6"
+          Id="Package\Loop through all excel files\Loop through all sheets in a file\Dummy"
+          TopLeft="111.085719501729,13.741179636523" />
+        <NodeLayout
+          Size="147.2,41.6"
+          Id="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data"
+          TopLeft="215.657149853998,91.3882387860836" />
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data"
+          TopLeft="10.5142892175792,92.6117687984322" />
+        <EdgeLayout
+          Id="Package\Loop through all excel files\Loop through all sheets in a file.PrecedenceConstraints[Constraint]"
+          TopLeft="168.685719501729,55.341179636523">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="120.571430352269,36.0470591495606"
+              Start="0,0"
+              End="120.571430352269,28.5470591495606">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.0235295747803" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.0235295747803"
+                    Point2="0,18.0235295747803"
+                    Point3="4,18.0235295747803" />
+                  <mssgle:LineSegment
+                    End="116.571430352269,18.0235295747803" />
+                  <mssgle:CubicBezierSegment
+                    Point1="116.571430352269,18.0235295747803"
+                    Point2="120.571430352269,18.0235295747803"
+                    Point3="120.571430352269,22.0235295747803" />
+                  <mssgle:LineSegment
+                    End="120.571430352269,28.5470591495606" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="52.2857151761347,23.0235295747803,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loop through all excel files\Loop through all sheets in a file.PrecedenceConstraints[Constraint 1]"
+          TopLeft="150.819052835062,55.341179636523">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-52.7047636174832,37.2705891619092"
+              Start="0,0"
+              End="-52.7047636174832,29.7705891619092">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.2145692743136" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.2145692743136"
+                    Point2="0,15.2145692743136"
+                    Point3="-4,15.2145692743136" />
+                  <mssgle:LineSegment
+                    End="-48.7047636174832,15.2145692743136" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-48.7047636174832,15.2145692743136"
+                    Point2="-52.7047636174832,15.2145692743136"
+                    Point3="-52.7047636174832,19.2145692743136" />
+                  <mssgle:LineSegment
+                    End="-52.7047636174832,29.7705891619092" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-34.3523818087416,20.2145692743136,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="368,209.6"
+          Size="368,252.8"
+          Id="Package\Loop through all excel files\Loop through all sheets in a file"
+          TopLeft="18.6285754378962,29.5529436217048" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="392,337.6"
+          Size="392,380.8"
+          Id="Package\Loop through all excel files"
+          TopLeft="177.142860159582,96.0470601705532" />
+        <NodeLayout
+          Size="159.2,41.6"
+          Id="Package\Create req tables"
+          TopLeft="262.285718752413,30.5882357231061" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="341.885718752413,72.1882357231061">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="31.2571414071685,23.8588244474471"
+              Start="0,0"
+              End="31.2571414071685,16.3588244474471">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.92941222372354" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.92941222372354"
+                    Point2="0,11.9294122237235"
+                    Point3="4,11.9294122237235" />
+                  <mssgle:LineSegment
+                    End="27.2571414071685,11.9294122237235" />
+                  <mssgle:CubicBezierSegment
+                    Point1="27.2571414071685,11.9294122237235"
+                    Point2="31.2571414071685,11.9294122237235"
+                    Point3="31.2571414071685,15.9294122237235" />
+                  <mssgle:LineSegment
+                    End="31.2571414071685,16.3588244474471" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination"
+          TopLeft="311.2,200.8" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source"
+          TopLeft="319.2,37.6" />
+        <EdgeLayout
+          Id="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data.Paths[Excel Source Output]"
+          TopLeft="388.4,79.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8,121.6"
+              Start="0,0"
+              End="8,114.1">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.8" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,56.8"
+                    Point2="0,60.8"
+                    Point3="4,60.8" />
+                  <mssgle:LineSegment
+                    End="4,60.8" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4,60.8"
+                    Point2="8,60.8"
+                    Point3="8,64.8" />
+                  <mssgle:LineSegment
+                    End="8,114.1" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loop through all excel files\Loop through all sheets in a file\Load City Data\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination"
+          TopLeft="194.85714617554,164.564708190311" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source"
+          TopLeft="224.000003814697,31.8117651520303" />
+        <EdgeLayout
+          Id="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data.Paths[Excel Source Output]"
+          TopLeft="293.200003814697,73.4117651520303">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-13.142857639157,91.1529430382805"
+              Start="0,0"
+              End="-13.142857639157,83.6529430382805">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.5764715191402" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.5764715191402"
+                    Point2="0,45.5764715191402"
+                    Point3="-4,45.5764715191402" />
+                  <mssgle:LineSegment
+                    End="-9.142857639157,45.5764715191402" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-9.142857639157,45.5764715191402"
+                    Point2="-13.142857639157,45.5764715191402"
+                    Point3="-13.142857639157,49.5764715191402" />
+                  <mssgle:LineSegment
+                    End="-13.142857639157,83.6529430382805" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Loop through all excel files\Loop through all sheets in a file\Load Employee Data\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

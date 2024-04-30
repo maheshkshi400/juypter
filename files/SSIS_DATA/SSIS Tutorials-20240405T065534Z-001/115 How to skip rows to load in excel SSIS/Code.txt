@@ -1,0 +1,1 @@
+"select * from [data$A"+ (DT_WSTR,12)@[User::NoOfRowsToSkip] +":E]"

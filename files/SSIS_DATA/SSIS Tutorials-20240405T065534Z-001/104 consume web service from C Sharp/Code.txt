@@ -1,0 +1,14 @@
+Calculator.CalculatorSoapClient client = new Calculator.CalculatorSoapClient();
+
+            int a, b, c;
+
+            a = 5;
+            b = 6;
+
+          c =  client.Add(a, b);
+
+
+            using (StreamWriter writer = new StreamWriter(@"D:\Files\result.txt"))
+            {
+                writer.WriteLine(c);
+            }

@@ -1,0 +1,9 @@
+select name from sys.sysdatabases where name in
+('Canada','India') order by name
+
+
+---file path variable
+@[User::FolderPath] + "\\"+  @[User::DatabaseName] +".CSV"
+
+--SQLQuery variable
+"SELECT *  FROM ["+ @[User::DatabaseName] +"].[dbo].["+ @[User::DatabaseName] +"] "

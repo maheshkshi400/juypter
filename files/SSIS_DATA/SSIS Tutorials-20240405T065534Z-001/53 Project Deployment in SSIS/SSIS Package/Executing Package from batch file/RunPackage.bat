@@ -1,0 +1,1 @@
+"C:\Program Files\Microsoft SQL Server\120\DTS\Binn\DTExec.exe" /F "C:\MSBI\SSIS\Executing Package from batch file\Executing Package from batch file\LoadCSVFile.dtsx" /set \package.variables[FilePath].Value;"C:\Files\TestData_2.CSV" > log.txt

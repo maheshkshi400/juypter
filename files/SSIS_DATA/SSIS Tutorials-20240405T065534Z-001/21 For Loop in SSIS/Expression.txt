@@ -1,0 +1,1 @@
+""+ @[User::FolderPath] +"\\Customer"+(DT_WSTR,12 ) @[User::LoopCounter] +".CSV"

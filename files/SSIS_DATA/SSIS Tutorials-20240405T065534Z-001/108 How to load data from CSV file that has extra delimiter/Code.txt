@@ -1,0 +1,171 @@
+public void Main()
+        {
+            // TODO: Add your code here
+
+
+            var path = Dts.Variables["varFILEName"].Value.ToString(); // 
+
+            using (TextFieldParser csvParser = new TextFieldParser(path))
+
+            {
+
+                //csvParser.CommentTokens = new string[] { "#" };
+
+                csvParser.SetDelimiters(new string[] { "," });
+
+                csvParser.HasFieldsEnclosedInQuotes = false;
+
+
+
+                // Skip the row with the column first_names ballot_rtn_status
+
+                csvParser.ReadLine();
+
+                int id = 0;
+
+                string first_name = "";
+
+                string last_name = "";
+
+                string email = "";
+
+                string gender = "";
+
+
+
+                DataTable tbl = new DataTable();
+
+                tbl.Columns.Add(new DataColumn("id", typeof(int)));
+
+                tbl.Columns.Add(new DataColumn("first_name", typeof(string)));
+
+                tbl.Columns.Add(new DataColumn("last_name", typeof(string)));
+
+                tbl.Columns.Add(new DataColumn("email", typeof(string)));
+                tbl.Columns.Add(new DataColumn("gender", typeof(string)));
+
+
+
+                string[] fields;
+
+
+
+                while (!csvParser.EndOfData)
+
+                {
+
+                    // Read current line fields, pointer moves to the next line.
+
+                    try
+
+                    {
+
+                        fields = csvParser.ReadFields();
+
+
+                        if (fields.Length == 5)
+
+                        {
+
+                            id = Convert.ToInt32(fields[0]);
+
+                            first_name = fields[1];
+
+                            last_name = fields[2];
+
+                            email = fields[3];
+                            gender = fields[4];
+
+
+                            DataRow dr = tbl.NewRow();
+
+                            dr["id"] = id;
+
+                            dr["first_name"] = first_name;
+
+                            dr["last_name"] = last_name;
+
+                            dr["email"] = email;
+
+                            dr["gender"] = gender;
+
+                            tbl.Rows.Add(dr);
+
+                        }
+                        else
+                        {
+                            string cln = "";
+
+                            for (int i = 0; i < fields.Length; i++)
+                            {
+                                if (i == 0)
+                                {
+                                    cln = fields[i];
+                                }
+                                else
+                                    cln = cln + "," + fields[i];
+                            }
+
+                            File.AppendAllText(@"D:\files\bad_data.txt", cln + Environment.NewLine);
+
+                        }
+
+                    }
+
+                    catch
+
+                    { }
+
+
+
+                }
+
+                try
+
+                {
+
+                    string connection = "Server=DESKTOP-EKJ1P64\\SQL2019;Database=Work;Trusted_Connection=True;";
+
+                    SqlConnection con = new SqlConnection(connection);
+
+                    //create object of SqlBulkCopy which help to insert 
+
+                    SqlBulkCopy objbulk = new SqlBulkCopy(con);
+
+
+                    //assign Destination table first_name 
+
+                    objbulk.DestinationTableName = "Email";
+
+                    objbulk.ColumnMappings.Add("id", "id");
+
+                    objbulk.ColumnMappings.Add("first_name", "first_name");
+
+                    objbulk.ColumnMappings.Add("last_name", "last_name");
+
+                    objbulk.ColumnMappings.Add("email", "email");
+
+                    objbulk.ColumnMappings.Add("gender", "gender");
+
+
+                    con.Open();
+
+                    //insert bulk Records into DataBase. 
+
+                    objbulk.WriteToServer(tbl);
+
+                    con.Close();
+
+                }
+
+                catch (Exception ex)
+
+                {
+
+                    // MessageBox.Show(ex.Message);
+                    File.AppendAllText(@"D:\files\ErrorMessage.txt", ex.Message + Environment.NewLine);
+
+                }
+
+            }
+        }

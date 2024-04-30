@@ -17,7 +17,7 @@ CREATE TABLE EMP5 (
 );
 
 
-elect emp,empname,dept,sal,mgrid,select max(sal) from emp where sal<5 and dept='HR';
+select emp,empname,dept,sal,mgrid,select max(sal) from emp where sal<5 and dept='HR';
 
 
 -- VERIFY THE CREATED TABLE
@@ -130,11 +130,55 @@ ISDATE('2020-15-06') AS Result2;
 
 
 
-SELECT *
-INTO NEW_EMP
-FROM EMP5;
+--find out the same salary employees
+
+SELECT * FROM EMP5 E1,EMP5 E2 
+WHERE E1.SAL=E2.SAL 
+AND E1.EMPNO != E2.EMPNO;
 
 
-SELECT * FROM dbo.NEW_EMP
 
-DROP TABLE DBO.NEW_EMP
+
+SELECT * FROM  dbo.EMP2
+
+--find out the records having 2 times 'L' in his name
+
+SELECT * FROM EMP2 WHERE ename LIKE'L%L%';
+SELECT * FROM EMP2 WHERE LEN(ENAME)-LEN(REPLACE(ENAME,'L','')) >=2
+
+
+--find out  the 2nd character of employee name is vowels
+
+SELECT * FROM EMP2 WHERE 
+ename LIKE '_A%' OR
+ename LIKE '_E%' OR
+ename LIKE '_I%' OR
+ename LIKE '_O%' OR
+ename LIKE '_U%';
+
+--BY USING SUBSTRINGMETHOD
+
+SELECT * FROM EMP2 WHERE SUBSTRING(ename,2,1) in ('a','e','i','o','u');
+
+
+--
+USE STUDENTS;
+CREATE TABLE STUDENT1(NAME NVARCHAR(20),MARKS INT);
+
+INSERT INTO STUDENT1 VALUES('MAHESH',90);
+INSERT INTO STUDENT1 VALUES('GANESH',70);
+INSERT INTO STUDENT1 VALUES('SHREYA',80);
+INSERT INTO STUDENT1 VALUES('HEMAVATI',90);
+INSERT INTO STUDENT1 VALUES('RAKESH',NULL);
+
+
+SELECT COUNT(*) FROM dbo.STUDENT1;
+SELECT COUNT(1) FROM dbo.STUDENT1;
+SELECT COUNT(MARKS) FROM dbo.STUDENT1;
+SELECT sum(MARKS) FROM dbo.STUDENT1;
+SELECT AVG(MARKS) FROM dbo.STUDENT1;
+
+SELECT TOP 1 MARKS FROM dbo.STUDENT1;
+
+
+
