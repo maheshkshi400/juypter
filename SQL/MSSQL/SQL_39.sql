@@ -8,6 +8,10 @@
 --1003 NULL
 
 
+<<<<<<< HEAD
+=======
+ use EMPLOYEE
+>>>>>>> 591731762cd9d3280aded8d5b3ca1797ecd3a1bf
 Create Table Club (
 Club_Id int,
 Member_Id int,
@@ -20,4 +24,28 @@ Insert into Club Values (1002,216,'CL:CM')
 Insert into Club Values (1002,217,'MM:CM')
 Insert into Club Values (1003,255,Null)
 Insert into Club Values (1001,216,'CO:CD:CL:MM')
+<<<<<<< HEAD
 Insert into Club Values (1002,210,Null)
+=======
+Insert into Club Values (1002,210,Null)
+
+
+SELECT  
+    Club_Id,
+    SUM(
+        CASE 
+            WHEN value IN ('MM', 'CI', 'CO') THEN 0.5
+            WHEN value IN ('CD', 'CL', 'CM') THEN 1.0
+            
+        END
+    ) AS REWARD
+FROM 
+    (
+        SELECT Club_Id, Member_Id, value 
+        FROM Club C 
+        OUTER APPLY STRING_SPLIT(C.EDU, ':')
+    ) X 
+GROUP BY 
+    Club_Id;
+
+>>>>>>> 591731762cd9d3280aded8d5b3ca1797ecd3a1bf

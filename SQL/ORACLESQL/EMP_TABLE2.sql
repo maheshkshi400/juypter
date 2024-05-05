@@ -36,3 +36,35 @@ INSERT INTO EMP2 (EMPID, FULL_NAME, EMAIL) VALUES (25, 'Aiden Johnson', 'aiden.j
 
 
 SELECT * FROM EMP2;
+
+
+-- Create the Employee table
+CREATE TABLE Employee (
+    empid INT PRIMARY KEY,
+    empname VARCHAR(100),
+    deptno INT,
+    gender VARCHAR(10)
+);
+
+-- Insert sample data into the Employee table
+
+INSERT INTO Employee VALUES(1, 'John', 101, 'male');
+INSERT INTO Employee VALUES(2, 'Emma', 102, 'female');
+INSERT INTO Employee VALUES(3, 'Michael', 101, 'male');
+INSERT INTO Employee VALUES(4, 'Sophia', 103, 'female');
+INSERT INTO Employee VALUES(5, 'David', 102, 'male');
+
+SELECT  * FROM Employee;
+
+SELECT 
+    deptno,
+    SUM(CASE WHEN gender = 'male' THEN 1 ELSE 0 END) AS male_count,
+    SUM(CASE WHEN gender = 'female' THEN 1 ELSE 0 END) AS female_count
+FROM 
+    Employee
+GROUP BY 
+    deptno
+ORDER BY 
+    deptno;
+
+

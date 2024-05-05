@@ -22,6 +22,7 @@ DROP TABLE Stadium
 --shown in the below table.
 
 
+<<<<<<< HEAD
 
 WITH CTE_STADIUM AS (
     SELECT 
@@ -59,3 +60,19 @@ FROM
 
 
 
+=======
+WITH STEDIUM_CTE AS (
+    SELECT id AS ID1,
+    LEAD(id,1) OVER(ORDER BY id) as ID2,
+    LEAD(id,2) OVER(ORDER BY id) as ID3
+    FROM Stadium
+    WHERE No_Of_People >= 100
+),
+CTE_TEMP AS(
+    SELECT * FROM STEDIUM_CTE AS A
+    LEFT JOIN Stadium AS B 
+    ON (B.id=A.ID1 OR B.id=A.ID2 OR B.id=A.ID3)
+    WHERE ID1+1=ID2 AND ID2+1=ID3
+)
+SELECT DISTINCT id,Visit_Date,No_Of_People FROM CTE_TEMP;
+>>>>>>> 591731762cd9d3280aded8d5b3ca1797ecd3a1bf
