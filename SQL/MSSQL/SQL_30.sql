@@ -20,12 +20,12 @@ Insert into Employee_2 Values('Michael','Analyst',301,28000);
 
 SELECT * FROM Employee_2;
 
---solution 1  byu sing cte
+--solution 1  by using cte
 
 WITH CTE_EMP AS(
 SELECT EmpName,DeptName,DeptNo,Salary,
-RANK() OVER (PARTITION BY DeptNo ORDER BY Salary DESC) AS RANK_TOP,
-RANK() OVER (PARTITION BY DeptNo ORDER BY Salary ASC) AS RANK_BOTTOM
+DENSE_RANK() OVER (PARTITION BY DeptNo ORDER BY Salary DESC) AS RANK_TOP,
+DENSE_RANK() OVER (PARTITION BY DeptNo ORDER BY Salary ASC) AS RANK_BOTTOM
 FROM Employee_2
 )
 SELECT EmpName,DeptName,DeptNo,Salary FROM CTE_EMP

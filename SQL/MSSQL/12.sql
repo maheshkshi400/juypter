@@ -30,6 +30,8 @@ SELECT * from school
 
 drop table school;
 
+select COUNT(id) from 
+
 
 
 SELECT s.id, s.studentname, d.schoolname,s.marks
@@ -53,7 +55,7 @@ FROM (
     SELECT EMP5 .*, DENSE_RANK() OVER (PARTITION BY DEPTNO ORDER BY SAL DESC) AS RANK
     FROM EMP5
 ) AS T
-WHERE RANK = 1;
+WHERE RANK =1;
 
 
 --SELECT TOP NTH SALARIES

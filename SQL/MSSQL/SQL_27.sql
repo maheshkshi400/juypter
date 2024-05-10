@@ -14,8 +14,8 @@ SELECT * FROM Employee_1;
 ----
 
 SELECT E1.EmployeeName AS EMPLOYEE, E2.EmployeeName AS MANAGER 
-FROM Employee_1 E1, Employee_1 E2 
-WHERE E1.ManagerID = E2.EmployeeID;
+FROM Employee_1 E1 LEFT OUTER JOIN  Employee_1 E2 ON
+ E1.ManagerID = E2.EmployeeID;
 
 
 ---

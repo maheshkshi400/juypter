@@ -22,6 +22,7 @@ from EMPLOYEE1
 
 select value from string_split('adnan,shaikh',',')
 --
+USE EMPLOYEE
 with NAME_CTE AS 
 (select employeeId,value
 ,ROW_NUMBER() OVER (PARTITION BY employeeId ORDER BY employeeId) AS Rownum
@@ -34,4 +35,4 @@ SELECT employeeId,
 FROM NAME_CTE
 PIVOT
 (MAX(VALUE)
-for Rownum in ([1],[2])) as PVT
+for Rownum in ([1],[2])) as PVT;

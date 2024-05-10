@@ -16,6 +16,6 @@ INSERT INTO Emp_Details VALUES (1008,'M','M@yahu.com',102)
 INSERT INTO Emp_Details VALUES (1009,'F','SS@yahu.com',100)
 
 
-SELECT DeptID,STRING_AGG(EmailID,',') WITHIN GROUP (ORDER by EmailID) Email_list
+SELECT DeptID,STRING_AGG(EmailID,',') WITHIN GROUP (ORDER by EmailID) AS Email_list
 FROM Emp_Details
 GROUP BY DeptID

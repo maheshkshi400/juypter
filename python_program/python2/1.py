@@ -1,0 +1,7 @@
+nl = []
+
+for x in range(1500,2700):
+    if (x%7== 0) and (x %5==0):
+        nl.append(str(x))
+
+print(nl,end='')
