@@ -1,0 +1,17 @@
+1.SELECT [Id]
+      ,[zipcode]
+      ,[City]
+      ,[State]
+      ,[Country]
+      ,ISNULL(ServerName,'') as ServerName
+  FROM [Work].[dbo].[ZipCode]
+
+
+2. derived column transformation
+
+ServerName: REPLACENULL(ServerName,"")
+
+
+3. script component
+
+ Row.ServerName = Row.ServerName ?? "";

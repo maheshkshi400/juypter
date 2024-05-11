@@ -1,0 +1,11 @@
+"select count(*) from FilesLoaded where PackageName = '"+ @[System::PackageName] +"' and FileLoaded = '"+ @[User::FilePath] +"' "
+
+@[User::FilesLoaded] == 0
+
+
+"insert into [audit_log]
+select '"+ @[System::PackageName] +"','"+ @[User::FilePath] +"', "+ (DT_WSTR, 50) @[User::RecordsImported] +", getdate()
+go
+insert into FilesLoaded
+select  '"+ @[System::PackageName] +"','"+ @[User::FilePath] +"',getdate()
+"

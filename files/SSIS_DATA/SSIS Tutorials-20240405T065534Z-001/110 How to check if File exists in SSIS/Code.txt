@@ -1,0 +1,35 @@
+--Check if file exists
+using System.IO;
+-----------------------------------------------
+public void Main()
+		{
+            // TODO: Add your code here
+            //User::IsFileExists,User::ShortFileName
+
+            string File1 = Dts.Variables["File1"].Value.ToString();
+            string IsFileExists = "";
+
+            if (File.Exists(File1))
+            {
+                IsFileExists = "Yes";
+            }
+            else
+            {
+                IsFileExists = "No";
+            }
+
+            Dts.Variables["ShortFileName"].Value = Path.GetFileName(File1);
+            Dts.Variables["IsFileExists"].Value = IsFileExists;
+
+            Dts.TaskResult = (int)ScriptResults.Success;
+		}
+
+------------------------------------------------
+--expression builder
+
+"insert into FileInfo
+select '"+ @[User::ShortFileName] +" file does not exists', 0, getdate()
+"
+-----------------------------------
+-- precedence constrains
+@[User::IsFileExists]=="No"

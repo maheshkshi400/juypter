@@ -1,0 +1,7 @@
+FullName: (DT_STR,101,1252)(first_name + " " + last_name)
+TotalPrice: (DT_I4)UnitPrice * (DT_I4)Quantity
+FileName: (DT_STR,50,1252)RIGHT(@[User::FilePath],FINDSTRING(REVERSE(@[User::FilePath]),"\\",1) - 1)
+FileExtension: (DT_STR,50,1252)RIGHT(ImagePath,FINDSTRING(REVERSE(ImagePath),".",1) - 1)
+Provider: (DT_STR,50,1252)RIGHT(email,FINDSTRING(REVERSE(email),"@",1) - 1)
+gender: UPPER(gender)
+Phone_Num: REPLACE(Phone_Num,"-","")

@@ -8,7 +8,10 @@
 --1003 NULL
 
 
+<<<<<<< HEAD
+=======
  use EMPLOYEE
+>>>>>>> 591731762cd9d3280aded8d5b3ca1797ecd3a1bf
 Create Table Club (
 Club_Id int,
 Member_Id int,
@@ -21,6 +24,9 @@ Insert into Club Values (1002,216,'CL:CM')
 Insert into Club Values (1002,217,'MM:CM')
 Insert into Club Values (1003,255,Null)
 Insert into Club Values (1001,216,'CO:CD:CL:MM')
+<<<<<<< HEAD
+Insert into Club Values (1002,210,Null)
+=======
 Insert into Club Values (1002,210,Null)
 
 
@@ -42,3 +48,4 @@ FROM
 GROUP BY 
     Club_Id;
 
+>>>>>>> 591731762cd9d3280aded8d5b3ca1797ecd3a1bf

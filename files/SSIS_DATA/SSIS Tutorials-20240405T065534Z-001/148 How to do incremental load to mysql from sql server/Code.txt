@@ -1,0 +1,39 @@
+sql-mode="NO_ENGINE_SUBSTITUTION,ANSI_QUOTES"
+DRIVER={MySQL ODBC 8.0 ANSI Driver};SERVER=localhost;DATABASE=test;UID=root;Password=mysql123
+
+--truncate email_updated
+truncate table email_updated
+
+--Migrate data
+--OLE DB Source
+SELECT [id]
+      ,[first_name]
+      ,[last_name]
+      ,[email]
+      ,[gender]
+  FROM [School].[dbo].[Email]
+
+
+--ADO NET Source
+SELECT id,
+    cast(first_name as char(50)) as first_name,
+     cast(last_name as char(50)) as last_name,
+    cast(email as char(50)) as email,
+    cast(gender as char(50)) as gender
+FROM `test`.`email`;
+
+
+--Conditional Split
+ISNULL(id_dest) ==  TRUE 
+
+--Conditional Split 1
+first_name != first_name_dest || last_name != last_name_dest || email != email_dest
+
+
+--update data
+UPDATE Email a
+INNER JOIN Email_updated b ON a.Id = b.Id
+SET a.first_name = b.first_name,
+    a.last_name = b.last_name,
+    a.email = b.email;
+

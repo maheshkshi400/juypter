@@ -1,0 +1,50 @@
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Runtime;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Xml;
+
+public void Main()
+		{
+            string connetionString = null;
+            SqlConnection connection;
+            SqlCommand command;
+            SqlDataAdapter adpter = new SqlDataAdapter();
+            DataSet ds = new DataSet();
+            XmlReader xmlFile;
+            string sql;
+
+            int id;
+            string first_name;
+            string last_name;
+            string email;
+            string gender;
+            string company;
+
+            connetionString = @"Data Source=DESKTOP-EKJ1P64\SQL2019;Initial Catalog=work;Trusted_Connection=True";
+
+            connection = new SqlConnection(connetionString);
+
+            xmlFile = XmlReader.Create(@"D:\Files\Sellers.xml", new XmlReaderSettings());
+            ds.ReadXml(xmlFile);
+            int i;
+            connection.Open();
+            for (i = 0; i <= ds.Tables[0].Rows.Count - 1; i++)
+            {
+                id = Convert.ToInt32(ds.Tables[0].Rows[i].ItemArray[0]);
+                first_name = ds.Tables[0].Rows[i].ItemArray[1].ToString();
+                last_name = ds.Tables[0].Rows[i].ItemArray[2].ToString();
+                email = ds.Tables[0].Rows[i].ItemArray[3].ToString();
+                gender = ds.Tables[0].Rows[i].ItemArray[4].ToString();
+                company = ds.Tables[0].Rows[i].ItemArray[5].ToString();
+
+                sql = "insert into Sellers values(" + id + ",'" + first_name.Replace("'", "''") + "','" + last_name.Replace("'", "''") + "','" + email.Replace("'", "''") + "','" + gender.Replace("'", "''") + "','" + company.Replace("'", "''") + "' )";
+                command = new SqlCommand(sql, connection);
+                adpter.InsertCommand = command;
+                adpter.InsertCommand.ExecuteNonQuery();
+            }
+            connection.Close();
+
+            Dts.TaskResult = (int)ScriptResults.Success;
+		}

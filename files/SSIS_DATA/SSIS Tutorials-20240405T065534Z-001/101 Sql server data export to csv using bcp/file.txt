@@ -1,0 +1,1 @@
+bcp "SELECT * FROM WORK..EMAIL_Sample" queryout D:\FILES\EMAIL.CSV -c -t "," -T -S DESKTOP-EKJ1P64\SQL2019 

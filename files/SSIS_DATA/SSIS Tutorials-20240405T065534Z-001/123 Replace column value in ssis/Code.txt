@@ -1,0 +1,2 @@
+filename: REPLACE(filename,".txt",".CSV")
+Email: REPLACE(Email,".com",".in")

@@ -1,0 +1,18 @@
+	 try
+            {
+                string FilePath = Dts.Variables["FilePath"].Value.ToString();
+                string FileName = System.IO.Path.GetFileName(FilePath);
+                string YYYYMM = Dts.Variables["YYYYMM"].Value.ToString();
+                bool ShouldMoveFile = false;
+
+                if (FileName.Contains(YYYYMM))
+                {
+                    ShouldMoveFile = true;
+                }
+
+                Dts.Variables["ShouldMoveFile"].Value = ShouldMoveFile;
+            }
+            catch 
+            { 
+            
+            }

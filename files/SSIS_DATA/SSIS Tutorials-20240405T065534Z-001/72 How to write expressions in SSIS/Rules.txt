@@ -1,0 +1,7 @@
+1. Concatenate 2 field may be FirstName and LastName to get the FullName
+2. Change the case of Gender to upper
+3. Get TotalPrice by Multiplying 2 fields may be UnitPrice ad Quantity
+4. Get the FileName without filepath and insert it to sql table.
+5. Get the File extension separately and insert it to sql table.
+6. Remove the dash from phone_num and insert only numeric fields.
+7. Insert the Provider of email into a separate field. 

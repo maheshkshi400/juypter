@@ -1,0 +1,1 @@
+create table VariableDemo(Id int identity, PackageName varchar(100), Notes varchar(100))

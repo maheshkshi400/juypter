@@ -1,0 +1,17 @@
+Package started
+
+"insert into tbl_log
+select '"+ @[User::PackageName]  +"', 'Package Started', getdate()
+"
+
+
+Package completed
+
+"insert into tbl_log
+select '"+ @[User::PackageName]  +"', 'Package Completed', getdate()
+
+go
+update Config_SSISPkg
+set Active =0
+where PackageName = '"+ @[User::PackageName] +"'
+"

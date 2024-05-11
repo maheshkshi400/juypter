@@ -1,0 +1,4 @@
+FullName: first_name + " " + last_name
+Gender1: SUBSTRING(Gender,1,1)
+Gender2: Gender == "Male" ? "M" : "F"
+Company2: UPPER(Company_Name)

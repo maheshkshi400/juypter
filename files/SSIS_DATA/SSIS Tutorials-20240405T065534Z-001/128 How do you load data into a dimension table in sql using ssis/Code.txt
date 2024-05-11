@@ -1,0 +1,18 @@
+--Lookup query
+SELECT [EmployeeID]
+      ,[FirstName]
+      ,[LastName]
+      ,[IsPermittedToLogon]
+      ,[LogonName]
+      ,[IsSalesperson]
+      ,[PhoneNumber]
+      ,[FaxNumber]
+      ,[Email]
+      ,[ValidFrom]
+  FROM [FameSellDW].[Dimension].[Employee] where ValidTo is null
+
+--Conditional split transformation
+i) New Records: ISNULL(Dest_EmployeeID)
+ii) SCD Type 1: LogonName != Dest_LogonName || Email != Dest_Email
+iii) SCD Type 2: PhoneNumber != Dest_PhoneNumber || FaxNumber != Dest_FaxNumber
+

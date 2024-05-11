@@ -1,0 +1,33 @@
+public void Main()
+		{
+            // TODO: Add your code here System::ErrorDescription
+
+            var fromAddress = new MailAddress("skumar84770@gmail.com", "Test-SSIS Package Notification");
+            var toAddress = new MailAddress("aqil33@gmail.com", "");
+
+            const string fromPassword = "Ssis#987";
+
+            var smtp = new SmtpClient
+            {
+                Host = "smtp.gmail.com",
+                Port = 587,
+                EnableSsl = true,
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = false,
+                Credentials = new NetworkCredential(fromAddress.Address, fromPassword),
+                Timeout = 20000
+            };
+
+            MailMessage mailmsg = new MailMessage();
+            mailmsg.IsBodyHtml = true;
+            mailmsg.Subject = "Test-SSIS Package got failed";
+            mailmsg.Body = Dts.Variables["System::ErrorDescription"].Value.ToString();
+            mailmsg.From = new MailAddress(fromAddress.ToString());
+            mailmsg.To.Add(toAddress);
+
+            {
+                smtp.Send(mailmsg);
+            }
+
+            Dts.TaskResult = (int)ScriptResults.Success;
+		}

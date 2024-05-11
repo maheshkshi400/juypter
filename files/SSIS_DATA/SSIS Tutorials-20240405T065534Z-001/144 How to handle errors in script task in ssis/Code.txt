@@ -1,0 +1,30 @@
+public void Main()
+		{
+            // TODO: Add your code here Id
+
+            string currentdatetime = DateTime.Now.ToString("yyyyMMddHHmmss");
+            string LogFolder = @"D:\Files\Logs\";
+
+            try
+            {
+                int Id = Convert.ToInt32(Dts.Variables["Id"].Value);
+                int source = 1000;
+
+                int b = source / Id;
+
+                MessageBox.Show("Final value from b is :" + b.ToString());
+            }
+
+            catch (Exception exception)
+            {
+                using (StreamWriter sw = File.CreateText(LogFolder + "\\" + "ErrorLog_" + currentdatetime + ".log"))
+                {
+                    sw.WriteLine(exception.ToString());
+                }
+                Dts.TaskResult = (int)ScriptResults.Failure;
+                return;
+            }
+
+
+            Dts.TaskResult = (int)ScriptResults.Success;
+		}

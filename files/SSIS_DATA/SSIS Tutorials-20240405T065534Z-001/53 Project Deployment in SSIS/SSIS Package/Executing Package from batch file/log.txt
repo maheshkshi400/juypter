@@ -1,0 +1,123 @@
+Microsoft (R) SQL Server Execute Package Utility
+Version 12.0.2000.8 for 64-bit
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Started:  5:14:48 PM
+Progress: 2017-11-24 17:14:48.87
+   Source: Load CSV File 
+   Validating: 0% complete
+End Progress
+Progress: 2017-11-24 17:14:48.87
+   Source: Load CSV File 
+   Validating: 33% complete
+End Progress
+Progress: 2017-11-24 17:14:48.95
+   Source: Load CSV File 
+   Validating: 66% complete
+End Progress
+Progress: 2017-11-24 17:14:48.95
+   Source: Load CSV File 
+   Validating: 100% complete
+End Progress
+Progress: 2017-11-24 17:14:49.18
+   Source: Prepare tables 
+   Executing query "IF EXISTS(SELECT 1 FROM sysobjects with (nolock) W...".: 33% complete
+End Progress
+Progress: 2017-11-24 17:14:49.19
+   Source: Prepare tables 
+   Executing query "CREATE TABLE [dbo].[TestData](
+	[id] [varchar](50)...".: 66% complete
+End Progress
+Progress: 2017-11-24 17:14:49.19
+   Source: Prepare tables 
+   Executing query "IF NOT EXISTS(SELECT 1 FROM sysobjects with (noloc...".: 100% complete
+End Progress
+Progress: 2017-11-24 17:14:49.19
+   Source: Load CSV File 
+   Validating: 0% complete
+End Progress
+Progress: 2017-11-24 17:14:49.19
+   Source: Load CSV File 
+   Validating: 33% complete
+End Progress
+Progress: 2017-11-24 17:14:49.23
+   Source: Load CSV File 
+   Validating: 66% complete
+End Progress
+Progress: 2017-11-24 17:14:49.23
+   Source: Load CSV File 
+   Validating: 100% complete
+End Progress
+Progress: 2017-11-24 17:14:49.23
+   Source: Load CSV File 
+   Prepare for Execute: 0% complete
+End Progress
+Progress: 2017-11-24 17:14:49.23
+   Source: Load CSV File 
+   Prepare for Execute: 33% complete
+End Progress
+Progress: 2017-11-24 17:14:49.23
+   Source: Load CSV File 
+   Prepare for Execute: 66% complete
+End Progress
+Progress: 2017-11-24 17:14:49.23
+   Source: Load CSV File 
+   Prepare for Execute: 100% complete
+End Progress
+Progress: 2017-11-24 17:14:49.24
+   Source: Load CSV File 
+   Pre-Execute: 0% complete
+End Progress
+Progress: 2017-11-24 17:14:49.24
+   Source: Load CSV File 
+   Pre-Execute: 33% complete
+End Progress
+Progress: 2017-11-24 17:14:49.24
+   Source: Load CSV File 
+   Pre-Execute: 66% complete
+End Progress
+Progress: 2017-11-24 17:14:49.24
+   Source: Load CSV File 
+   Pre-Execute: 100% complete
+End Progress
+Progress: 2017-11-24 17:14:49.25
+   Source: Load CSV File 
+   Post Execute: 0% complete
+End Progress
+Progress: 2017-11-24 17:14:49.25
+   Source: Load CSV File 
+   Post Execute: 33% complete
+End Progress
+Progress: 2017-11-24 17:14:49.25
+   Source: Load CSV File 
+   Post Execute: 66% complete
+End Progress
+Progress: 2017-11-24 17:14:49.25
+   Source: Load CSV File 
+   Post Execute: 100% complete
+End Progress
+Progress: 2017-11-24 17:14:49.25
+   Source: Load CSV File 
+   Cleanup: 0% complete
+End Progress
+Progress: 2017-11-24 17:14:49.25
+   Source: Load CSV File 
+   Cleanup: 33% complete
+End Progress
+Progress: 2017-11-24 17:14:49.25
+   Source: Load CSV File 
+   Cleanup: 66% complete
+End Progress
+Progress: 2017-11-24 17:14:49.25
+   Source: Load CSV File 
+   Cleanup: 100% complete
+End Progress
+Progress: 2017-11-24 17:14:49.26
+   Source: Do logging 
+   Executing query "insert into tblLogs
+select 'C:\Files\TestData_2.CS...".: 100% complete
+End Progress
+DTExec: The package execution returned DTSER_SUCCESS (0).
+Started:  5:14:48 PM
+Finished: 5:14:49 PM
+Elapsed:  0.625 seconds

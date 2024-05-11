@@ -1,0 +1,11 @@
+ //take all files of main folder to folder model_RCCMrecTransfered 
+            string rootFolderPath = @"E:\Archive files\";
+            string destinationPath = @"D:\Files\";
+            string[] fileList = System.IO.Directory.GetFiles(rootFolderPath);
+            foreach (string file in fileList)
+            {
+                string fileToMove = rootFolderPath + Path.GetFileName(file);
+                string moveTo = destinationPath + Path.GetFileName(file);
+                //moving file
+                File.Copy(fileToMove, moveTo);
+            }

@@ -1,0 +1,19 @@
+	    string FilePath = Dts.Variables["FilePath"].Value.ToString();
+            string FileName = Path.GetFileNameWithoutExtension(FilePath);
+            string LoadFile = "";
+
+            string dateValue = FileName.Substring(FileName.LastIndexOf('_') + 1);
+            
+            string todaysdate = System.DateTime.Now.ToString("yyyyMMdd");
+
+            if (dateValue == todaysdate)
+            {
+
+                LoadFile = "Yes";
+            }
+            else
+            {
+                LoadFile = "No";
+            }
+
+            Dts.Variables["LoadFile"].Value = LoadFile;

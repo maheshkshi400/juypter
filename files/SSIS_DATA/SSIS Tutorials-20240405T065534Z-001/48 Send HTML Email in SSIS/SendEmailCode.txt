@@ -1,0 +1,76 @@
+public void Main()
+		{
+			// TODO: Add your code here
+            //RunId
+
+            var fromAddress = new MailAddress("skumar84770@gmail.com", "Test-SSIS Package Notification");
+            var toAddress = new MailAddress("aqil33@gmail.com", "");
+
+            const string fromPassword = "Test@12345";
+
+            var smtp = new SmtpClient
+            {
+                Host = "smtp.gmail.com",
+                Port = 587,
+                EnableSsl = true,
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = false,
+                Credentials = new NetworkCredential(fromAddress.Address, fromPassword),
+                Timeout = 20000
+            };
+
+            string Server = "localhost";
+            string Database = "Testing";
+            string Query = "";
+            int RunId = Convert.ToInt32(Dts.Variables["RunId"].Value);
+
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "Data Source= " + Server + "; Initial Catalog= " + Database + "; Integrated Security=SSPI";
+            con.Open();
+
+            SqlDataReader myReader = null;
+
+            Query = @"
+                select ID, PackageName, ServerName, DatabaseName, TableName, RecordsInserted, RecordsUpdated, Dated from PackageLogs where runid = " + RunId + " order by ID ";
+
+            SqlCommand myCommand = new SqlCommand(Query, con);
+
+            string MailBody = "";
+            myReader = myCommand.ExecuteReader();
+
+            while (myReader.Read())
+            {
+                MailBody += "<tr> " +
+                               "<td>" + myReader["ID"].ToString() + " </td>" +
+                               "<td>" + myReader["PackageName"].ToString() + " </td>" +
+                               "<td>" + myReader["ServerName"].ToString() + " </td>" +
+                               "<td>" + myReader["DatabaseName"].ToString() + " </td>" +
+                               "<td>" + myReader["TableName"].ToString() + " </td>" +
+                               "<td>" + myReader["RecordsInserted"].ToString() + " </td>" +
+                               "<td>" + myReader["RecordsUpdated"].ToString() + " </td>" +
+                                "<td>" + myReader["Dated"].ToString() + " </td>" +
+
+                                   "</tr>";
+
+            }
+
+
+            MailBody += "</table>";
+
+            String CompleteMAilMessage = "<html><head></head><body>" +
+            @"<table border=""1"" cellpadding=""2"" style=""border-collapse: collapse;""><tr style=""color:white;background-Color:SkyBlue;font-weight:bold;"">" +
+            "<td>Id</td><td>Package Name</td><td>Server Name</td><td>Database Name</td><td>Table Name</td><td>Records Inserted</td><td>Records Updated</td><td>Update Time</td>" + "</tr>" + MailBody + "</table></body></html>";
+
+            MailMessage mailmsg = new MailMessage();
+            mailmsg.IsBodyHtml = true;
+            mailmsg.Subject = "CSV File Load completed.";
+            mailmsg.Body = CompleteMAilMessage;
+            mailmsg.From = new MailAddress(fromAddress.ToString());
+            mailmsg.To.Add(toAddress);
+
+            {
+                smtp.Send(mailmsg);
+            }
+
+			Dts.TaskResult = (int)ScriptResults.Success;
+		}

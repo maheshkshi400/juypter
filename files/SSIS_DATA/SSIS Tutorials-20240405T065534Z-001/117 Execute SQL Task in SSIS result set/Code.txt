@@ -1,0 +1,7 @@
+select 'Table '+ name + ' was created on '+ cast(crdate as varchar(50)) from sys.sysobjects where type = 'U' 
+
+Expressions code
+
+"insert into [tbl_logs]
+  values ('Package.dtsx', '" + @[User::TableName]  +"', getdate())
+"

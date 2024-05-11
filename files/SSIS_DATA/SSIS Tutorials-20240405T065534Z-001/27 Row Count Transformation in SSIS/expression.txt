@@ -1,0 +1,1 @@
+"INSERT INTO LOGS VALUES ('"+ @[User::FilePath] +"', "+ (DT_WSTR,12) @[User::RecordCount] +", GETDATE()) "

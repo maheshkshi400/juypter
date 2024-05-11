@@ -1,0 +1,18 @@
+public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+        CultureInfo cultureInfo = Thread.CurrentThread.CurrentCulture;
+        TextInfo textInfo = cultureInfo.TextInfo;
+
+        string firstname = Row.firstname;
+        firstname = firstname.ToLower();
+        Row.firstname = textInfo.ToTitleCase(firstname);
+
+        string lastname = Row.lastname;
+        lastname = lastname.ToLower();
+        Row.lastname = textInfo.ToTitleCase(lastname);
+
+        string fullname = Row.FullName;
+        fullname = fullname.ToLower();
+        Row.FullName = textInfo.ToTitleCase(fullname);
+
+    }

@@ -1,0 +1,12 @@
+ public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+        Row.firstname = RemoveSpecialCharacters(Row.firstname);
+        Row.lastname = RemoveSpecialCharacters(Row.lastname);
+        Row.email = RemoveSpecialCharacters(Row.email);
+        Row.gender = RemoveSpecialCharacters(Row.gender);
+    }
+
+    public static string RemoveSpecialCharacters(string str)
+    {
+        return Regex.Replace(str, "[^a-zA-Z0-9_.@-]+", "", RegexOptions.Compiled);
+    }

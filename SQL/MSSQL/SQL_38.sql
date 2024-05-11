@@ -27,6 +27,20 @@ Insert into Month_Table Values (11, 'NOV')
 Insert into Month_Table Values (12, 'DEC')
 
 
+<<<<<<< HEAD
+
+WITH CTE_EMP AS (
+    SELECT E.SerialNo,E.Name,M.Month_ID,M.[Month] FROM Emp_Table E 
+    CROSS JOIN 
+    Month_Table M
+)
+SELECT C.SerialNo,C.Name,C.Month,e.Amount FROM CTE_EMP C
+LEFT JOIN 
+Emp_Table E
+ON C.SerialNo=E.SerialNo AND C.Month_ID=E.Month_ID
+ORDER BY
+C.SerialNo,C.Month_ID
+=======
 SELECT * FROM Emp_Table;
 SELECT * FROM Month_Table;
 
@@ -40,3 +54,4 @@ LEFT JOIN Emp_Table  E
 ON C.SerialNo=E.SerialNo 
 AND
 C.Month_ID=E.Month_ID ORDER BY C.SerialNo,C.Month_ID
+>>>>>>> 591731762cd9d3280aded8d5b3ca1797ecd3a1bf

@@ -1,0 +1,46 @@
+using Renci.SshNet;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _132_How_to_download_files_from_sftp_server
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DownloadFiles();
+        }
+
+ 	 public static void DownloadFiles()
+        {
+            string host = "192.168.1.100";
+            string username = "hp";
+            string password = "hello";
+            string remoteFolder = @"/C:/Data to Load/Email";
+            string localFolder = @"D:\Files\";
+
+            using (var sftp = new SftpClient(host, username, password))
+            {
+                sftp.Connect();
+                var files = sftp.ListDirectory(remoteFolder);
+                foreach (var file in files)
+                {
+                    if (file.Name != "." && file.Name != "..")
+                    {
+                        using (var localFile = File.OpenWrite(localFolder + file.Name))
+                        {
+                            sftp.DownloadFile(file.FullName, localFile);
+                        }
+                    }
+                }
+                sftp.Disconnect();
+            }
+        } // method end
+
+
+    }
+}

@@ -1,0 +1,20 @@
+// Method 1
+ int Active = 0;
+
+        if (Row.DNC == "Y")
+        {
+            Active = 1;
+        }
+        else if (Row.DNC == "N")
+        {
+            Active = 0;
+        }
+
+        Row.DNC = Active.ToString();
+
+
+// Method 2
+REPLACE(REPLACE(DNC,"Y","1"),"N","0")
+
+// Method 3
+DNC == "Y" ? "1" : (DNC == "N" ? "0" : "0")

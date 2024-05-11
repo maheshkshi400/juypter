@@ -1,0 +1,10 @@
+IF (NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND  TABLE_NAME = 'tbl_log'))
+CREATE TABLE [dbo].[tbl_log](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[PackageName] [varchar](100) NULL,
+	[Step] [varchar](100) NULL,
+	[Dated] [datetime] NULL
+) ON [PRIMARY]
+-----------------------------------------------
+insert into [tbl_log]
+select 'PKG_CUSTOMER_DIM.dtsx', 'Package Completed successfully',getdate()

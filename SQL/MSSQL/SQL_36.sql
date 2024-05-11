@@ -14,6 +14,7 @@ Insert into Stadium Values(8,'2018-01-09',125)
 Insert into Stadium Values(9,'2018-01-10',88)
 
 SELECT * FROM Stadium;
+DROP TABLE Stadium
 
 --Problem Statement :- Stadium Table has three columns namely Id, Visit_Date and No_Of_People. 
 --Write a SQL query to display the records with three or more rows with consecutive id’s and the 
@@ -21,6 +22,45 @@ SELECT * FROM Stadium;
 --shown in the below table.
 
 
+<<<<<<< HEAD
+
+WITH CTE_STADIUM AS (
+    SELECT 
+        id as id1,
+        LEAD(id, 1) OVER (ORDER BY Id) as id2,
+        LEAD(id, 2) OVER (ORDER BY Id) as id3
+    FROM 
+        Stadium
+    WHERE 
+        No_Of_People >= 100
+),
+CTE_TEMP AS (
+    SELECT 
+        B.id, 
+        B.Visit_Date, 
+        B.No_Of_People 
+    FROM 
+        CTE_STADIUM AS A
+    LEFT JOIN 
+        Stadium AS B ON (B.id = A.id1 OR B.id = A.id2 OR B.id = A.id3)
+    WHERE 
+        A.id1 + 1 = A.id2 AND A.id2 + 1 = A.id3  
+)
+SELECT DISTINCT 
+    id, 
+    Visit_Date, 
+    No_Of_People 
+FROM 
+    CTE_TEMP;
+
+
+
+
+
+
+
+
+=======
 WITH STEDIUM_CTE AS (
     SELECT id AS ID1,
     LEAD(id,1) OVER(ORDER BY id) as ID2,
@@ -35,3 +75,4 @@ CTE_TEMP AS(
     WHERE ID1+1=ID2 AND ID2+1=ID3
 )
 SELECT DISTINCT id,Visit_Date,No_Of_People FROM CTE_TEMP;
+>>>>>>> 591731762cd9d3280aded8d5b3ca1797ecd3a1bf

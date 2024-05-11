@@ -1,0 +1,3 @@
+CUSTID,NAME,SALARY
+5,nandini,7000
+6,shrikant,12000

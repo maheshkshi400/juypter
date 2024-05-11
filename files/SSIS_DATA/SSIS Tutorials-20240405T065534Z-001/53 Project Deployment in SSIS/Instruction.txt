@@ -1,0 +1,8 @@
+This package is created in Visual Studio 2013. Its corresponding video can be seen from here
+
+https://youtu.be/i-pweUrVXYw
+
+1. To execute the SSIS package. Right Click localhost.testing OLE DB Connection Manager under Connection Managers pane and select Edit. Provide name of SQL Server instance and provide name of the database against which you want to execute the SSIS package.
+2. Right Click on Control Flow and Select Variables. Provide the valid path to "FilePath" variable, the file "TestData_1.CSV" will be inside "File" folder.
+3. Make sure to do the same steps in both the SSIS packages. 
+4. First try to execute the SSIS packages from SQL Server Data Tools 2013, and once you are able to execute them, then work on the deployment of the SSIS Project.

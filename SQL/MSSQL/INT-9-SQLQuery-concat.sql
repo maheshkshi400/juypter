@@ -13,9 +13,12 @@ insert into EMPLOYEE1 values(7,'sitara,tamboli')
 
 select * from EMPLOYEE1;
 
+
+
 select Name,LEFT(Name,CHARINDEX(',',Name)-1) AS FIRST_NAME, 
 RIGHT(Name, LEN(Name)- CHARINDEX(',',Name)) AS LAST_NAME
-from EMPLOYEE1
+from EMPLOYEE1;
+
 
 
 
