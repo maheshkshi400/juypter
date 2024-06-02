@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/juypter/ML/mlruns/0/85c8fd3ce7ce4eaeabf11e26ab5bd850/artifacts
+end_time: 1717311853041
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 85c8fd3ce7ce4eaeabf11e26ab5bd850
+run_name: skillful-shad-699
+run_uuid: 85c8fd3ce7ce4eaeabf11e26ab5bd850
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717311852847
+status: 4
+tags: []
+user_id: User

@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/juypter/ML/mlruns/0/82e72029d13749daad07a31229da748f/artifacts
+end_time: 1717311796753
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 82e72029d13749daad07a31229da748f
+run_name: treasured-mouse-681
+run_uuid: 82e72029d13749daad07a31229da748f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717311796410
+status: 4
+tags: []
+user_id: User

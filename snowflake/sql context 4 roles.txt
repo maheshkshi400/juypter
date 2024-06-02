@@ -1,0 +1,7 @@
+show roles;
+
+show roles like'%01%';
+
+CREATE ROLE analyst01; -- analyst who can query objects
+GRANT ROLE analyst01 TO ROLE admin01;
+

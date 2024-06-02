@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/juypter/ML/mlruns/0/0b2846159e0e4113993661646273c228/artifacts
+end_time: 1717312039552
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0b2846159e0e4113993661646273c228
+run_name: aged-whale-837
+run_uuid: 0b2846159e0e4113993661646273c228
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717312039382
+status: 4
+tags: []
+user_id: User

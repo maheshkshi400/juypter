@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/juypter/ML/mlruns/0/4ce19ac5da714e4189ecd46ed7c73c6f/artifacts
+end_time: 1717312179110
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4ce19ac5da714e4189ecd46ed7c73c6f
+run_name: blushing-panda-708
+run_uuid: 4ce19ac5da714e4189ecd46ed7c73c6f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717312178811
+status: 3
+tags: []
+user_id: User
