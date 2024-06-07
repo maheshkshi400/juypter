@@ -24,13 +24,13 @@ insert into school values(1,'annant','pune')
 insert into school values(2,'new english era','banglore')
 insert into school values(3,'savitribai phule','delhi')
 insert into school values(4,'lokmanya tilak','kolkatta')
+insert into school values(5, 'sarojini naidu', 'banglore')
 
-SELECT * from std1
-SELECT * from school
 
-drop table school;
 
-select COUNT(id) from 
+
+
+
 
 
 
