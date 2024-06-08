@@ -1,6 +1,6 @@
 USE JOINS;
 
-tudent_id	student_name	score
+student_id	student_name	score
 1	Alice	85
 2	Bob	90
 3	Carol	85
@@ -153,6 +153,7 @@ SELECT CONVERT(DATE, '2023-04-15');
 -- Check if a value is a valid date
 SELECT ISDATE('2023-04-15'); -- Returns 1 (true
 
+USE JOINS
 
 ID	Name
 1	Anu
@@ -193,6 +194,11 @@ SELECT * FROM project;
 
 SELECT e.id,e.name,p.project_id FROM emp_3 e LEFT OUTER JOIN project p ON e.id = p.id 
 where p.project_id is NULL;
+
+
+select * from emp5
+
+
 
 
 
