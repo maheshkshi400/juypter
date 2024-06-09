@@ -48,6 +48,14 @@ select id,count(id) from student_3 group by id having(count(id)) >1;
 --add single colum in table
 ALTER TABLE student_3
 ADD dob date;
+select * from  student_4;
+
+update student_3 set dob='13-Mar-2011' where id =1;
+update student_3 set dob='15-Mar-2013' where id =2;
+update student_3 set dob='15-Mar-2013' where id =3;
+update student_3 set dob='15-Mar-2013' where id =4;
+update student_3 set dob='15-Mar-2013' where id =5;
+
 
 -- add multiple columns  
 alter table student_3 add dob date,location varchar(20);
@@ -59,26 +67,28 @@ drop column dob;
 --sysntax of rename
 EXEC sp_rename 'table_name.old_column_name', 'new_column_name', 'COLUMN';
 
-EXEC sp_rename 'student_3.dob1','dob','COLUMN';
+EXEC sp_rename 'student_3.dob','dob1','COLUMN';
 
 
 --rename table
-EXEC sp_rename 'student_4','student_3';
+EXEC sp_rename 'student_3','student_4';
 
 
 --AGGREGATE FNCTIONS
-SELECT SUM(salary) FROM student_3;
+SELECT SUM(salary) FROM student_4;
 
 --count function
-SELECT COUNT(id) from student_3;
+SELECT COUNT(id) from student_4;
+
+select  count(*) from student_4;
 --Insert null value in id check count
-insert into student_3 values(null, 'Reva', 23, 25000);
+insert into student_4 values(null, 'Reva', 23, 25000);
 
 --MIN FUNCTION 
-SELECT MIN(salary) FROM student_3;
+SELECT MIN(salary) FROM student_4;
 
 --MAX FUNCTION
-SELECT MAX(salary) FROM student_3;
+SELECT MAX(salary) as 'Max_sal' FROM student_4;
 
 --round command
 select round(123.456,2) as round_value;
