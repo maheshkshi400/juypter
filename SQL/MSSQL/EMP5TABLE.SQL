@@ -194,9 +194,6 @@ SELECT TOP 1 MARKS FROM dbo.STUDENT1;
 
 
 
-=======
-
-
 
 SELECT * /*This is the outer query part */
 FROM EMP5 E1

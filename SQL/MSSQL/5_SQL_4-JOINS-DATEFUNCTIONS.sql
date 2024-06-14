@@ -120,6 +120,7 @@ SELECT round(123.456, 2) as round_value;
 
 
 --DATENAME FUNCTIONS
+SELECT GETDATE();
 
 SELECT DATENAME(YEAR, GETDATE())        AS 'Year';        
 SELECT DATENAME(QUARTER, GETDATE())     AS 'Quarter';     
