@@ -14,9 +14,9 @@ SELECT max(sal) from EMP2 WHERE sal<(SELECT max(sal) from EMP2)
 
 --
 WITH MAX_2SAL AS (
-    SELECT empno, ename, job, DENSE_RANK() OVER (ORDER BY SAL DESC) AS RANK 
+    SELECT  DENSE_RANK() OVER (ORDER BY sal DESC) AS RANK 
     FROM EMP2
-)
-SELECT empno, ename, job
+) t
+SELECT *
 FROM MAX_2SAL 
-WHERE RANK = 2;
+WHERE t.RANK = 2;

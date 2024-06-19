@@ -27,7 +27,6 @@ INSERT INTO Quaterly_sales VALUES(2019,'Q4',20000)
 SELECT * FROM Quaterly_sales
 
 -- LAG FUNCTION 
-
 SELECT 
 Year,
 QuarterName as QUARTER,
@@ -35,8 +34,6 @@ Sales AS CURRENTSALE,
 LAG(Sales) OVER (partition BY Year ORDER BY QuarterName) 
 AS PREVIOUS_QTR_SALE
 FROM Quaterly_sales
-
-
 
 -- LEAD FUNCTION
 
