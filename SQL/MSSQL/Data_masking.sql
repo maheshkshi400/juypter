@@ -1,4 +1,6 @@
 -- schema to contain user tables
+
+USE JOINS;
 CREATE SCHEMA Data;
 GO
 
