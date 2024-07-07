@@ -1,4 +1,4 @@
-# adition_function()
+# addition_function()
 
 a = int(input("Enter a number1: "))
 b = int(input("Enter a number2: "))
@@ -14,8 +14,8 @@ print("The addition of " + str(a) + " and " + str(b) + " is:", result)
 
 # exponent_function()
 
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
+a = int(input("Enter a number1: "))
+b = int(input("Enter a number2: "))
 
 def exponent(a,b):
     if b == 0:
@@ -31,8 +31,8 @@ print("The exponent of " + str(a) + " and " + str(b) + " is:", output)
 
 # Multiplication_function()
 
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
+a = int(input("Enter a number1: "))
+b = int(input("Enter a number2: "))
 
 def Multiplication(a,b):
     if b == 0:
