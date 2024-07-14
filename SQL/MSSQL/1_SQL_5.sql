@@ -42,7 +42,7 @@ ID	 	ID
 Null	 	 
 Null
 
-USE OTHER
+USE OTHERS
 CREATE table TABLE_A(
     id INT 
 );

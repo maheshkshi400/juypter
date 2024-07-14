@@ -1,5 +1,5 @@
 
-
+USE OTHERS;
 Create table Authors
 (
 	AuthorId int primary key,
@@ -43,9 +43,4 @@ Insert into Authors_Books values (1, 1)
 Insert into Authors_Books values (1, 2)
 Insert into Authors_Books values (2, 1)
 
-USE EMPLOYEE
 
-SELECT TOP 1 COUNT(ENAME)
-FROM EMP5
-GROUP BY ENAME
-ORDER BY COUNT(ENAME) DESC;

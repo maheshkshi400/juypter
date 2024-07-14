@@ -1,10 +1,12 @@
-use other
+use OTHERS
 
-create table customer7(cust_id INT, cust_name varchar(20), city varchar(20) ,
+create table customer7(cust_id INT, cust_name varchar(20), city varchar(20),
 salesman_id INT ,order_id INT);
+
 drop table customer7;
 
 create table salesman(salesman_id INT, salesman_name varchar(20),city VARCHAR(20));
+
 drop table salesman;
 
 
