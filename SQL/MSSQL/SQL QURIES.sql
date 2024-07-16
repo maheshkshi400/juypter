@@ -1,55 +1,55 @@
-SELECT * FROM MK_DB.dbo.EMP5;
-SELECT * from MK_DB.dbo.DEPT1
-SELECT * FROM MK_DB.dbo.SALGRADE
+SELECT * FROM EMPLOYEES.dbo.EMP2;
+SELECT * from EMPLOYEES.dbo.DEPT
+SELECT * FROM EMPLOYEES.dbo.SALGRADE
 
 
 --1.Display the details of all employees
 
-SELECT * FROM MK_DB.dbo.EMP5;
+SELECT * FROM EMPLOYEES.dbo.EMP2;
 
 --2. Display the depart information from department table
 
-SELECT * FROM MK_DB.dbo.DEPT1
+SELECT * FROM EMPLOYEES.dbo.EMP2;
 
 --3. Display the name and job for all the employee.
 
-SELECT ENAME,JOB FROM MK_DB.dbo.EMP5;
+SELECT ENAME,JOB FROM EMPLOYEES.dbo.EMP2;
 
 -- 4. Display the name and salary for all the employees
 
-SELECT ENAME,SAL FROM MK_DB.dbo.EMP5;
+SELECT ENAME,SAL FROM EMPLOYEES.dbo.EMP2;
 
 --5. Display the employee no and total salary for all the employees
 
-SELECT EMPNO,SAL+ ISNULL(COMM,0) AS TOTAL_SAL FROM MK_DB.dbo.EMP5;
+SELECT EMPNO,(SAL+ ISNULL(COMM,0) AS TOTAL_SAL FROM EMPLOYEES.dbo.EMP2;
 
 --6. Display the employee name and annual salary for all employees.
 
-SELECT ENAME, 12 * (SAL + ISNULL(COMM, 0)) AS ANNUAL_SAL FROM MK_DB.dbo.EMP5;
+SELECT ENAME, 12 * (SAL + ISNULL(COMM, 0)) AS ANNUAL_SAL FROM EMPLOYEES.dbo.EMP2;
 
 --7. Display the names of all the employees who are working in depart number 10.
 
-SELECT ENAME FROM MK_DB.dbo.EMP5  WHERE DEPTNO=10;
+SELECT ENAME FROM EMPLOYEES.dbo.EMP2 WHERE DEPTNO=10;
 
 --8. Display the names of all the employees who are working as clerks and drawing a salary more than 3000.
 
-SELECT ENAME FROM MK_DB.dbo.EMP5 WHERE JOB='CLERK' AND SAL>3000;
+SELECT ENAME FROM EMPLOYEES.dbo.EMP2 WHERE JOB='CLERK' AND SAL>3000;
 
 -- 9. Display the employee number and name who are earning comm.
 
-SELECT EMPNO, ENAME FROM MK_DB.dbo.EMP5 WHERE COMM IS NOT NULL
+SELECT EMPNO, ENAME FROM EMPLOYEES.dbo.EMP2 WHERE COMM IS NOT NULL
 
 --10. Display the employee number and name who do not earn any comm.
 
-SELECT EMPNO, ENAME FROM MK_DB.dbo.EMP5 WHERE COMM IS NULL;
+SELECT EMPNO, ENAME FROM EMPLOYEES.dbo.EMP2 WHERE COMM IS NULL;
 
 --11. Display the names of employees who are working as clerks, salesman or analyst and drawing a salary more than 3000.
 
-SELECT ENAME FROM MK_DB.dbo.EMP5 WHERE JOB IN ('CLERK','SALESMAN','ANALYST') AND SAL>3000;
+SELECT ENAME FROM EMPLOYEES.dbo.EMP2 WHERE JOB IN ('CLERK','SALESMAN','ANALYST') AND SAL>3000;
 
 --12. Display the names of the employees who are working in the company for the past 5 years.
 
-SELECT ENAME FROM MK_DB.dbo.EMP5 WHERE  HIREDATE < DATEADD(YY, -5, GETDATE())
+SELECT ENAME FROM EMPLOYEES.dbo.EMP2 WHERE  HIREDATE < DATEADD(YY, -5, GETDATE())
 
 --13. Display the list of employees who have joined the company before 30-JUN-90 or after 31-DEC-90.
 
@@ -61,73 +61,73 @@ SELECT GETDATE()
 
 --15. Display the names of employees working in depart number 10 or 20 or 40 or employees working as CLERKS, SALESMAN or ANALYST.
 
-SELECT * FROM MK_DB.dbo.EMP5 WHERE JOB IN ('CLERK', 'SALESMAN', 'ANALYST') OR DEPTNO IN (10, 20, 40)
+SELECT * FROM EMPLOYEES.dbo.EMP2 WHERE JOB IN ('CLERK', 'SALESMAN', 'ANALYST') OR DEPTNO IN (10, 20, 40)
 
 --16. Display the names of employees whose name starts with alphabet S.
 
-SELECT * FROM MK_DB.dbo.EMP5 WHERE ENAME LIKE('S%')
+SELECT * FROM EMPLOYEES.dbo.EMP2 WHERE ENAME LIKE('S%')
 
 --17. Display the names of employees whose name ENDSs with alphabet S.
 
-SELECT * FROM MK_DB.dbo.EMP5 WHERE ENAME LIKE('%S')
+SELECT * FROM EMPLOYEES.dbo.EMP2 WHERE ENAME LIKE('%S')
 
 --18. Display the names of employees whose names have second alphabet A in their names.
 
-SELECT ENAME FROM MK_DB.dbo.EMP5 WHERE ENAME LIKE ('_A%');
+SELECT ENAME FROM EMPLOYEES.dbo.EMP2 WHERE ENAME LIKE ('_A%');
 
 -- 19. Select the names of the employee whose names is exactly five characters in length.
 
-SELECT ENAME FROM MK_DB.dbo.EMP5 WHERE ENAME LIKE ('_____');
+SELECT ENAME FROM EMPLOYEES.dbo.EMP2 WHERE ENAME LIKE ('_____');
 
-SELECT ENAME FROM MK_DB.dbo.EMP5 WHERE LEN(ENAME)=5;
+SELECT ENAME FROM EMPLOYEES.dbo.EMP2 WHERE LEN(ENAME)=5;
 
 --20. Display the names of the employee who are not working as MANAGERS.
 
-SELECT ENAME FROM MK_DB.dbo.EMP5 WHERE JOB  != 'MANAGER';
+SELECT ENAME FROM EMPLOYEES.dbo.EMP2 WHERE JOB  != 'MANAGER';
 
 --21. Display the names of the employee who are not working as SALESMAN OR CLERK OR ANALYST.
 
-SELECT ENAME FROM MK_DB.dbo.EMP5 WHERE JOB NOT IN('SALESMAN','CLERK','ANALYST');
+SELECT ENAME FROM EMPLOYEES.dbo.EMP2 WHERE JOB NOT IN('SALESMAN','CLERK','ANALYST');
 
 --22. Display the total number of employee working in the company.
 
-SELECT COUNT (EMPNO) AS TOTAL_EMP FROM MK_DB.dbo.EMP5
+SELECT COUNT (EMPNO) AS TOTAL_EMP FROM EMPLOYEES.dbo.EMP2;
 
 --23. Display the total salary beiging paid to all employees.
 
-SELECT SUM (SAL) AS TOTAL_SALARY FROM MK_DB.dbo.EMP5
+SELECT SUM (SAL) AS TOTAL_SALARY FROM EMPLOYEES.dbo.EMP2;
 
 --24. Display the maximum salary from emp table.
 
-SELECT MAX (SAL) AS MAX_SAL FROM MK_DB.dbo.EMP5
+SELECT MAX (SAL) AS MAX_SAL FROM EMPLOYEES.dbo.EMP2;
 
 --25. Display the minimum salary from emp table.
 
-SELECT MIN (SAL) AS MIN_SAL FROM MK_DB.dbo.EMP5
+SELECT MIN (SAL) AS MIN_SAL FROM EMPLOYEES.dbo.EMP2;
 
 --26. Display the average salary from emp table.
 
-SELECT AVG (SAL) AS AVG_SAL FROM MK_DB.dbo.EMP5
+SELECT AVG (SAL) AS AVG_SAL FROM EMPLOYEES.dbo.EMP2;
 
 --27. Display the maximum salary being paid to CLERK.
 
-SELECT MAX (SAL) AS MAX_SAL FROM MK_DB.dbo.EMP5 WHERE JOB='CLERK';
+SELECT MAX (SAL) AS MAX_SAL FROM EMPLOYEES.dbo.EMP2 WHERE JOB='CLERK';
 
 --28. Display the maximum salary being paid to department number 20.
 
-SELECT MAX (SAL) AS MAX_SAL FROM MK_DB.dbo.EMP5 WHERE deptno=20;
+SELECT MAX (SAL) AS MAX_SAL FROM EMPLOYEES.dbo.EMP2 WHERE deptno=20;
 
 --29. Display the minimum salary being paid to any SALESMAN.
 
-SELECT MIN (SAL) AS MIN_SAL FROM MK_DB.dbo.EMP5 WHERE JOB='SALESMAN';
+SELECT MIN (SAL) AS MIN_SAL FROM EMPLOYEES.dbo.EMP2 WHERE JOB='SALESMAN';
 
 --30. Display the average salary drawn by MANAGERS.
 
-SELECT AVG(SAL) AS AVG_SAL_MGR FROM MK_DB.dbo.EMP5 WHERE JOB='MANAGER';
+SELECT AVG(SAL) AS AVG_SAL_MGR FROM EMPLOYEES.dbo.EMP2 WHERE JOB='MANAGER';
 
 --31. Display the total salary drawn by ANALYST working in depart number 40.
 
-SELECT SUM (SAL) AS TOTAL_SAL_ANALYST FROM MK_DB.dbo.EMP5 WHERE JOB='ANALYST' 
+SELECT SUM (SAL) AS TOTAL_SAL_ANALYST FROM EMPLOYEES.dbo.EMP2 WHERE JOB='ANALYST' 
 
 --32. Display the names of the employee in order of salary i.e the name of the employee earning lowest salary should appear first.
 

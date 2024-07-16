@@ -1,0 +1,46 @@
+
+SELECT * FROM EMP2;
+
+INSERT INTO EMP2 VALUES ('7839','KING','PRESIDENT',NULL,'1981-11-17','5000.00',NULL,'10');
+INSERT INTO EMP2 VALUES ('7902','FORD','ANALYST','7566','1981-12-03','3000.00',NULL,'20');
+
+--FIND OUT DUPLCATE 
+SELECT * FROM EMP2;
+SELECT EMPNO,COUNT(EMPNO) FROM EMP2 GROUP BY EMPNO HAVING (COUNT(EMPNO)) >1;
+
+--FIND OUT DUPLICATE HAVING COUNT MORE THAN 1 EXCEPT DEPTNO=10
+
+USE EMPLOYEES;
+CREATE TABLE emp(
+empid INT,
+empname VARCHAR(20),
+salary INT,
+deptno INT
+);
+insert into emp VALUES(1, 'Alice', 5000, 10);
+insert into emp VALUES(2, 'Bob', 6000, 20);
+insert into emp VALUES(1, 'Alice', 5000, 10);
+insert into emp VALUES(2, 'Bob', 6000, 20);
+insert into emp VALUES(3, 'Emily', 9000, 30);
+insert into emp VALUES(3, 'Emily', 9000, 30);
+insert into emp VALUES(Null, 'David', 7000, 40);
+
+
+select empid,count(empid) from emp group by empid having(count(empid)) > 1;
+select empid,count(empid) from emp where deptno != 10 group by empid having(count(empid)) > 1;
+
+--BY USING CTE 
+
+WITH DUPLICATE_CTE AS(
+SELECT EMP2.*,ROW_NUMBER() OVER (PARTITION BY EMPNO ORDER BY EMPNO DESC) AS RANK FROM EMP2
+) 
+SELECT * FROM DUPLICATE_CTE WHERE RANK =2;
+
+
+-- DELETE DUPLICATE
+
+WITH DUPLICATE_CTE AS(
+SELECT EMP2.*,ROW_NUMBER() OVER (PARTITION BY EMPNO ORDER BY EMPNO DESC) AS RANK FROM EMP2
+) 
+DELETE FROM DUPLICATE_CTE WHERE RANK =2;
+SELECT * FROM EMP2;
