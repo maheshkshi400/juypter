@@ -1,0 +1,23 @@
+
+
+
+-- Create the tables
+CREATE TABLE TAB1 (ID INT);
+CREATE TABLE TAB2 (ID INT);
+
+-- Insert data into TAB1
+INSERT INTO TAB1 VALUES (0), (0), (NULL), (NULL), (NULL), (8), (8), (9);
+
+-- Insert data into TAB2
+INSERT INTO TAB2 VALUES (NULL), (NULL), (NULL), (2), (3);
+
+
+SELECT * FROM TAB1;
+SELECT * FROM TAB2;
+
+
+-- INNER JOIN
+SELECT TAB1.ID, TAB2.ID
+FROM TAB1
+INNER JOIN TAB2 ON TAB1.ID = TAB2.ID;
+

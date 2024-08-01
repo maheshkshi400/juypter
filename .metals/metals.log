@@ -1121,3 +1121,116 @@ Jul 22, 2024 11:54:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancella
 WARNING: Unmatched cancel notification for request id 2
 Jul 22, 2024 11:54:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2024.07.23 00:30:22 INFO  Shutting down server
+2024.07.23 00:30:22 INFO  shutting down Metals
+2024.07.23 00:30:22 INFO  Exiting server
+2024.07.23 00:30:22 INFO  Shut down connection with build server.
+2024.07.23 12:53:05 INFO  Started: Metals version 1.3.3 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.91.1.
+2024.07.23 12:53:06 INFO  time: initialize in 0.15s
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@6803a32f]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@2f05449d]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@6803a32f]
+2024.07.23 12:53:10 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.23 12:53:12 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.07.23 12:53:12 WARN  Build server is not auto-connectable.
+2024.07.24 10:30:05 INFO  Started: Metals version 1.3.3 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.91.1.
+2024.07.24 10:30:05 INFO  time: initialize in 0.12s
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@170e0021]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@673df3d0]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@170e0021]
+2024.07.24 10:30:12 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.24 10:30:14 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.07.24 10:30:15 WARN  Build server is not auto-connectable.
+2024.07.25 00:53:18 INFO  Started: Metals version 1.3.3 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.91.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@1ba8e65c]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@3ab1cc61]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@1ba8e65c]
+2024.07.25 00:53:23 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.25 00:53:24 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.07.25 00:53:25 WARN  Build server is not auto-connectable.
+2024.07.25 08:46:14 INFO  Started: Metals version 1.3.3 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.91.1.
+2024.07.25 08:46:14 INFO  time: initialize in 0.15s
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@19e5326b]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@a4f5cf3]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@19e5326b]
+2024.07.25 08:46:20 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.25 08:46:22 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.07.25 08:46:22 WARN  Build server is not auto-connectable.
+2024.07.26 02:44:17 INFO  Started: Metals version 1.3.3 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.91.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@4a823db2]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@51022792]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@4a823db2]
+2024.07.26 02:44:23 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.26 02:44:25 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.07.26 02:44:25 WARN  Build server is not auto-connectable.
+2024.07.26 02:54:52 INFO  Started: Metals version 1.3.4 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.91.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@41dc9877]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@3fa35825]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@41dc9877]
+2024.07.26 02:55:00 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.26 02:55:03 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.07.26 02:55:03 WARN  Build server is not auto-connectable.
+2024.07.26 03:04:21 INFO  Shutting down server
+2024.07.26 03:04:21 INFO  shutting down Metals
+2024.07.26 03:04:21 INFO  Exiting server
+2024.07.26 11:00:43 INFO  Started: Metals version 1.3.4 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.91.1.
+2024.07.26 11:00:43 INFO  time: initialize in 0.31s
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@7a2658f0]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@4df0e163]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@7a2658f0]
+2024.07.26 11:00:48 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.26 11:00:50 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.07.26 11:00:50 WARN  Build server is not auto-connectable.
+2024.07.26 14:00:55 INFO  Shutting down server
+2024.07.26 14:00:55 INFO  shutting down Metals
+2024.07.26 14:00:55 INFO  Exiting server
+2024.07.26 15:11:07 INFO  Started: Metals version 1.3.4 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.91.1.
+2024.07.26 15:11:07 INFO  time: initialize in 0.32s
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@6b7dea41]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@4a1bbfdd]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@6b7dea41]
+2024.07.26 15:11:10 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.26 15:11:12 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.07.26 15:11:12 WARN  Build server is not auto-connectable.
+2024.07.28 12:50:23 INFO  Started: Metals version 1.3.4 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.91.1.
+2024.07.28 12:50:23 INFO  time: initialize in 0.34s
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@3dc0ef33]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@311d085b]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@3dc0ef33]
+2024.07.28 12:50:31 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.28 12:50:32 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.07.28 12:50:32 WARN  Build server is not auto-connectable.
+2024.07.29 12:20:18 INFO  Started: Metals version 1.3.4 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.91.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@42c11913]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@37c11847]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@42c11913]
+2024.07.29 12:20:26 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.29 12:20:27 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.07.29 12:20:27 WARN  Build server is not auto-connectable.
+2024.07.31 20:05:25 INFO  Started: Metals version 1.3.4 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.91.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@4dd343a]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@3124e00c]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@4dd343a]
+2024.07.31 20:05:31 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
