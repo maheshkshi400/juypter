@@ -26,15 +26,18 @@ from EMPLOYEE1;
 select value from string_split('adnan,shaikh',',')
 --
 USE EMPLOYEE
-with NAME_CTE AS 
-(select employeeId,value
-,ROW_NUMBER() OVER (PARTITION BY employeeId ORDER BY employeeId) AS Rownum
-from EMPLOYEE1
+with
+    NAME_CTE
+    AS
+    (
+        select employeeId, value,
+        ROW_NUMBER() OVER (PARTITION BY employeeId ORDER BY employeeId) AS Rownum
+        from EMPLOYEE1
 CROSS APPLY
 string_split(Name,',')
-)
+    )
 SELECT employeeId,
-[1] AS FIRST_NAME,[2] AS LAST_NAME 
+    [1] AS FIRST_NAME, [2] AS LAST_NAME
 FROM NAME_CTE
 PIVOT
 (MAX(VALUE)

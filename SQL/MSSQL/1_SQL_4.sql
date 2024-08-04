@@ -7,6 +7,8 @@ drop table customer7;
 
 create table salesman(salesman_id INT, salesman_name varchar(20),city VARCHAR(20));
 
+SELECT * FROM customer7;
+
 drop table salesman;
 
 
@@ -29,6 +31,7 @@ INSERT INTO salesman (salesman_id, salesman_name, city) VALUES(5005, 'Juan Herna
 SELECT * FROM customer7;
 
 SELECT * FROM salesman;
+
 -- Write a query to find the salesman who works not in the city of customer
 
 

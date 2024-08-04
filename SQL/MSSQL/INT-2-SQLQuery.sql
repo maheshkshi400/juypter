@@ -64,21 +64,33 @@ ON E1.ManagerID = E2.EmployeeID;
 
 --write an sql query to see employee name and his manager
 
-SELECT emp.EmployeeID, emp.EmployeeName,emp.EmployeeName AS ManagerName 
+SELECT
+    emp.EmployeeID,
+    emp.EmployeeName AS EmployeeName,
+    ISNULL(mgr.EmployeeName, 'BOSS') AS ManagerName
 FROM Employees emp
-LEFT OUTER JOIN Employees mgr
-ON emp.ManagerID = mgr.EmployeeID
+    LEFT OUTER JOIN Employees mgr ON emp.ManagerID = mgr.EmployeeID;
+
 
 
 --SECOND METHOD FIND OUT HIEARCHY
 
-WITH CTE_EMP AS (
-    SELECT EmployeeID,EmployeeName,ManagerID,0 AS Employee_level FROM dbo.Employee_Table WHERE ManagerID IS NULL 
+WITH
+    CTE_EMP
+    AS
+    (SELECT EmployeeID, EmployeeName, ManagerID, 0 AS Employee_level
+    FROM dbo.Employee_Table
+    WHERE ManagerID IS NULL
+
     UNION ALL
-    SELECT EMP.EmployeeID,EMP.EmployeeName,EMP.ManagerID,Employee_level+1 FROM dbo.Employee_Table AS EMP
+
+    SELECT EMP.EmployeeID, EMP.EmployeeName, EMP.ManagerID, Employee_level+1
+    FROM dbo.Employee_Table AS EMP
     INNER JOIN CTE_EMP AS MGR ON EMP.ManagerID=MGR.EmployeeID
-)
-SELECT * FROM CTE_EMP ORDER BY Employee_level;
+    )
+SELECT *
+FROM CTE_EMP
+ORDER BY Employee_level;
 
 
 
