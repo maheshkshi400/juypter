@@ -1454,3 +1454,7 @@ SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@2af66b2
 2024.08.24 13:19:46 WARN  Build server is not auto-connectable.
 Aug 24, 2024 7:52:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+Aug 24, 2024 11:27:18 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Aug 24, 2024 11:27:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
