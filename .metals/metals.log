@@ -1452,3 +1452,5 @@ SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@2af66b2
 2024.08.24 13:19:43 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
 2024.08.24 13:19:46 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
 2024.08.24 13:19:46 WARN  Build server is not auto-connectable.
+Aug 24, 2024 7:52:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
