@@ -1,0 +1,423 @@
+County,Farmer,Education,Gender,Age bracket,Household size,Crop,Acreage,Fertilizer amount,Laborers,Yield,Power source,Water source,Main credit source,Crop insurance,Farm records,Main advisory source,Extension provider,Advisory format,Advisory language,Latitude,Longitude
+TAITA TAVETA,fmr_65,Certificate,Male,36-45,7,corn,2,50,2,300,Manual,Rain,Credit groups,No,Yes,Radio,Private Provider,Phone Calls,Vernacular,-3.46,38.35
+TAITA TAVETA,fmr_77,Certificate,Male,36-45,7,corn,0.25,50,2,270,Manual,Rain,Credit groups,No,Yes,Radio,County Government,SMS text,Kiswahili,-3.31,38.4
+TAITA TAVETA,fmr_89,Certificate,Male,36-45,7,corn,3,251,2,270,Manual,Rain,Credit groups,No,Yes,Radio,Private Provider,Phone Calls,Vernacular,-3.41,38.37
+TAITA TAVETA,fmr_102,Certificate,Male,36-45,7,corn,1.5,300,3,200,Manual,Rain,Credit groups,No,Yes,Radio,County Government,SMS text,Kiswahili,-3.39,38.37
+TAITA TAVETA,fmr_25,Certificate,Male,46-55,3,corn,,50,2,180,Manual,Rain,Credit groups,No,Yes,Radio,Private Provider,Phone Calls,Vernacular,-3.39,38.33
+TAITA TAVETA,fmr_26,Certificate,Male,46-55,3,corn,0.5,200,2,180,Manual,Rain,Credit groups,No,Yes,Radio,National Government,Phone Calls,Kiswahili,-3.44,38.35
+TAITA TAVETA,fmr_109,Certificate,Female,46-55,6,corn,0.5,40,2,180,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.34,38.38
+TAITA TAVETA,fmr_110,Certificate,Female,46-55,6,corn,0.25,150,2,180,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.34,38.38
+TAITA TAVETA,fmr_336,Certificate,Male,46-55,5,corn,1,30,4,180,Manual,Rain,Savings,No,No,Extension services,County Government,SMS text,English,-3.38,38.36
+TAITA TAVETA,fmr_338,Certificate,Male,46-55,5,corn,1,120,3,180,Manual,Rain,Savings,No,Yes,Public gatherings,Private Provider,Phone Calls,Vernacular,-3.49,38.33
+TAITA TAVETA,fmr_111,Certificate,Female,46-55,6,corn,0.5,50,3,150,Manual,Rain,Credit groups,No,Yes,Radio,Private Provider,Phone Calls,Vernacular,-3.34,38.34
+TAITA TAVETA,fmr_339,Certificate,Male,46-55,5,corn,1,40,3,150,Manual,Rain,Savings,No,No,Extension services,County Government,SMS text,Kiswahili,-3.63,38.37
+TAITA TAVETA,fmr_114,Certificate,Female,46-55,6,corn,0.25,45,6,135,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.51,38.58
+TAITA TAVETA,fmr_340,Certificate,Male,46-55,5,corn,,20,3,135,Manual,Rain,Savings,No,No,Extension services,County Government,SMS text,English,-3.53,38.56
+TAITA TAVETA,fmr_27,Certificate,Male,46-55,3,corn,0.5,25,2,125,Manual,Rain,Credit groups,No,Yes,Radio,Private Provider,Phone Calls,Vernacular,-3.36,38.35
+TAITA TAVETA,fmr_201,Diploma,Female,46-55,5,corn,1,50,4,180,Manual,Rain,Credit groups,No,Yes,Public gatherings,National Government,Phone Calls,Kiswahili,-3.5,38.4
+TAITA TAVETA,fmr_212,Diploma,Female,46-55,5,corn,,25,2,160,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,Phone Calls,Kiswahili,-3.5,38.39
+TAITA TAVETA,fmr_48,Diploma,Male,56-65,1,corn,0.5,30,2,100,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,English,-3.38,38.32
+TAITA TAVETA,fmr_49,Diploma,Male,56-65,1,corn,0.25,120,3,100,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.39,38.35
+TAITA TAVETA,fmr_224,Diploma,Female,46-55,5,corn,0.5,20,3,100,Manual,Rain,Credit groups,No,Yes,Public gatherings,National Government,Phone Calls,Kiswahili,-3.5,38.4
+TAITA TAVETA,fmr_50,Diploma,Male,56-65,1,corn,,20,4,90,Manual,Rain,Credit groups,No,Yes,Radio,County Government,SMS text,English,-3.5,38.58
+TAITA TAVETA,fmr_51,Diploma,Male,56-65,1,corn,0.5,90,2,90,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.42,38.37
+TAITA TAVETA,fmr_235,Diploma,Female,46-55,5,corn,0.25,50,3,90,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.5,38.4
+TAITA TAVETA,fmr_52,Diploma,Male,56-65,1,corn,,48,2,75,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.45,38.4
+TAITA TAVETA,fmr_54,Diploma,Male,56-65,1,corn,0.5,20,4,50,Manual,Rain,Credit groups,No,No,Radio,KALRO,SMS text,Kiswahili,-3.35,38.35
+TAITA TAVETA,fmr_55,Diploma,Male,56-65,1,corn,,50,2,50,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Vernacular,-3.39,38.32
+TAITA TAVETA,fmr_146,Degree,Male,18-35,6,corn,0.5,20,3,540,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.25,38.3
+TAITA TAVETA,fmr_403,Degree,Male,18-35,6,corn,,25,6,540,Manual,Rain,Credit groups,No,Yes,Television,County Government,Phone Calls,Kiswahili,-3.38,38.43
+TAITA TAVETA,fmr_168,Degree,Male,18-35,6,corn,0.5,25,2,450,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.26,38.32
+TAITA TAVETA,fmr_404,Degree,Male,18-35,6,corn,0.5,30,3,450,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,Phone Calls,Kiswahili,-3.36,38.42
+TAITA TAVETA,fmr_179,Degree,Female,18-35,6,corn,0.5,20,2,360,Manual,Rain,Credit groups,No,No,Internet,County Government,Phone Calls,Kiswahili,-3.51,38.39
+TAITA TAVETA,fmr_190,Degree,Female,18-35,6,corn,1,25,2,360,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.5,38.37
+TAITA TAVETA,fmr_405,Primary,Female,18-35,6,corn,1,20,2,360,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.39,38.38
+TAITA TAVETA,fmr_406,Primary,Female,18-35,6,corn,1,30,2,360,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,Phone Calls,Kiswahili,-3.34,38.39
+TAITA TAVETA,fmr_262,Primary,Female,46-55,2,corn,1,50,3,180,Manual,Rain,Family,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.39,38.33
+TAITA TAVETA,fmr_299,Primary,Female,46-55,2,corn,1,20,4,150,Manual,Rain,Family,No,Yes,Public gatherings,Private Provider,Phone Calls,Vernacular,-3.36,38.33
+TAITA TAVETA,fmr_311,Primary,Female,46-55,2,corn,,25,2,100,Manual,Rain,Family,No,No,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.36,38.33
+TAITA TAVETA,fmr_324,Primary,Female,46-55,2,corn,,50,4,90,Manual,Rain,Family,No,No,Public gatherings,County Government,SMS text,Vernacular,-3.32,38.31
+TAITA TAVETA,fmr_395,Primary,Female,above 65,5,corn,0.25,25,4,90,Manual,Rain,Credit groups,No,No,Internet,County Government,Phone Calls,English,-3.45,38.37
+TAITA TAVETA,fmr_396,Primary,Female,above 65,5,corn,0.25,25,3,50,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.47,38.59
+TAITA TAVETA,fmr_90,Primary,Female,18-35,9,corn,1,50,3,600,Manual,Rain,Credit groups,No,No,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.5,38.39
+TAITA TAVETA,fmr_131,Primary,Female,18-35,2,corn,0.5,40,3,560,Manual,Rain,Savings,No,No,Extension services,County Government,SMS text,Kiswahili,-3.5,38.6
+TAITA TAVETA,fmr_375,Primary,Female,18-35,5,corn,2,50,2,550,Manual,Rain,Savings,No,No,Extension services,County Government,SMS text,English,-3.53,38.58
+TAITA TAVETA,fmr_10,Primary,Female,18-35,5,corn,0.5,40,2,540,Manual,Rain,Credit groups,No,No,Extension services,Private Provider,Phone Calls,Kiswahili,-3.47,38.35
+TAITA TAVETA,fmr_56,Primary,Female,18-35,4,corn,2,50,3,540,Manual,Rain,Credit groups,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.42,38.39
+TAITA TAVETA,fmr_127,Primary,Male,18-35,1,corn,3,100,2,540,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Vernacular,-3.5,38.36
+TAITA TAVETA,fmr_181,Primary,Male,18-35,5,corn,0.5,20,3,540,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.34,38.39
+TAITA TAVETA,fmr_213,Primary,Female,18-35,4,corn,0.5,25,3,540,Manual,Rain,Credit groups,No,No,Extension services,Private Provider,SMS text,Kiswahili,-3.5,38.58
+TAITA TAVETA,fmr_263,Primary,Female,18-35,4,corn,1,50,3,540,Manual,Rain,Family,No,Yes,Radio,Private Provider,Phone Calls,Vernacular,-3.55,38.58
+TAITA TAVETA,fmr_322,Primary,Female,18-35,6,corn,0.25,70,2,540,Manual,Rain,Family,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.56,38.58
+TAITA TAVETA,fmr_390,Primary,Male,18-35,6,corn,0.5,100,3,540,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.5,38.38
+TAITA TAVETA,fmr_277,Primary,Female,18-35,5,corn,0.5,100,3,500,Manual,Rain,Family,No,No,Extension services,County Government,SMS text,Kiswahili,-3.39,38.41
+TAITA TAVETA,fmr_11,Primary,Female,18-35,5,corn,1.5,50,2,450,Manual,Rain,Credit groups,No,Yes,Extension services,Private Provider,Phone Calls,Vernacular,-3.44,38.35
+TAITA TAVETA,fmr_58,Primary,Female,18-35,4,corn,2.5,50,3,450,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.42,38.38
+TAITA TAVETA,fmr_132,Primary,Female,18-35,2,corn,0.5,20,3,450,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.52,38.58
+TAITA TAVETA,fmr_140,Primary,Male,18-35,1,corn,2,100,4,450,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,SMS text,English,-3.49,38.59
+TAITA TAVETA,fmr_182,Primary,Male,18-35,5,corn,1.5,25,4,450,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.51,38.58
+TAITA TAVETA,fmr_226,Primary,Female,18-35,4,corn,1,30,3,450,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Kiswahili,-3.51,38.63
+TAITA TAVETA,fmr_275,Primary,Female,18-35,4,corn,2,50,2,450,Manual,Rain,Family,No,No,Extension services,Private Provider,SMS text,Kiswahili,-3.41,38.37
+TAITA TAVETA,fmr_278,Primary,Female,18-35,5,corn,2,100,5,450,Manual,Rain,Family,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.51,38.58
+TAITA TAVETA,fmr_286,Primary,Male,18-35,4,corn,0.5,20,3,450,Manual,Rain,Family,No,No,Radio,County Government,SMS text,Kiswahili,-3.55,38.59
+TAITA TAVETA,fmr_295,Primary,Male,18-35,6,corn,0.25,20,3,450,Manual,Rain,Family,No,Yes,Public gatherings,County Government,SMS text,Kiswahili,-3.39,38.41
+TAITA TAVETA,fmr_296,Primary,Male,18-35,6,corn,0.5,200,5,450,Manual,Rain,Family,No,No,Extension services,County Government,SMS text,Kiswahili,-3.39,38.41
+TAITA TAVETA,fmr_325,Primary,Female,18-35,6,corn,1,50,2,450,Manual,Rain,Family,No,Yes,Radio,County Government,Phone Calls,Kiswahili,-3.55,38.58
+TAITA TAVETA,fmr_377,Primary,Female,18-35,5,corn,,25,3,450,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.3,38.29
+TAITA TAVETA,fmr_401,Primary,Male,18-35,6,corn,1,60,5,450,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.25,38.33
+TAITA TAVETA,fmr_288,Primary,Male,18-35,4,corn,1.5,40,2,440,Manual,Rain,Family,No,Yes,Public gatherings,National Government,Phone Calls,Kiswahili,-3.37,38.33
+TAITA TAVETA,fmr_133,Primary,Female,18-35,2,corn,2,40,4,400,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.41,38.37
+TAITA TAVETA,fmr_378,Primary,Female,18-35,5,corn,1,50,3,400,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.31,38.27
+TAITA TAVETA,fmr_12,Primary,Female,18-35,5,corn,1,30,4,360,Manual,Rain,Credit groups,No,Yes,Extension services,Private Provider,Phone Calls,Vernacular,-3.47,38.34
+TAITA TAVETA,fmr_19,Primary,Male,36-45,3,corn,,100,2,360,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.48,38.35
+TAITA TAVETA,fmr_59,Primary,Female,18-35,4,corn,0.25,40,2,360,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.33,38.36
+TAITA TAVETA,fmr_83,Primary,Female,36-45,4,corn,,150,2,360,Manual,Rain,Credit groups,No,Yes,Radio,National Government,Phone Calls,Kiswahili,-3.46,38.33
+TAITA TAVETA,fmr_125,Primary,Female,36-45,4,corn,0.5,100,4,360,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,Phone Calls,Kiswahili,-3.37,38.34
+TAITA TAVETA,fmr_134,Primary,Female,18-35,2,corn,1,20,2,360,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.41,38.37
+TAITA TAVETA,fmr_136,Primary,Female,18-35,2,corn,1,50,2,360,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.35,38.36
+TAITA TAVETA,fmr_137,Primary,Female,36-45,5,corn,0.75,100,2,360,Manual,Rain,Credit groups,No,No,Radio,KALRO,Phone Calls,Kiswahili,-3.34,38.36
+TAITA TAVETA,fmr_152,Primary,Male,18-35,1,corn,2,50,4,360,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,SMS text,English,-3.5,38.36
+TAITA TAVETA,fmr_183,Primary,Male,18-35,5,corn,,20,2,360,Manual,Rain,Credit groups,No,Yes,Extension services,National Government,SMS text,English,-3.41,38.37
+TAITA TAVETA,fmr_184,Primary,Male,18-35,5,corn,1.5,25,2,360,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.4,38.34
+TAITA TAVETA,fmr_220,Primary,Female,36-45,6,corn,0.5,220,3,360,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.39,38.37
+TAITA TAVETA,fmr_238,Primary,Female,18-35,4,corn,0.5,20,4,360,Manual,Rain,Credit groups,No,Yes,Public gatherings,National Government,Phone Calls,Kiswahili,-3.38,38.37
+TAITA TAVETA,fmr_250,Primary,Female,18-35,4,corn,0.5,30,2,360,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Kiswahili,-3.44,38.34
+TAITA TAVETA,fmr_251,Primary,Female,36-45,5,corn,1,100,2,360,Manual,Rain,Credit groups,No,Yes,Internet,Private Provider,Phone Calls,English,-3.39,38.41
+TAITA TAVETA,fmr_271,Primary,Female,36-45,4,corn,0.25,150,3,360,Manual,Rain,Family,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.34,38.38
+TAITA TAVETA,fmr_280,Primary,Female,18-35,5,corn,1,50,3,360,Manual,Rain,Family,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.46,38.34
+TAITA TAVETA,fmr_287,Primary,Female,18-35,4,corn,,50,3,360,Manual,Rain,Family,No,No,Extension services,Private Provider,SMS text,Kiswahili,-3.51,38.58
+TAITA TAVETA,fmr_289,Primary,Male,18-35,4,corn,1,20,2,360,Manual,Rain,Family,No,No,Radio,County Government,SMS text,Kiswahili,-3.36,38.33
+TAITA TAVETA,fmr_291,Primary,Male,18-35,4,corn,1,50,2,360,Manual,Rain,Family,No,Yes,Public gatherings,National Government,Phone Calls,Kiswahili,-3.4,38.34
+TAITA TAVETA,fmr_297,Primary,Male,18-35,6,corn,1,20,5,360,Manual,Rain,Family,No,Yes,Public gatherings,County Government,SMS text,Kiswahili,-3.5,38.58
+TAITA TAVETA,fmr_298,Primary,Male,18-35,6,corn,1,50,5,360,Manual,Rain,Family,No,No,Extension services,County Government,SMS text,Kiswahili,-3.41,38.37
+TAITA TAVETA,fmr_326,Primary,Female,18-35,6,corn,1,50,3,360,Manual,Rain,Family,No,Yes,Radio,County Government,Phone Calls,Kiswahili,-3.41,38.37
+TAITA TAVETA,fmr_367,Primary,Female,36-45,5,corn,2.5,150,2,360,Manual,Rain,Credit groups,No,Yes,Public gatherings,Private Provider,Phone Calls,Vernacular,-3.39,38.39
+TAITA TAVETA,fmr_380,Primary,Female,18-35,5,corn,1,25,2,360,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.32,38.33
+TAITA TAVETA,fmr_381,Primary,Female,18-35,5,corn,,70,2,360,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.3,38.29
+TAITA TAVETA,fmr_407,Primary,Female,36-45,3,corn,1.5,150,2,360,Manual,Rain,Credit groups,No,Yes,Public gatherings,Private Provider,Phone Calls,Vernacular,-3.35,38.42
+TAITA TAVETA,fmr_412,Primary,Male,18-35,6,corn,1,50,5,360,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.49,38.4
+TAITA TAVETA,fmr_28,Primary,Female,36-45,2,corn,2,50,4,330,Manual,Rain,Credit groups,No,No,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.36,38.35
+TAITA TAVETA,fmr_40,Primary,Female,36-45,5,corn,1.5,100,2,330,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.39,38.32
+TAITA TAVETA,fmr_156,Primary,Female,36-45,3,corn,1.5,100,2,330,Manual,Rain,Credit groups,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.47,38.58
+TAITA TAVETA,fmr_267,Primary,Male,36-45,3,corn,2,100,2,330,Manual,Rain,Family,No,Yes,Radio,County Government,Phone Calls,Kiswahili,-3.5,38.4
+TAITA TAVETA,fmr_387,Primary,Female,36-45,3,corn,2,100,2,330,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.31,38.29
+TAITA TAVETA,fmr_414,Primary,Female,36-45,3,corn,2,50,4,330,Manual,Rain,Credit groups,No,Yes,Television,County Government,Phone Calls,Kiswahili,-3.34,38.38
+TAITA TAVETA,fmr_126,Primary,Female,36-45,4,corn,1,300,2,300,Manual,Rain,Credit groups,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.36,38.34
+TAITA TAVETA,fmr_20,Primary,Male,36-45,3,corn,0.5,20,4,270,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.36,38.33
+TAITA TAVETA,fmr_21,Primary,Male,36-45,3,corn,0.75,50,3,270,Manual,Rain,Credit groups,No,No,Public gatherings,National Government,SMS text,Kiswahili,-3.38,38.33
+TAITA TAVETA,fmr_30,Primary,Female,36-45,2,corn,0.75,25,4,270,Manual,Rain,Credit groups,No,No,Television,County Government,Phone Calls,English,-3.39,38.33
+TAITA TAVETA,fmr_31,Primary,Female,36-45,2,corn,0.25,100,3,270,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Kiswahili,-3.38,38.33
+TAITA TAVETA,fmr_42,Primary,Female,36-45,5,corn,1,50,5,270,Manual,Rain,Credit groups,No,No,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.41,38.33
+TAITA TAVETA,fmr_84,Primary,Female,36-45,4,corn,1,20,3,270,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.55,38.58
+TAITA TAVETA,fmr_85,Primary,Female,36-45,4,corn,2,50,2,270,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.5,38.35
+TAITA TAVETA,fmr_128,Primary,Female,36-45,4,corn,0.3,50,3,270,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.41,38.36
+TAITA TAVETA,fmr_138,Primary,Female,36-45,5,corn,,20,4,270,Manual,Rain,Credit groups,No,No,Public gatherings,National Government,Phone Calls,Kiswahili,-3.36,38.37
+TAITA TAVETA,fmr_141,Primary,Female,36-45,5,corn,1.5,50,2,270,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Kiswahili,-3.36,38.36
+TAITA TAVETA,fmr_158,Primary,Female,36-45,3,corn,1,25,2,270,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.38,38.32
+TAITA TAVETA,fmr_159,Primary,Female,36-45,3,corn,,100,2,270,Manual,Rain,Credit groups,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.51,38.58
+TAITA TAVETA,fmr_221,Primary,Female,36-45,6,corn,1,25,2,270,Manual,Rain,Credit groups,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.37,38.35
+TAITA TAVETA,fmr_222,Primary,Female,36-45,6,corn,0.75,50,2,270,Manual,Rain,Credit groups,No,Yes,Extension services,Private Provider,Phone Calls,Kiswahili,-3.39,38.35
+TAITA TAVETA,fmr_252,Primary,Female,36-45,5,corn,0.25,20,2,270,Manual,Rain,Family,No,No,Radio,County Government,SMS text,Kiswahili,-3.38,38.36
+TAITA TAVETA,fmr_253,Primary,Female,36-45,5,corn,0.25,50,2,270,Manual,Rain,Family,No,No,Public gatherings,National Government,Phone Calls,Kiswahili,-3.51,38.61
+TAITA TAVETA,fmr_269,Primary,Male,36-45,3,corn,1,30,2,270,Manual,Rain,Family,No,Yes,Public gatherings,National Government,Phone Calls,Kiswahili,-3.35,38.36
+TAITA TAVETA,fmr_272,Primary,Female,36-45,4,corn,2.5,20,4,270,Manual,Rain,Family,No,No,Radio,Private Provider,Phone Calls,Vernacular,-3.38,38.34
+TAITA TAVETA,fmr_273,Primary,Female,36-45,4,corn,0.25,50,2,270,Manual,Rain,Family,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.39,38.41
+TAITA TAVETA,fmr_369,Primary,Female,36-45,5,corn,1,20,2,270,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.28,38.3
+TAITA TAVETA,fmr_370,Primary,Female,36-45,5,corn,0.25,50,3,270,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.3,38.33
+TAITA TAVETA,fmr_389,Primary,Female,36-45,3,corn,,30,2,270,Manual,Rain,Credit groups,No,Yes,Internet,Private Provider,Phone Calls,English,-3.51,38.58
+TAITA TAVETA,fmr_408,Primary,Female,36-45,3,corn,1,25,2,270,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.35,38.31
+TAITA TAVETA,fmr_409,Primary,Female,36-45,3,corn,,50,2,270,Manual,Rain,Credit groups,No,Yes,Radio,County Government,SMS text,Kiswahili,-3.39,38.37
+TAITA TAVETA,fmr_415,Primary,Female,36-45,3,corn,1.5,25,2,270,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.42,38.38
+TAITA TAVETA,fmr_416,Primary,Female,36-45,3,corn,,100,2,270,Manual,Rain,Credit groups,No,Yes,Public gatherings,County Government,SMS text,Vernacular,-3.42,38.38
+TAITA TAVETA,fmr_22,Primary,Male,36-45,3,corn,0.5,30,3,250,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.38,38.33
+TAITA TAVETA,fmr_86,Primary,Female,36-45,4,corn,,50,3,250,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.42,38.34
+TAITA TAVETA,fmr_129,Primary,Female,36-45,4,corn,1,25,2,250,Manual,Rain,Credit groups,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.46,38.36
+TAITA TAVETA,fmr_142,Primary,Female,36-45,5,corn,0.25,40,2,250,Manual,Rain,Credit groups,No,No,Public gatherings,National Government,Phone Calls,Kiswahili,-3.32,38.37
+TAITA TAVETA,fmr_254,Primary,Female,36-45,5,corn,0.5,30,2,250,Manual,Rain,Family,No,No,Radio,County Government,SMS text,Kiswahili,-3.55,38.58
+TAITA TAVETA,fmr_274,Primary,Female,36-45,4,corn,1,100,2,250,Manual,Rain,Family,No,No,Radio,Private Provider,Phone Calls,Vernacular,-3.35,38.35
+TAITA TAVETA,fmr_371,Primary,Female,36-45,5,corn,1,50,3,250,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.3,38.28
+TAITA TAVETA,fmr_410,Primary,Female,36-45,3,corn,,50,2,240,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.34,38.38
+TAITA TAVETA,fmr_225,Primary,Female,36-45,6,corn,1,100,2,220,Manual,Rain,Credit groups,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.41,38.36
+TAITA TAVETA,fmr_32,Primary,Female,36-45,2,corn,0.5,25,5,200,Manual,Rain,Credit groups,No,No,Television,County Government,Phone Calls,English,-3.36,38.35
+TAITA TAVETA,fmr_43,Primary,Female,36-45,5,corn,1,80,3,200,Manual,Rain,Credit groups,No,No,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.41,38.33
+TAITA TAVETA,fmr_160,Primary,Female,36-45,3,corn,0.5,25,4,200,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.36,38.34
+TAITA TAVETA,fmr_270,Primary,Male,36-45,3,corn,1,40,4,200,Manual,Rain,Family,No,Yes,Public gatherings,National Government,Phone Calls,Kiswahili,-3.39,38.41
+TAITA TAVETA,fmr_391,Primary,Female,36-45,3,corn,1,30,3,200,Manual,Rain,Credit groups,No,Yes,Internet,Private Provider,Phone Calls,English,-3.47,38.58
+TAITA TAVETA,fmr_417,Primary,Female,36-45,3,corn,1,20,3,200,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.34,38.38
+TAITA TAVETA,fmr_3,Primary,Female,46-55,3,corn,0.5,50,2,180,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,SMS text,English,-3.34,38.38
+TAITA TAVETA,fmr_5,Primary,Female,46-55,3,corn,0.5,200,2,180,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.42,38.35
+TAITA TAVETA,fmr_14,Primary,Female,46-55,4,corn,0.5,50,3,180,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.38,38.33
+TAITA TAVETA,fmr_15,Primary,Female,46-55,4,corn,,350,5,180,Manual,Rain,Credit groups,No,Yes,Extension services,Private Provider,Phone Calls,Vernacular,-3.42,38.36
+TAITA TAVETA,fmr_23,Primary,Male,36-45,3,corn,0.5,20,3,180,Manual,Rain,Credit groups,No,No,Public gatherings,National Government,SMS text,Kiswahili,-3.37,38.33
+TAITA TAVETA,fmr_33,Primary,Female,36-45,2,corn,0.5,25,5,180,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Kiswahili,-3.37,38.32
+TAITA TAVETA,fmr_44,Primary,Male,46-55,1,corn,0.25,50,3,180,Manual,Rain,Credit groups,No,No,Extension services,Private Provider,Phone Calls,Kiswahili,-3.45,38.39
+TAITA TAVETA,fmr_45,Primary,Male,46-55,1,corn,,200,2,180,Manual,Rain,Credit groups,No,Yes,Public gatherings,Private Provider,Phone Calls,English,-3.37,38.33
+TAITA TAVETA,fmr_60,Primary,Male,46-55,5,corn,0.5,40,4,180,Manual,Rain,Credit groups,No,Yes,Public gatherings,County Government,Phone Calls,Kiswahili,-3.5,38.59
+TAITA TAVETA,fmr_61,Primary,Male,46-55,5,corn,0.5,150,2,180,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.51,38.58
+TAITA TAVETA,fmr_64,Primary,Female,46-55,6,corn,1,25,2,180,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.45,38.37
+TAITA TAVETA,fmr_87,Primary,Female,36-45,4,corn,0.25,20,3,180,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.48,38.34
+TAITA TAVETA,fmr_95,Primary,Female,46-55,6,corn,1,50,3,180,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.34,38.38
+TAITA TAVETA,fmr_96,Primary,Female,46-55,6,corn,0.5,200,3,180,Manual,Rain,Credit groups,No,No,Radio,National Government,Phone Calls,Kiswahili,-3.38,38.39
+TAITA TAVETA,fmr_130,Primary,Female,36-45,4,corn,1,20,3,180,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.41,38.37
+TAITA TAVETA,fmr_143,Primary,Female,36-45,5,corn,1,20,2,180,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Kiswahili,-3.55,38.58
+TAITA TAVETA,fmr_149,Primary,Female,46-55,4,corn,0.5,40,2,180,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.41,38.37
+TAITA TAVETA,fmr_150,Primary,Female,46-55,4,corn,,150,6,180,Manual,Rain,Credit groups,No,Yes,Radio,County Government,SMS text,Kiswahili,-3.34,38.34
+TAITA TAVETA,fmr_161,Primary,Female,36-45,3,corn,1,25,2,180,Manual,Rain,Credit groups,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.45,38.34
+TAITA TAVETA,fmr_173,Primary,Female,46-55,4,corn,1,50,3,180,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.47,38.35
+TAITA TAVETA,fmr_174,Primary,Female,46-55,4,corn,0.5,250,5,180,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.34,38.39
+TAITA TAVETA,fmr_195,Primary,Female,46-55,5,corn,0.5,90,2,180,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.49,38.59
+TAITA TAVETA,fmr_227,Primary,Female,36-45,6,corn,0.5,20,2,180,Manual,Rain,Credit groups,No,Yes,Extension services,Private Provider,Phone Calls,Kiswahili,-3.55,38.59
+TAITA TAVETA,fmr_247,Primary,Female,46-55,4,corn,0.5,40,3,180,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Vernacular,-3.54,38.58
+TAITA TAVETA,fmr_248,Primary,Female,46-55,4,corn,1.5,150,2,180,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,English,-3.47,38.58
+TAITA TAVETA,fmr_255,Primary,Female,36-45,5,corn,1,20,3,180,Manual,Rain,Family,No,No,Public gatherings,National Government,Phone Calls,Kiswahili,-3.33,38.39
+TAITA TAVETA,fmr_256,Primary,Female,46-55,6,corn,,25,4,180,Manual,Rain,Family,No,No,Television,County Government,Phone Calls,English,-3.39,38.33
+TAITA TAVETA,fmr_261,Primary,Male,46-55,3,corn,0.5,30,2,180,Manual,Rain,Family,No,No,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.46,38.4
+TAITA TAVETA,fmr_264,Primary,Male,46-55,3,corn,0.25,100,3,180,Manual,Rain,Family,No,No,Radio,KALRO,SMS text,Kiswahili,-3.55,38.58
+TAITA TAVETA,fmr_276,Primary,Female,36-45,4,corn,0.5,20,4,180,Manual,Rain,Family,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.47,38.58
+TAITA TAVETA,fmr_310,Primary,Female,46-55,2,corn,0.5,50,5,180,Manual,Rain,Family,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.52,38.61
+TAITA TAVETA,fmr_312,Primary,Female,46-55,2,corn,0.25,50,2,180,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.29,38.35
+TAITA TAVETA,fmr_323,Primary,Female,46-55,2,corn,1,500,2,180,Manual,Rain,Credit groups,No,No,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.3,38.36
+TAITA TAVETA,fmr_372,Primary,Female,36-45,5,corn,1,20,2,180,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.36,38.4
+TAITA TAVETA,fmr_411,Primary,Female,36-45,3,corn,0.25,20,2,180,Manual,Rain,Credit groups,No,Yes,Radio,County Government,SMS text,Kiswahili,-3.34,38.38
+TAITA TAVETA,fmr_418,Primary,Female,36-45,3,corn,0.25,23,2,180,Manual,Rain,Credit groups,No,Yes,Public gatherings,County Government,SMS text,Vernacular,-3.46,38.35
+TAITA TAVETA,fmr_419,Primary,Female,46-55,2,corn,0.25,50,3,180,Manual,Rain,Credit groups,No,No,Public gatherings,National Government,Phone Calls,Kiswahili,-3.42,38.38
+TAITA TAVETA,fmr_313,Primary,Female,46-55,2,corn,1,25,3,160,Manual,Rain,Family,No,No,Extension services,County Government,SMS text,English,-3.45,38.39
+TAITA TAVETA,fmr_420,Primary,Female,46-55,2,corn,0.5,20,3,160,Manual,Rain,Credit groups,No,Yes,Radio,County Government,SMS text,English,-3.4,38.37
+TAITA TAVETA,fmr_62,Primary,Male,46-55,5,corn,,50,3,150,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.49,38.59
+TAITA TAVETA,fmr_66,Primary,Female,46-55,6,corn,0.5,75,2,150,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.58,38.32
+TAITA TAVETA,fmr_151,Primary,Female,46-55,4,corn,,50,2,150,Manual,Rain,Credit groups,No,Yes,Public gatherings,County Government,SMS text,Kiswahili,-3.5,38.57
+TAITA TAVETA,fmr_196,Primary,Female,46-55,5,corn,0.75,20,2,150,Manual,Rain,Credit groups,No,No,Television,County Government,Phone Calls,English,-3.35,38.38
+TAITA TAVETA,fmr_258,Primary,Female,46-55,6,corn,,100,2,150,Manual,Rain,Family,No,No,Television,County Government,Phone Calls,English,-3.55,38.58
+TAITA TAVETA,fmr_265,Primary,Male,46-55,3,corn,0.25,40,4,150,Manual,Rain,Family,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.37,38.34
+TAITA TAVETA,fmr_266,Primary,Male,46-55,3,corn,,150,2,150,Manual,Rain,Family,No,No,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.37,38.33
+TAITA TAVETA,fmr_63,Primary,Male,46-55,5,corn,0.25,200,2,135,Manual,Rain,Credit groups,No,Yes,Public gatherings,County Government,Phone Calls,Kiswahili,-3.34,38.34
+TAITA TAVETA,fmr_153,Primary,Female,46-55,4,corn,0.25,40,3,135,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.36,38.33
+TAITA TAVETA,fmr_249,Primary,Female,46-55,4,corn,,300,2,135,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Vernacular,-3.34,38.36
+TAITA TAVETA,fmr_47,Primary,Male,46-55,1,corn,,100,5,126,Manual,Rain,Credit groups,No,No,Extension services,Private Provider,Phone Calls,Kiswahili,-3.41,38.37
+TAITA TAVETA,fmr_6,Primary,Female,46-55,3,corn,0.5,40,4,115,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,SMS text,English,-3.42,38.35
+TAITA TAVETA,fmr_18,Primary,Female,46-55,4,corn,,50,6,110,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.42,38.35
+TAITA TAVETA,fmr_175,Primary,Female,46-55,4,corn,1.5,50,3,110,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.38,38.4
+TAITA TAVETA,fmr_2,Primary,Male,56-65,6,corn,0.5,40,5,100,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.5,38.39
+TAITA TAVETA,fmr_13,Primary,Male,56-65,6,corn,0.25,150,4,100,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.51,38.38
+TAITA TAVETA,fmr_17,Primary,Female,56-65,3,corn,0.25,100,2,100,Manual,Rain,Credit groups,No,No,Radio,KALRO,SMS text,Kiswahili,-3.42,38.37
+TAITA TAVETA,fmr_73,Primary,Female,56-65,1,corn,0.25,30,3,100,Manual,Rain,Credit groups,No,Yes,Radio,County Government,SMS text,Kiswahili,-3.52,38.58
+TAITA TAVETA,fmr_76,Primary,Female,56-65,8,corn,0.25,50,2,100,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.42,38.37
+TAITA TAVETA,fmr_78,Primary,Female,56-65,8,corn,0.5,200,2,100,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Vernacular,-3.33,38.31
+TAITA TAVETA,fmr_88,Primary,Female,56-65,5,corn,0.25,75,3,100,Manual,Rain,Credit groups,No,No,Public gatherings,National Government,Phone Calls,Kiswahili,-3.38,38.35
+TAITA TAVETA,fmr_204,Primary,Female,56-65,3,corn,0.25,30,3,100,Manual,Rain,Credit groups,No,Yes,Public gatherings,Private Provider,Phone Calls,English,-3.5,38.59
+TAITA TAVETA,fmr_205,Primary,Female,56-65,3,corn,1,100,3,100,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Kiswahili,-3.32,38.36
+TAITA TAVETA,fmr_241,Primary,Female,56-65,3,corn,,100,2,100,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.55,38.58
+TAITA TAVETA,fmr_281,Primary,Male,56-65,3,corn,0.25,70,2,100,Manual,Rain,Family,No,No,Radio,County Government,SMS text,Kiswahili,-3.39,38.35
+TAITA TAVETA,fmr_314,Primary,Female,46-55,2,corn,0.75,20,4,100,Manual,Rain,Family,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.37,38.33
+TAITA TAVETA,fmr_335,Primary,Female,46-55,2,corn,0.5,20,3,100,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.29,38.36
+TAITA TAVETA,fmr_355,Primary,Female,56-65,5,corn,0.5,50,2,100,Manual,Rain,Savings,No,No,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.48,38.58
+TAITA TAVETA,fmr_356,Primary,Female,56-65,5,corn,,250,2,100,Manual,Rain,Savings,No,Yes,Television,County Government,Phone Calls,Kiswahili,-3.48,38.58
+TAITA TAVETA,fmr_388,Primary,Male,56-65,2,corn,1,100,2,100,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.5,38.58
+TAITA TAVETA,fmr_421,Primary,Female,46-55,2,corn,0.5,20,3,100,Manual,Rain,Credit groups,No,No,Public gatherings,National Government,Phone Calls,Kiswahili,-3.4,38.38
+TAITA TAVETA,fmr_282,Primary,Male,56-65,3,corn,0.5,50,6,95,Manual,Rain,Family,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.56,38.58
+TAITA TAVETA,fmr_7,Primary,Female,above 65,6,corn,0.25,25,3,90,Manual,Rain,Credit groups,No,Yes,Internet,Private Provider,Phone Calls,English,-3.42,38.35
+TAITA TAVETA,fmr_8,Primary,Female,above 65,6,corn,1,40,4,90,Manual,Rain,Credit groups,No,Yes,Internet,Private Provider,Phone Calls,English,-3.38,38.35
+TAITA TAVETA,fmr_24,Primary,Male,56-65,6,corn,0.5,20,3,90,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.27,38.33
+TAITA TAVETA,fmr_29,Primary,Female,56-65,3,corn,,20,2,90,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.38,38.33
+TAITA TAVETA,fmr_46,Primary,Male,56-65,6,corn,0.25,100,3,90,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.27,38.33
+TAITA TAVETA,fmr_74,Primary,Female,56-65,1,corn,0.75,50,3,90,Manual,Rain,Credit groups,No,Yes,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.51,38.58
+TAITA TAVETA,fmr_80,Primary,Female,56-65,8,corn,0.25,250,3,90,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.41,38.37
+TAITA TAVETA,fmr_91,Primary,Female,56-65,5,corn,0.25,20,2,90,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.47,38.35
+TAITA TAVETA,fmr_115,Primary,Female,above 65,5,corn,2,35,3,90,Manual,Rain,Credit groups,No,Yes,Radio,County Government,SMS text,Kiswahili,-3.37,38.36
+TAITA TAVETA,fmr_162,Primary,Female,above 65,4,corn,0.25,30,4,90,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Vernacular,-3.48,38.41
+TAITA TAVETA,fmr_192,Primary,Male,above 65,2,corn,0.3,40,4,90,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.41,38.33
+TAITA TAVETA,fmr_193,Primary,Female,above 65,7,corn,0.5,25,2,90,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Vernacular,-3.38,38.4
+TAITA TAVETA,fmr_194,Primary,Female,above 65,7,corn,0.5,50,3,90,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Vernacular,-3.38,38.4
+TAITA TAVETA,fmr_206,Primary,Female,56-65,3,corn,,20,3,90,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.39,38.37
+TAITA TAVETA,fmr_207,Primary,Female,56-65,3,corn,,70,3,90,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,SMS text,English,-3.34,38.36
+TAITA TAVETA,fmr_218,Primary,Female,above 65,7,corn,,25,3,90,Manual,Rain,Credit groups,No,Yes,Public gatherings,National Government,Phone Calls,Kiswahili,-3.48,38.58
+TAITA TAVETA,fmr_242,Primary,Female,56-65,3,corn,0.25,20,2,90,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Vernacular,-3.5,38.59
+TAITA TAVETA,fmr_308,Primary,Female,above 65,2,corn,0.25,25,3,90,Manual,Rain,Family,No,No,Radio,Private Provider,Phone Calls,English,-3.33,38.31
+TAITA TAVETA,fmr_315,Primary,Female,46-55,2,corn,,50,2,90,Manual,Rain,Family,No,No,Extension services,County Government,SMS text,English,-3.51,38.59
+TAITA TAVETA,fmr_320,Primary,Male,above 65,5,corn,0.3,20,3,90,Manual,Rain,Family,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.51,38.39
+TAITA TAVETA,fmr_346,Primary,Female,above 65,4,corn,0.25,30,3,90,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,SMS text,Kiswahili,-3.27,38.3
+TAITA TAVETA,fmr_363,Primary,Female,above 65,4,corn,,25,3,90,Manual,Rain,Credit groups,No,No,Radio,National Government,Phone Calls,Kiswahili,-3.27,38.3
+TAITA TAVETA,fmr_365,Primary,Female,above 65,4,corn,,40,3,90,Manual,Rain,Credit groups,No,No,Radio,National Government,Phone Calls,Kiswahili,-3.51,38.29
+TAITA TAVETA,fmr_400,Primary,Male,56-65,2,corn,0.25,20,2,90,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.37,38.42
+TAITA TAVETA,fmr_422,Primary,Female,46-55,2,corn,0.5,50,4,90,Manual,Rain,Credit groups,No,No,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.42,38.36
+TAITA TAVETA,fmr_41,Primary,Female,56-65,3,corn,0.25,40,3,80,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Kiswahili,-3.41,38.3
+TAITA TAVETA,fmr_92,Primary,Female,56-65,5,corn,0.5,35,2,80,Manual,Rain,Credit groups,No,Yes,Public gatherings,National Government,Phone Calls,Kiswahili,-3.41,38.37
+TAITA TAVETA,fmr_243,Primary,Female,56-65,3,corn,1,37,2,80,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.64,38.37
+TAITA TAVETA,fmr_283,Primary,Male,56-65,3,corn,0.5,30,2,80,Manual,Rain,Family,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.37,38.34
+TAITA TAVETA,fmr_358,Primary,Female,56-65,5,corn,0.25,25,3,80,Manual,Rain,Savings,No,No,Public gatherings,KALRO,SMS text,English,-3.39,38.38
+TAITA TAVETA,fmr_413,Primary,Male,56-65,2,corn,,50,3,80,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.34,38.38
+TAITA TAVETA,fmr_208,Primary,Female,56-65,3,corn,,90,2,78,Manual,Rain,Credit groups,No,Yes,Public gatherings,KALRO,SMS text,Kiswahili,-3.55,38.58
+TAITA TAVETA,fmr_57,Primary,Male,56-65,6,corn,0.5,100,2,75,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.49,38.41
+TAITA TAVETA,fmr_81,Primary,Female,56-65,8,corn,,25,3,70,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,English,-3.36,38.35
+TAITA TAVETA,fmr_359,Primary,Female,56-65,5,corn,1.5,50,2,70,Manual,Rain,Savings,No,No,Television,County Government,Phone Calls,English,-3.49,38.41
+TAITA TAVETA,fmr_93,Primary,Female,56-65,5,corn,1,25,3,60,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.63,38.37
+TAITA TAVETA,fmr_244,Primary,Female,56-65,3,corn,0.5,100,3,60,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.58,38.32
+TAITA TAVETA,fmr_284,Primary,Male,56-65,3,corn,0.5,25,4,60,Manual,Rain,Family,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.4,38.37
+TAITA TAVETA,fmr_4,Primary,Male,56-65,2,corn,0.5,20,2,50,Manual,Rain,Credit groups,No,No,Public gatherings,National Government,Phone Calls,Kiswahili,-3.4,38.36
+TAITA TAVETA,fmr_9,Primary,Female,above 65,6,corn,0.5,30,2,50,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Vernacular,-3.39,38.35
+TAITA TAVETA,fmr_53,Primary,Female,56-65,3,corn,0.5,20,2,50,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Kiswahili,-3.47,38.4
+TAITA TAVETA,fmr_68,Primary,Male,56-65,6,corn,0.5,20,3,50,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.46,38.4
+TAITA TAVETA,fmr_75,Primary,Female,56-65,1,corn,,40,3,50,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.38,38.4
+TAITA TAVETA,fmr_79,Primary,Male,56-65,6,corn,0.3,50,5,50,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.49,38.4
+TAITA TAVETA,fmr_82,Primary,Female,56-65,8,corn,,50,2,50,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.35,38.34
+TAITA TAVETA,fmr_94,Primary,Female,56-65,5,corn,0.25,75,2,50,Manual,Rain,Credit groups,No,Yes,Public gatherings,National Government,Phone Calls,Kiswahili,-3.41,38.36
+TAITA TAVETA,fmr_209,Primary,Female,56-65,3,corn,0.5,20,2,50,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.42,38.39
+TAITA TAVETA,fmr_210,Primary,Female,56-65,3,corn,,40,2,50,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.34,38.39
+TAITA TAVETA,fmr_219,Primary,Female,above 65,7,corn,0.25,24,3,50,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.51,38.58
+TAITA TAVETA,fmr_245,Primary,Female,56-65,3,corn,,90,6,50,Manual,Rain,Credit groups,No,No,Internet,County Government,Phone Calls,English,-3.37,38.33
+TAITA TAVETA,fmr_285,Primary,Male,56-65,3,corn,0.3,50,3,50,Manual,Rain,Family,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.56,38.59
+TAITA TAVETA,fmr_321,Primary,Male,above 65,5,corn,0.5,20,3,50,Manual,Rain,Family,No,No,Public gatherings,County Government,SMS text,Kiswahili,-3.47,38.58
+TAITA TAVETA,fmr_360,Primary,Female,56-65,5,corn,,50,3,50,Manual,Rain,Savings,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.34,38.37
+TAITA TAVETA,fmr_366,Primary,Female,above 65,4,corn,0.5,25,2,50,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Vernacular,-3.45,38.4
+TAITA TAVETA,fmr_67,Secondary,Male,46-55,1,corn,4,300,8,600,Manual,Rain,Savings,No,No,Radio,County Government,SMS text,Kiswahili,-3.62,38.31
+TAITA TAVETA,fmr_116,Secondary,Female,18-35,5,corn,2,150,2,550,Manual,Rain,Credit groups,No,No,Extension services,National Government,SMS text,Vernacular,-3.33,38.38
+TAITA TAVETA,fmr_223,Secondary,Male,18-35,2,corn,2,150,2,550,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.51,38.38
+TAITA TAVETA,fmr_170,Secondary,Female,18-35,4,corn,3,60,2,540,Manual,Rain,Credit groups,No,Yes,Radio,County Government,SMS text,English,-3.55,38.58
+TAITA TAVETA,fmr_351,Secondary,Male,18-35,8,corn,0.5,20,3,540,Manual,Rain,Savings,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.34,38.35
+TAITA TAVETA,fmr_177,Secondary,Male,18-35,4,corn,0.25,20,2,500,Manual,Rain,Credit groups,No,Yes,Radio,Private Provider,Phone Calls,Vernacular,-3.36,38.33
+TAITA TAVETA,fmr_300,Secondary,Female,18-35,6,corn,1,30,3,500,Manual,Rain,Family,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.56,38.6
+TAITA TAVETA,fmr_69,Secondary,Male,18-35,1,corn,0.5,20,3,450,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.5,38.36
+TAITA TAVETA,fmr_104,Secondary,Female,18-35,6,corn,0.75,200,3,450,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.53,38.56
+TAITA TAVETA,fmr_117,Secondary,Female,18-35,5,corn,0.5,25,2,450,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.39,38.37
+TAITA TAVETA,fmr_171,Secondary,Female,18-35,4,corn,1.5,50,3,450,Manual,Rain,Credit groups,No,Yes,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.37,38.34
+TAITA TAVETA,fmr_178,Secondary,Male,18-35,4,corn,2,100,5,450,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.4,38.37
+TAITA TAVETA,fmr_302,Secondary,Female,18-35,6,corn,1,100,2,450,Manual,Rain,Family,No,No,Public gatherings,National Government,Phone Calls,Kiswahili,-3.31,38.4
+TAITA TAVETA,fmr_334,Secondary,Male,18-35,2,corn,0.5,25,4,450,Manual,Rain,Credit groups,No,No,Extension services,Private Provider,Phone Calls,Kiswahili,-3.5,38.38
+TAITA TAVETA,fmr_352,Secondary,Male,18-35,8,corn,1.5,25,3,450,Manual,Rain,Savings,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.35,38.34
+TAITA TAVETA,fmr_70,Secondary,Male,18-35,1,corn,0.3,20,3,400,Manual,Rain,Credit groups,No,Yes,Radio,Private Provider,Phone Calls,Vernacular,-3.29,38.41
+TAITA TAVETA,fmr_368,Secondary,Male,18-35,2,corn,0.3,50,2,400,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Vernacular,-3.46,38.42
+TAITA TAVETA,fmr_71,Secondary,Male,18-35,1,corn,1.5,20,4,360,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.36,38.34
+TAITA TAVETA,fmr_72,Secondary,Male,18-35,1,corn,1,50,3,360,Manual,Rain,Credit groups,No,Yes,Radio,Private Provider,Phone Calls,Vernacular,-3.42,38.37
+TAITA TAVETA,fmr_105,Secondary,Female,18-35,6,corn,0.75,50,4,360,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.51,38.58
+TAITA TAVETA,fmr_118,Secondary,Female,18-35,5,corn,1,20,2,360,Manual,Rain,Credit groups,No,No,Public gatherings,National Government,SMS text,Kiswahili,-3.34,38.39
+TAITA TAVETA,fmr_119,Secondary,Female,18-35,5,corn,,25,2,360,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.46,38.37
+TAITA TAVETA,fmr_172,Secondary,Female,18-35,4,corn,1.5,50,2,360,Manual,Rain,Credit groups,No,Yes,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.37,38.33
+TAITA TAVETA,fmr_180,Secondary,Male,18-35,4,corn,0.75,50,2,360,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.36,38.41
+TAITA TAVETA,fmr_197,Secondary,Female,36-45,5,corn,1,75,2,360,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.38,38.36
+TAITA TAVETA,fmr_228,Secondary,Female,36-45,6,corn,1,90,3,360,Manual,Rain,Credit groups,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.34,38.37
+TAITA TAVETA,fmr_303,Secondary,Female,18-35,6,corn,0.25,50,3,360,Manual,Rain,Family,No,No,Public gatherings,National Government,Phone Calls,Kiswahili,-3.36,38.37
+TAITA TAVETA,fmr_353,Secondary,Male,18-35,8,corn,,20,3,360,Manual,Rain,Savings,No,No,Extension services,County Government,SMS text,Kiswahili,-3.34,38.4
+TAITA TAVETA,fmr_354,Secondary,Male,18-35,8,corn,1,25,2,360,Manual,Rain,Savings,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.5,38.6
+TAITA TAVETA,fmr_379,Secondary,Male,18-35,2,corn,1,25,4,360,Manual,Rain,Credit groups,No,No,Extension services,Private Provider,Phone Calls,Kiswahili,-3.49,38.4
+TAITA TAVETA,fmr_382,Secondary,Female,36-45,5,corn,0.25,150,2,360,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.3,38.31
+TAITA TAVETA,fmr_1,Secondary,Male,36-45,3,corn,2,100,2,330,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.47,38.42
+TAITA TAVETA,fmr_113,Secondary,Female,36-45,6,corn,1.5,100,2,330,Manual,Rain,Credit groups,No,Yes,Public gatherings,National Government,Phone Calls,Kiswahili,-3.5,38.38
+TAITA TAVETA,fmr_120,Secondary,Female,36-45,3,corn,1.5,150,2,330,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.49,38.58
+TAITA TAVETA,fmr_144,Secondary,Female,36-45,3,corn,0.5,400,4,330,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.29,38.39
+TAITA TAVETA,fmr_185,Secondary,Female,36-45,6,corn,1.5,30,2,330,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.36,38.34
+TAITA TAVETA,fmr_341,Secondary,Male,36-45,3,corn,1,100,2,330,Manual,Rain,Savings,No,No,Television,County Government,Phone Calls,English,-3.47,38.59
+TAITA TAVETA,fmr_347,Secondary,Female,36-45,4,corn,1.5,100,2,330,Manual,Rain,Savings,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.47,38.59
+TAITA TAVETA,fmr_392,Secondary,Male,36-45,2,corn,,100,3,330,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.31,38.3
+TAITA TAVETA,fmr_198,Secondary,Female,36-45,5,corn,1,50,2,300,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.49,38.58
+TAITA TAVETA,fmr_229,Secondary,Female,36-45,6,corn,0.75,70,3,300,Manual,Rain,Credit groups,No,Yes,Public gatherings,National Government,Phone Calls,Kiswahili,-3.34,38.39
+TAITA TAVETA,fmr_304,Secondary,Male,36-45,9,corn,1.5,30,2,300,Manual,Rain,Family,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.41,38.37
+TAITA TAVETA,fmr_16,Secondary,Male,36-45,3,corn,0.5,30,3,270,Manual,Rain,Credit groups,No,No,Internet,County Government,Phone Calls,English,-3.32,38.38
+TAITA TAVETA,fmr_121,Secondary,Female,36-45,3,corn,0.5,50,2,270,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.5,38.36
+TAITA TAVETA,fmr_122,Secondary,Female,36-45,3,corn,0.5,120,2,270,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.55,38.58
+TAITA TAVETA,fmr_124,Secondary,Female,36-45,6,corn,0.25,50,5,270,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Vernacular,-3.25,38.3
+TAITA TAVETA,fmr_145,Secondary,Female,36-45,3,corn,0.75,50,3,270,Manual,Rain,Credit groups,No,No,Extension services,Private Provider,Phone Calls,Kiswahili,-3.37,38.35
+TAITA TAVETA,fmr_147,Secondary,Female,36-45,3,corn,,150,5,270,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.39,38.37
+TAITA TAVETA,fmr_186,Secondary,Female,36-45,6,corn,1,25,4,270,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.43,38.39
+TAITA TAVETA,fmr_187,Secondary,Female,36-45,6,corn,0.5,70,2,270,Manual,Rain,Credit groups,No,Yes,Radio,Private Provider,Phone Calls,Vernacular,-3.5,38.58
+TAITA TAVETA,fmr_199,Secondary,Female,36-45,5,corn,1,50,3,270,Manual,Rain,Credit groups,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.38,38.34
+TAITA TAVETA,fmr_202,Secondary,Female,36-45,5,corn,0.5,350,3,270,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.54,38.49
+TAITA TAVETA,fmr_230,Secondary,Female,36-45,6,corn,0.5,50,2,270,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.38,38.36
+TAITA TAVETA,fmr_305,Secondary,Male,36-45,9,corn,0.5,50,3,270,Manual,Rain,Family,No,No,Television,County Government,Phone Calls,English,-3.35,38.36
+TAITA TAVETA,fmr_306,Secondary,Male,36-45,9,corn,,200,5,270,Manual,Rain,Family,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.33,38.31
+TAITA TAVETA,fmr_342,Secondary,Male,36-45,3,corn,1,30,2,270,Manual,Rain,Savings,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.51,38.58
+TAITA TAVETA,fmr_348,Secondary,Female,36-45,4,corn,0.5,40,2,270,Manual,Rain,Savings,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.37,38.4
+TAITA TAVETA,fmr_383,Secondary,Female,36-45,5,corn,1,21,3,270,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.3,38.3
+TAITA TAVETA,fmr_384,Secondary,Female,36-45,5,corn,1,50,2,270,Manual,Rain,Credit groups,No,No,Radio,KALRO,SMS text,Kiswahili,-3.34,38.4
+TAITA TAVETA,fmr_393,Secondary,Male,36-45,2,corn,0.5,30,2,270,Manual,Rain,Credit groups,No,Yes,Internet,Private Provider,Phone Calls,English,-3.31,38.29
+TAITA TAVETA,fmr_231,Secondary,Female,36-45,6,corn,1,20,2,250,Manual,Rain,Credit groups,No,Yes,Public gatherings,National Government,Phone Calls,Kiswahili,-3.48,38.58
+TAITA TAVETA,fmr_385,Secondary,Female,36-45,5,corn,0.25,150,3,250,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.3,38.29
+TAITA TAVETA,fmr_123,Secondary,Female,36-45,3,corn,0.5,100,3,200,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.41,38.37
+TAITA TAVETA,fmr_135,Secondary,Female,36-45,6,corn,0.5,80,2,200,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Vernacular,-3.49,38.4
+TAITA TAVETA,fmr_139,Secondary,Male,36-45,3,corn,2,50,3,200,Manual,Rain,Credit groups,No,No,Internet,County Government,Phone Calls,English,-3.5,38.4
+TAITA TAVETA,fmr_148,Secondary,Female,36-45,3,corn,1,100,3,200,Manual,Rain,Credit groups,No,No,Extension services,Private Provider,Phone Calls,Kiswahili,-3.36,38.36
+TAITA TAVETA,fmr_189,Secondary,Female,36-45,6,corn,1,20,3,200,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.47,38.58
+TAITA TAVETA,fmr_307,Secondary,Male,36-45,9,corn,0.5,120,3,200,Manual,Rain,Family,No,No,Television,County Government,Phone Calls,English,-3.39,38.35
+TAITA TAVETA,fmr_343,Secondary,Male,36-45,3,corn,,50,2,200,Manual,Rain,Savings,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.47,38.59
+TAITA TAVETA,fmr_350,Secondary,Female,36-45,4,corn,0.75,50,2,200,Manual,Rain,Savings,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.5,38.6
+TAITA TAVETA,fmr_394,Secondary,Male,36-45,2,corn,,50,3,200,Manual,Rain,Credit groups,No,Yes,Internet,Private Provider,Phone Calls,English,-3.47,38.58
+TAITA TAVETA,fmr_34,Secondary,Female,46-55,4,corn,,70,5,180,Manual,Rain,Credit groups,No,Yes,Public gatherings,KALRO,SMS text,Kiswahili,-3.39,38.33
+TAITA TAVETA,fmr_154,Secondary,Female,46-55,4,corn,1,100,3,180,Manual,Rain,Credit groups,No,Yes,Extension services,Private Provider,Phone Calls,Kiswahili,-3.4,38.31
+TAITA TAVETA,fmr_191,Secondary,Female,36-45,6,corn,,20,2,180,Manual,Rain,Credit groups,No,Yes,Radio,Private Provider,Phone Calls,Vernacular,-3.51,38.59
+TAITA TAVETA,fmr_203,Secondary,Female,36-45,5,corn,,20,4,180,Manual,Rain,Credit groups,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.52,38.61
+TAITA TAVETA,fmr_232,Secondary,Female,36-45,6,corn,0.5,20,2,180,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.34,38.38
+TAITA TAVETA,fmr_233,Secondary,Female,46-55,4,corn,0.5,25,3,180,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,English,-3.41,38.37
+TAITA TAVETA,fmr_236,Secondary,Female,46-55,5,corn,0.5,30,2,180,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.64,38.37
+TAITA TAVETA,fmr_237,Secondary,Female,46-55,5,corn,0.5,100,3,180,Manual,Rain,Credit groups,No,No,Public gatherings,National Government,SMS text,Kiswahili,-3.34,38.36
+TAITA TAVETA,fmr_259,Secondary,Female,46-55,3,corn,1,25,2,180,Manual,Rain,Family,No,No,Extension services,Private Provider,SMS text,Kiswahili,-3.49,38.38
+TAITA TAVETA,fmr_292,Secondary,Male,46-55,3,corn,,50,4,180,Manual,Rain,Family,No,Yes,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.4,38.37
+TAITA TAVETA,fmr_293,Secondary,Male,46-55,3,corn,1,200,2,180,Manual,Rain,Family,No,No,Radio,County Government,SMS text,English,-3.34,38.36
+TAITA TAVETA,fmr_309,Secondary,Female,46-55,5,corn,2,100,2,180,Manual,Rain,Family,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.49,38.33
+TAITA TAVETA,fmr_316,Secondary,Female,46-55,5,corn,0.25,50,2,180,Manual,Rain,Family,No,No,Public gatherings,KALRO,SMS text,English,-3.34,38.36
+TAITA TAVETA,fmr_330,Secondary,Female,46-55,5,corn,1,50,2,180,Manual,Rain,Family,No,No,Public gatherings,County Government,SMS text,Kiswahili,-3.48,38.58
+TAITA TAVETA,fmr_344,Secondary,Female,46-55,5,corn,0.25,90,3,180,Manual,Rain,Savings,No,No,Public gatherings,National Government,SMS text,Kiswahili,-3.34,38.34
+TAITA TAVETA,fmr_364,Secondary,Female,46-55,4,corn,0.5,80,3,180,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.27,38.3
+TAITA TAVETA,fmr_373,Secondary,Female,46-55,3,corn,1,100,2,180,Manual,Rain,Credit groups,No,No,Internet,County Government,Phone Calls,Kiswahili,-3.29,38.31
+TAITA TAVETA,fmr_386,Secondary,Female,36-45,5,corn,0.5,20,3,180,Manual,Rain,Credit groups,No,No,Radio,KALRO,SMS text,Kiswahili,-3.4,38.39
+TAITA TAVETA,fmr_397,Secondary,Female,46-55,2,corn,1,30,4,180,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Vernacular,-3.37,38.42
+TAITA TAVETA,fmr_398,Secondary,Female,46-55,2,corn,1,100,2,180,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.39,38.38
+TAITA TAVETA,fmr_317,Secondary,Female,46-55,5,corn,0.5,20,2,160,Manual,Rain,Family,No,No,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.41,38.37
+TAITA TAVETA,fmr_331,Secondary,Female,46-55,5,corn,0.5,150,3,160,Manual,Rain,Family,No,Yes,Public gatherings,Private Provider,Phone Calls,Vernacular,-3.37,38.43
+TAITA TAVETA,fmr_36,Secondary,Female,46-55,4,corn,0.75,20,4,150,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.39,38.33
+TAITA TAVETA,fmr_155,Secondary,Female,46-55,4,corn,0.5,25,3,150,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.41,38.37
+TAITA TAVETA,fmr_234,Secondary,Female,46-55,4,corn,2.5,50,3,150,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,English,-3.52,38.61
+TAITA TAVETA,fmr_239,Secondary,Female,46-55,5,corn,0.75,25,3,150,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Kiswahili,-3.34,38.37
+TAITA TAVETA,fmr_240,Secondary,Female,46-55,5,corn,0.25,150,4,150,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.38,38.4
+TAITA TAVETA,fmr_260,Secondary,Female,46-55,3,corn,1,50,3,150,Manual,Rain,Family,No,No,Extension services,Private Provider,SMS text,Kiswahili,-3.34,38.39
+TAITA TAVETA,fmr_345,Secondary,Female,46-55,5,corn,0.75,20,3,150,Manual,Rain,Savings,No,No,Extension services,County Government,SMS text,Kiswahili,-3.5,38.61
+TAITA TAVETA,fmr_374,Secondary,Female,46-55,3,corn,1,25,3,150,Manual,Rain,Credit groups,No,No,Public gatherings,KALRO,SMS text,English,-3.31,38.33
+TAITA TAVETA,fmr_376,Secondary,Female,46-55,4,corn,1.5,20,3,150,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.49,38.33
+TAITA TAVETA,fmr_399,Secondary,Female,46-55,2,corn,0.25,40,2,150,Manual,Rain,Credit groups,No,Yes,Radio,Private Provider,Phone Calls,Vernacular,-3.49,38.58
+TAITA TAVETA,fmr_402,Secondary,Female,46-55,2,corn,0.25,20,3,135,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Vernacular,-3.48,38.33
+TAITA TAVETA,fmr_294,Secondary,Male,46-55,3,corn,0.25,42,4,120,Manual,Rain,Family,No,Yes,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.37,38.33
+TAITA TAVETA,fmr_37,Secondary,Female,46-55,4,corn,0.75,25,3,100,Manual,Rain,Credit groups,No,Yes,Public gatherings,KALRO,SMS text,Kiswahili,-3.4,38.31
+TAITA TAVETA,fmr_106,Secondary,Female,56-65,5,corn,0.5,25,3,100,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.34,38.39
+TAITA TAVETA,fmr_163,Secondary,Male,56-65,4,corn,0.5,50,3,100,Manual,Rain,Credit groups,No,No,Television,County Government,Phone Calls,English,-3.39,38.37
+TAITA TAVETA,fmr_165,Secondary,Male,56-65,4,corn,,150,5,100,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Vernacular,-3.41,38.36
+TAITA TAVETA,fmr_246,Secondary,Female,56-65,3,corn,0.75,50,2,100,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,Phone Calls,Kiswahili,-3.26,38.29
+TAITA TAVETA,fmr_257,Secondary,Female,56-65,3,corn,,250,4,100,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,English,-3.49,38.4
+TAITA TAVETA,fmr_318,Secondary,Female,46-55,5,corn,,20,4,100,Manual,Rain,Family,No,No,Public gatherings,KALRO,SMS text,English,-3.38,38.33
+TAITA TAVETA,fmr_332,Secondary,Female,46-55,5,corn,0.3,25,3,100,Manual,Rain,Savings,No,No,Public gatherings,County Government,SMS text,Kiswahili,-3.5,38.6
+TAITA TAVETA,fmr_38,Secondary,Female,46-55,4,corn,1,50,2,90,Manual,Rain,Credit groups,No,No,Extension services,Private Provider,Phone Calls,Kiswahili,-3.39,38.33
+TAITA TAVETA,fmr_101,Secondary,Male,above 65,6,corn,,40,3,90,Manual,Rain,Credit groups,No,No,Radio,County Government,SMS text,Kiswahili,-3.5,38.4
+TAITA TAVETA,fmr_107,Secondary,Female,56-65,5,corn,0.5,50,4,90,Manual,Rain,Credit groups,No,Yes,Radio,Private Provider,Phone Calls,Vernacular,-3.35,38.36
+TAITA TAVETA,fmr_166,Secondary,Male,56-65,4,corn,0.5,100,5,90,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.33,38.31
+TAITA TAVETA,fmr_268,Secondary,Female,56-65,3,corn,3,480,2,90,Manual,Rain,Credit groups,No,No,Public gatherings,National Government,Phone Calls,Kiswahili,-3.51,38.38
+TAITA TAVETA,fmr_319,Secondary,Female,46-55,5,corn,1,50,2,90,Manual,Rain,Family,No,No,Public gatherings,Private Provider,Phone Calls,Vernacular,-3.51,38.58
+TAITA TAVETA,fmr_333,Secondary,Female,46-55,5,corn,,50,3,90,Manual,Rain,Savings,No,Yes,Public gatherings,County Government,Phone Calls,Kiswahili,-3.34,38.36
+TAITA TAVETA,fmr_167,Secondary,Male,56-65,4,corn,0.25,22,4,70,Manual,Rain,Credit groups,No,Yes,Public gatherings,Private Provider,Phone Calls,English,-3.47,38.59
+TAITA TAVETA,fmr_290,Secondary,Female,56-65,3,corn,,40,2,70,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.51,38.39
+TAITA TAVETA,fmr_39,Secondary,Female,46-55,4,corn,,31,3,50,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,English,-3.41,38.3
+TAITA TAVETA,fmr_108,Secondary,Female,56-65,5,corn,0.5,31,2,50,Manual,Rain,Credit groups,No,Yes,Television,County Government,Phone Calls,Kiswahili,-3.34,38.39
+TAITA TAVETA,fmr_169,Secondary,Male,56-65,4,corn,0.5,50,3,50,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.55,38.58
+TAITA TAVETA,fmr_301,Secondary,Female,56-65,3,corn,1.5,50,2,50,Manual,Rain,Credit groups,No,Yes,Radio,County Government,SMS text,English,-3.27,38.3
+TAITA TAVETA,fmr_98,,Female,18-35,7,corn,1,40,2,540,Manual,Rain,Credit groups,No,Yes,Radio,Private Provider,Phone Calls,Vernacular,-3.44,38.34
+TAITA TAVETA,fmr_327,,Male,18-35,4,corn,2,60,2,540,Manual,Rain,Family,No,No,Public gatherings,National Government,SMS text,Kiswahili,-3.34,38.38
+TAITA TAVETA,fmr_99,,Female,18-35,7,corn,1.5,30,2,450,Manual,Rain,Credit groups,No,No,Radio,KALRO,Phone Calls,Kiswahili,-3.36,38.34
+TAITA TAVETA,fmr_103,,Female,18-35,6,corn,,20,2,450,Manual,Rain,Credit groups,No,No,Public gatherings,County Government,SMS text,English,-3.38,38.37
+TAITA TAVETA,fmr_328,,Male,18-35,4,corn,1,50,2,450,Manual,Rain,Family,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.48,38.36
+TAITA TAVETA,fmr_100,,Female,18-35,7,corn,1,30,3,360,Manual,Rain,Credit groups,No,No,Radio,KALRO,Phone Calls,Kiswahili,-3.43,38.39
+TAITA TAVETA,fmr_211,,Female,36-45,6,corn,0.5,180,3,360,Manual,Rain,Credit groups,No,Yes,Radio,County Government,SMS text,English,-3.39,38.35
+TAITA TAVETA,fmr_329,,Male,18-35,4,corn,1,50,2,360,Manual,Rain,Family,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.34,38.39
+TAITA TAVETA,fmr_357,,Female,36-45,7,corn,1,100,3,330,Manual,Rain,Credit groups,No,No,Extension services,County Government,SMS text,Kiswahili,-3.3,38.36
+TAITA TAVETA,fmr_112,,Female,36-45,2,corn,2,50,2,300,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.49,38.41
+TAITA TAVETA,fmr_35,,Female,36-45,2,corn,1,50,2,270,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.47,38.41
+TAITA TAVETA,fmr_157,,Female,36-45,2,corn,0.25,250,4,270,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.5,38.39
+TAITA TAVETA,fmr_214,,Female,36-45,6,corn,0.5,25,2,270,Manual,Rain,Credit groups,No,No,Public gatherings,National Government,SMS text,Kiswahili,-3.36,38.34
+TAITA TAVETA,fmr_215,,Female,36-45,6,corn,,50,2,270,Manual,Rain,Credit groups,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.48,38.36
+TAITA TAVETA,fmr_361,,Female,36-45,7,corn,0.25,45,4,270,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.45,38.4
+TAITA TAVETA,fmr_216,,Female,36-45,6,corn,1,40,3,220,Manual,Rain,Credit groups,No,No,Public gatherings,National Government,SMS text,Kiswahili,-3.39,38.38
+TAITA TAVETA,fmr_279,,Female,36-45,2,corn,1,150,3,200,Manual,Rain,Credit groups,No,Yes,Extension services,County Government,SMS text,Kiswahili,-3.27,38.3
+TAITA TAVETA,fmr_362,,Female,36-45,7,corn,1,50,3,200,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.43,38.39
+TAITA TAVETA,fmr_164,,Male,46-55,6,corn,0.25,50,5,180,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.32,38.36
+TAITA TAVETA,fmr_217,,Female,36-45,6,corn,0.5,20,2,180,Manual,Rain,Credit groups,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.32,38.36
+TAITA TAVETA,fmr_337,,Female,46-55,7,corn,0.25,100,3,180,Manual,Rain,Savings,No,Yes,Extension services,National Government,SMS text,English,-3.64,38.37
+TAITA TAVETA,fmr_176,,Male,46-55,6,corn,0.5,50,3,160,Manual,Rain,Credit groups,No,No,Extension services,County Government,Phone Calls,Kiswahili,-3.47,38.59
+TAITA TAVETA,fmr_349,,Female,46-55,7,corn,1,25,3,150,Manual,Rain,Savings,No,No,Public gatherings,Private Provider,Phone Calls,Kiswahili,-3.48,38.59
+TAITA TAVETA,fmr_97,,Female,46-55,6,corn,,50,2,110,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.41,38.35
+TAITA TAVETA,fmr_188,,Male,46-55,6,corn,0.75,25,3,100,Manual,Rain,Credit groups,No,No,Radio,County Government,Phone Calls,Kiswahili,-3.56,38.6
+TAITA TAVETA,fmr_200,,Male,46-55,6,corn,0.25,50,3,90,Manual,Rain,Credit groups,No,No,Radio,Private Provider,Phone Calls,Kiswahili,-3.41,38.37
