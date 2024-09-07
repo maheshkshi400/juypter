@@ -26,6 +26,7 @@ AS (SELECT MIN(OrderID) AS OrderID,
            EndRange
     FROM RecursiveSequence
     WHERE OrderID < EndRange)
+    
 -- Select the missing values
 SELECT rs.OrderID AS MissingOrderID
 FROM RecursiveSequence rs
