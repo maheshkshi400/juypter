@@ -1587,3 +1587,21 @@ SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@200ef4c
 2024.09.07 18:44:27 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
 2024.09.07 18:44:31 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
 2024.09.07 18:44:32 WARN  Build server is not auto-connectable.
+2024.09.08 10:16:13 INFO  Started: Metals version 1.3.5 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.93.0.
+2024.09.08 10:16:13 INFO  time: initialize in 0.12s
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@2cdd4802]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@5f7530bc]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@2cdd4802]
+2024.09.08 10:16:21 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.09.08 10:16:24 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.09.08 10:16:24 WARN  Build server is not auto-connectable.
+Sep 08, 2024 10:21:56 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 08, 2024 10:21:58 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 08, 2024 10:21:58 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 08, 2024 10:21:59 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
