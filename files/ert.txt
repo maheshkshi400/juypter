@@ -1,0 +1,5 @@
+ThisIsData|One:100
+AnotherLine|Two:200
+ThirdRecord,Three:300
+FourthEntry|Four:400,Five:500  
+LastLine|Six:600
