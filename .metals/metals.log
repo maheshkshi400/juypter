@@ -2025,3 +2025,349 @@ SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@203fc41
 2024.09.25 12:06:14 WARN  Build server is not auto-connectable.
 Sep 27, 2024 3:18:40 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2024.09.27 13:17:16 INFO  Started: Metals version 1.3.5 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.93.1.
+2024.09.27 13:17:16 INFO  time: initialize in 0.17s
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@6e55d3b0]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@2c381961]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@6e55d3b0]
+2024.09.27 13:17:24 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.09.27 13:17:27 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.09.27 13:17:28 WARN  Build server is not auto-connectable.
+2024.10.10 20:09:23 INFO  Started: Metals version 1.3.5 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.93.1.
+2024.10.10 20:09:24 INFO  time: initialize in 0.97s
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@c2920a8]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@7debef49]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@c2920a8]
+2024.10.10 20:11:10 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.10 20:11:15 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.10.10 20:11:16 WARN  Build server is not auto-connectable.
+2024.10.12 11:23:11 INFO  Started: Metals version 1.3.5 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.93.1.
+2024.10.12 11:23:11 INFO  time: initialize in 0.47s
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@7cfd8c99]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@5184957]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@7cfd8c99]
+2024.10.12 11:23:20 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.12 11:23:24 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.10.12 11:23:25 WARN  Build server is not auto-connectable.
+2024.10.17 22:39:44 INFO  Started: Metals version 1.3.5 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.94.2.
+2024.10.17 22:39:44 INFO  time: initialize in 0.41s
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@7181c606]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@5a3b47cb]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@7181c606]
+2024.10.17 22:40:08 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.17 22:40:11 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.10.17 22:40:11 WARN  Build server is not auto-connectable.
+Oct 17, 2024 10:47:59 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.10.17 23:23:45 INFO  Shutting down server
+2024.10.17 23:23:45 INFO  shutting down Metals
+2024.10.19 10:52:18 INFO  Started: Metals version 1.3.5 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.94.2.
+2024.10.19 10:52:21 INFO  time: initialize in 2.02s
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@26a7ddf3]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@6f3f6e64]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@26a7ddf3]
+2024.10.19 10:52:52 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.19 10:52:56 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.10.19 10:52:58 WARN  Build server is not auto-connectable.
+2024.10.22 19:36:35 INFO  Started: Metals version 1.3.5 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.94.2.
+2024.10.22 19:36:38 INFO  time: initialize in 2.74s
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@60a640f0]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@2414e65a]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@60a640f0]
+2024.10.22 19:37:02 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.22 19:37:08 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.10.22 19:37:09 WARN  Build server is not auto-connectable.
+2024.10.27 09:15:22 INFO  Started: Metals version 1.3.5 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.94.2.
+2024.10.27 09:15:22 INFO  time: initialize in 0.27s
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@6af9042e]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@45e1b979]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@6af9042e]
+2024.10.27 09:15:40 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.10.27 09:15:43 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.10.27 09:15:44 WARN  Build server is not auto-connectable.
+2024.10.30 00:12:20 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\User\juypter\.metals\lsp.trace.json
+2024.10.30 00:12:29 ERROR Failed to get project directories
+java.util.concurrent.TimeoutException: Future timed out after [5 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.$anonfun$wrap$1(MetalsProjectDirectories.scala:39)
+	at scala.util.Try$.apply(Try.scala:217)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.wrap(MetalsProjectDirectories.scala:37)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.fromPath(MetalsProjectDirectories.scala:30)
+	at scala.meta.internal.bsp.BspServers$.globalInstallDirectories(BspServers.scala:209)
+	at scala.meta.internal.metals.MetalsServerInputs$.productionConfiguration(MetalsServerInputs.scala:75)
+	at scala.meta.metals.MetalsLanguageServer$.$lessinit$greater$default$3(MetalsLanguageServer.scala:48)
+	at scala.meta.metals.Main$.main(Main.scala:45)
+	at scala.meta.metals.Main.main(Main.scala)
+
+Oct 30, 2024 12:13:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.LanguageServer.initialize(org.eclipse.lsp4j.InitializeParams)
+java.lang.IllegalStateException: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.LanguageServer.initialize(org.eclipse.lsp4j.InitializeParams)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:73)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: coursierapi.error.SimpleResolutionError$1: Error downloading com.sourcegraph:semanticdb-javac:0.10.3
+  not found: C:\Users\User\.ivy2\local\com.sourcegraph\semanticdb-javac\0.10.3\ivys\ivy.xml
+  download error: Caught java.net.ConnectException (Connection timed out: connect) while downloading https://repo1.maven.org/maven2/com/sourcegraph/semanticdb-javac/0.10.3/semanticdb-javac-0.10.3.pom
+  not found: C:\Users\User\.ivy2\local\com.sourcegraph\semanticdb-javac\0.10.3\ivys\ivy.xml
+  download error: Caught java.net.ConnectException (Connection timed out: connect) while downloading https://oss.sonatype.org/content/repositories/public/com/sourcegraph/semanticdb-javac/0.10.3/semanticdb-javac-0.10.3.pom
+  not found: https://oss.sonatype.org/content/repositories/snapshots/com/sourcegraph/semanticdb-javac/0.10.3/semanticdb-javac-0.10.3.pom
+	at coursierapi.error.SimpleResolutionError.of(SimpleResolutionError.java:11)
+	at coursierapi.shaded.coursier.internal.api.ApiHelper$.simpleResError(ApiHelper.scala:371)
+	at coursierapi.shaded.coursier.internal.api.ApiHelper$.doFetch(ApiHelper.scala:415)
+	at coursierapi.shaded.coursier.internal.api.ApiHelper.doFetch(ApiHelper.scala)
+	at coursierapi.Fetch.fetchResult(Fetch.java:244)
+	at coursierapi.Fetch.fetch(Fetch.java:239)
+	at scala.meta.internal.metals.Embedded$.downloadDependency(Embedded.scala:301)
+	at scala.meta.internal.metals.Embedded$.downloadSemanticdbJavac(Embedded.scala:329)
+	at scala.meta.internal.metals.JavaInteractiveSemanticdb$.create(JavaInteractiveSemanticdb.scala:182)
+	at scala.meta.internal.metals.MetalsLspService.<init>(MetalsLspService.scala:388)
+	at scala.meta.internal.metals.ProjectMetalsLspService.<init>(ProjectMetalsLspService.scala:76)
+	at scala.meta.internal.metals.WorkspaceLspService.createService(WorkspaceLspService.scala:215)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$workspaceFolders$1(WorkspaceLspService.scala:222)
+	at scala.collection.immutable.List.map(List.scala:247)
+	at scala.meta.internal.metals.WorkspaceFolders.initServices(WorkspaceFolders.scala:44)
+	at scala.meta.internal.metals.WorkspaceFolders.<init>(WorkspaceFolders.scala:22)
+	at scala.meta.internal.metals.WorkspaceLspService.<init>(WorkspaceLspService.scala:220)
+	at scala.meta.metals.MetalsLanguageServer.createService(MetalsLanguageServer.scala:219)
+	at scala.meta.metals.MetalsLanguageServer.initialize(MetalsLanguageServer.scala:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	... 11 more
+
+2024.10.30 00:13:53 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\User\juypter\.metals\lsp.trace.json
+2024.10.30 00:14:00 ERROR Failed to get project directories
+java.util.concurrent.TimeoutException: Future timed out after [5 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.$anonfun$wrap$1(MetalsProjectDirectories.scala:39)
+	at scala.util.Try$.apply(Try.scala:217)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.wrap(MetalsProjectDirectories.scala:37)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.fromPath(MetalsProjectDirectories.scala:30)
+	at scala.meta.internal.bsp.BspServers$.globalInstallDirectories(BspServers.scala:209)
+	at scala.meta.internal.metals.MetalsServerInputs$.productionConfiguration(MetalsServerInputs.scala:75)
+	at scala.meta.metals.MetalsLanguageServer$.$lessinit$greater$default$3(MetalsLanguageServer.scala:48)
+	at scala.meta.metals.Main$.main(Main.scala:45)
+	at scala.meta.metals.Main.main(Main.scala)
+
+2024.10.30 00:14:23 ERROR Failed to get project directories
+java.util.concurrent.TimeoutException: Future timed out after [5 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.$anonfun$wrap$1(MetalsProjectDirectories.scala:39)
+	at scala.util.Try$.apply(Try.scala:217)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.wrap(MetalsProjectDirectories.scala:37)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.from(MetalsProjectDirectories.scala:23)
+	at scala.meta.internal.metals.BloopServers$.createBloopWorkingDir(BloopServers.scala:439)
+	at scala.meta.internal.metals.BloopServers.<init>(BloopServers.scala:67)
+	at scala.meta.internal.metals.ProjectMetalsLspService.<init>(ProjectMetalsLspService.scala:155)
+	at scala.meta.internal.metals.WorkspaceLspService.createService(WorkspaceLspService.scala:215)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$workspaceFolders$1(WorkspaceLspService.scala:222)
+	at scala.collection.immutable.List.map(List.scala:247)
+	at scala.meta.internal.metals.WorkspaceFolders.initServices(WorkspaceFolders.scala:44)
+	at scala.meta.internal.metals.WorkspaceFolders.<init>(WorkspaceFolders.scala:22)
+	at scala.meta.internal.metals.WorkspaceLspService.<init>(WorkspaceLspService.scala:220)
+	at scala.meta.metals.MetalsLanguageServer.createService(MetalsLanguageServer.scala:219)
+	at scala.meta.metals.MetalsLanguageServer.initialize(MetalsLanguageServer.scala:160)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.10.30 00:14:23 INFO  logging to files C:\Users\User\juypter\.metals\metals.log
+2024.10.30 00:14:23 INFO  Started: Metals version 1.4.0 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.94.2.
+2024.10.30 00:14:23 INFO  time: initialize in 0.24s
+2024.10.30 00:14:33 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.10.30 00:14:36 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.10.30 00:14:37 WARN  Build server is not auto-connectable.
+2024.10.30 12:14:53 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\User\juypter\.metals\lsp.trace.json or C:\Users\User\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2024.10.30 12:15:00 ERROR Failed to get project directories
+java.util.concurrent.TimeoutException: Future timed out after [5 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.$anonfun$wrap$1(MetalsProjectDirectories.scala:39)
+	at scala.util.Try$.apply(Try.scala:217)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.wrap(MetalsProjectDirectories.scala:37)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.fromPath(MetalsProjectDirectories.scala:30)
+	at scala.meta.internal.bsp.BspServers$.globalInstallDirectories(BspServers.scala:209)
+	at scala.meta.internal.metals.MetalsServerInputs$.productionConfiguration(MetalsServerInputs.scala:75)
+	at scala.meta.metals.MetalsLanguageServer$.$lessinit$greater$default$3(MetalsLanguageServer.scala:48)
+	at scala.meta.metals.Main$.main(Main.scala:45)
+	at scala.meta.metals.Main.main(Main.scala)
+
+2024.10.30 12:15:27 ERROR Failed to get project directories
+java.util.concurrent.TimeoutException: Future timed out after [5 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.$anonfun$wrap$1(MetalsProjectDirectories.scala:39)
+	at scala.util.Try$.apply(Try.scala:217)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.wrap(MetalsProjectDirectories.scala:37)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.from(MetalsProjectDirectories.scala:23)
+	at scala.meta.internal.metals.BloopServers$.createBloopWorkingDir(BloopServers.scala:439)
+	at scala.meta.internal.metals.BloopServers.<init>(BloopServers.scala:67)
+	at scala.meta.internal.metals.ProjectMetalsLspService.<init>(ProjectMetalsLspService.scala:155)
+	at scala.meta.internal.metals.WorkspaceLspService.createService(WorkspaceLspService.scala:215)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$workspaceFolders$1(WorkspaceLspService.scala:222)
+	at scala.collection.immutable.List.map(List.scala:247)
+	at scala.meta.internal.metals.WorkspaceFolders.initServices(WorkspaceFolders.scala:44)
+	at scala.meta.internal.metals.WorkspaceFolders.<init>(WorkspaceFolders.scala:22)
+	at scala.meta.internal.metals.WorkspaceLspService.<init>(WorkspaceLspService.scala:220)
+	at scala.meta.metals.MetalsLanguageServer.createService(MetalsLanguageServer.scala:219)
+	at scala.meta.metals.MetalsLanguageServer.initialize(MetalsLanguageServer.scala:160)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.10.30 12:15:29 INFO  logging to files C:\Users\User\juypter\.metals\metals.log
+2024.10.30 12:15:29 INFO  Started: Metals version 1.4.0 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.95.0.
+2024.10.30 12:15:31 INFO  time: initialize in 1.51s
+2024.10.30 12:15:47 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.10.30 12:15:50 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.10.30 12:15:51 WARN  Build server is not auto-connectable.
+2024.10.30 19:55:35 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\User\juypter\.metals\lsp.trace.json
+2024.10.30 19:55:42 ERROR Failed to get project directories
+java.util.concurrent.TimeoutException: Future timed out after [5 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.$anonfun$wrap$1(MetalsProjectDirectories.scala:39)
+	at scala.util.Try$.apply(Try.scala:217)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.wrap(MetalsProjectDirectories.scala:37)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.fromPath(MetalsProjectDirectories.scala:30)
+	at scala.meta.internal.bsp.BspServers$.globalInstallDirectories(BspServers.scala:209)
+	at scala.meta.internal.metals.MetalsServerInputs$.productionConfiguration(MetalsServerInputs.scala:75)
+	at scala.meta.metals.MetalsLanguageServer$.$lessinit$greater$default$3(MetalsLanguageServer.scala:48)
+	at scala.meta.metals.Main$.main(Main.scala:45)
+	at scala.meta.metals.Main.main(Main.scala)
+
+2024.10.30 19:56:08 ERROR Failed to get project directories
+java.util.concurrent.TimeoutException: Future timed out after [5 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:248)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:261)
+	at scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at scala.concurrent.Await$.result(package.scala:124)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.$anonfun$wrap$1(MetalsProjectDirectories.scala:39)
+	at scala.util.Try$.apply(Try.scala:217)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.wrap(MetalsProjectDirectories.scala:37)
+	at scala.meta.internal.metals.MetalsProjectDirectories$.from(MetalsProjectDirectories.scala:23)
+	at scala.meta.internal.metals.BloopServers$.createBloopWorkingDir(BloopServers.scala:439)
+	at scala.meta.internal.metals.BloopServers.<init>(BloopServers.scala:67)
+	at scala.meta.internal.metals.ProjectMetalsLspService.<init>(ProjectMetalsLspService.scala:155)
+	at scala.meta.internal.metals.WorkspaceLspService.createService(WorkspaceLspService.scala:215)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$workspaceFolders$1(WorkspaceLspService.scala:222)
+	at scala.collection.immutable.List.map(List.scala:247)
+	at scala.meta.internal.metals.WorkspaceFolders.initServices(WorkspaceFolders.scala:44)
+	at scala.meta.internal.metals.WorkspaceFolders.<init>(WorkspaceFolders.scala:22)
+	at scala.meta.internal.metals.WorkspaceLspService.<init>(WorkspaceLspService.scala:220)
+	at scala.meta.metals.MetalsLanguageServer.createService(MetalsLanguageServer.scala:219)
+	at scala.meta.metals.MetalsLanguageServer.initialize(MetalsLanguageServer.scala:160)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.10.30 19:56:10 INFO  logging to files C:\Users\User\juypter\.metals\metals.log
+2024.10.30 19:56:10 INFO  Started: Metals version 1.4.0 in folders 'C:\Users\User\juypter' for client Visual Studio Code 1.95.0.
+2024.10.30 19:56:10 INFO  time: initialize in 0.4s
+2024.10.30 19:56:30 WARN  Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2024.10.30 19:56:36 WARN  no build tool detected in workspace 'C:\Users\User\juypter'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.10.30 19:56:39 WARN  Build server is not auto-connectable.
+Oct 30, 2024 8:00:01 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 30, 2024 8:00:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 30, 2024 8:00:29 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 30, 2024 8:00:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 30, 2024 8:01:12 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 30, 2024 8:01:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 30, 2024 8:01:51 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 30, 2024 8:01:51 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 30, 2024 8:04:40 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

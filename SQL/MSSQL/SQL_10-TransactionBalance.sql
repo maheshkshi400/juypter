@@ -33,35 +33,39 @@ ON A.AccountNumber = B.AccountNumber AND A.TransactionTime = B.TransactionTime;
 
 --BY USING CTE
 
-WITH CTE_Tran AS (
-    SELECT AccountNumber, TransactionID, Balance, TransactionTime 
-    FROM Transaction_Table
-),
-CTE_MaxTran AS (
-    SELECT AccountNumber, MAX(TransactionTime) AS MaxTransactionTime 
-    FROM Transaction_Table 
-    GROUP BY AccountNumber
-)
-SELECT A.AccountNumber, A.TransactionID, A.Balance, B.MaxTransactionTime AS TransactionTime 
+WITH
+    CTE_Tran AS
+    (
+        SELECT AccountNumber, TransactionID, Balance, TransactionTime
+        FROM Transaction_Table
+    ),
+    CTE_MaxTran
+    AS
+    (
+        SELECT AccountNumber, MAX(TransactionTime) AS MaxTransactionTime
+        FROM Transaction_Table
+        GROUP BY AccountNumber
+    )
+SELECT A.AccountNumber, A.TransactionID, A.Balance, B.MaxTransactionTime AS TransactionTime
 FROM CTE_Tran A
-INNER JOIN CTE_MaxTran B ON A.AccountNumber = B.AccountNumber AND A.TransactionTime = B.MaxTransactionTime;
+    INNER JOIN CTE_MaxTran B ON A.AccountNumber = B.AccountNumber AND A.TransactionTime = B.MaxTransactionTime;
 
 
 --by using subquery and IN operator
 
-SELECT 
-    A.AccountNumber, 
-    A.TransactionID, 
-    A.Balance, 
-    A.TransactionTime 
-FROM 
+SELECT
+    A.AccountNumber,
+    A.TransactionID,
+    A.Balance,
+    A.TransactionTime
+FROM
     Transaction_Table  A
 WHERE 
     TransactionTime IN (
-        SELECT 
-            MAX(TransactionTime) AS MaxTran 
-        FROM 
-            Transaction_Table B
-        GROUP BY 
+        SELECT
+    MAX(TransactionTime) AS MaxTran
+FROM
+    Transaction_Table B
+GROUP BY 
             AccountNumber
     );

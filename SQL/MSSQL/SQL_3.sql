@@ -16,7 +16,7 @@ INSERT INTO Student VALUES('Mohan',90,2012)
 
 SELECT * FROM Student
 
-use OTHER
+use OTHERS
 SELECT Student_Name, Total_Marks, Year, Prev_yrs_Marks
 FROM
 (

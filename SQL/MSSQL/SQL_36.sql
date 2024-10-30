@@ -58,9 +58,6 @@ FROM
 
 
 
-
-
-=======
 WITH STEDIUM_CTE AS (
     SELECT id AS ID1,
     LEAD(id,1) OVER(ORDER BY id) as ID2,
@@ -75,4 +72,4 @@ CTE_TEMP AS(
     WHERE ID1+1=ID2 AND ID2+1=ID3
 )
 SELECT DISTINCT id,Visit_Date,No_Of_People FROM CTE_TEMP;
->>>>>>> 591731762cd9d3280aded8d5b3ca1797ecd3a1bf
+
