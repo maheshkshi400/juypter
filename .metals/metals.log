@@ -2863,3 +2863,27 @@ INFO: Unsupported notification method: $/setTrace
 2024.11.08 02:27:45 INFO  no build target found for C:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
 2024.11.08 02:27:45 INFO  no build target found for C:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
 2024.11.08 02:27:45 INFO  no build target found for C:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.08 02:30:15 INFO  no build target found for C:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.08 02:30:16 INFO  no build target found for C:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.08 02:30:16 INFO  no build target found for C:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.08 02:30:16 INFO  no build target found for C:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.08 02:30:16 INFO  no build target found for C:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.08 02:30:16 INFO  no build target found for C:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
+Nov 08, 2024 2:30:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 21
+2024.11.08 02:30:17 WARN  no build target for: C:\Users\User\juypter\SCALA\1.scala
+Nov 08, 2024 2:30:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 28
+Nov 08, 2024 2:30:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 23
+2024.11.08 02:30:17 INFO  no build target found for C:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.08 02:30:17 INFO  no build target found for C:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.08 02:30:22 INFO  no build target found for c:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.08 02:30:29 INFO  time: code lens generation in 12s
+2024.11.08 02:30:29 INFO  time: code lens generation in 11s
+2024.11.08 02:30:29 INFO  time: code lens generation in 12s
+2024.11.08 02:30:29 INFO  time: code lens generation in 11s
+2024.11.08 02:30:29 INFO  time: code lens generation in 11s
+2024.11.08 02:30:29 INFO  time: code lens generation in 12s
+Nov 08, 2024 2:36:24 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
