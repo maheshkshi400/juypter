@@ -20,9 +20,10 @@ insert into employee values(4,'Bhagya','Surkute','Male',20000);
 insert into employee values(2,'Ganesh','Hirave','Male',27000);
 insert into employee values(5,'Shreya','Mittal','female',25000);
 insert into employee values(6,'Kamana','Shitole','female',22000);
-insert into employee values(7,'Dhani','Devdhar','female',28000);
+insert into employee values(10,'Dhani','Devdhar','female',28000);
 insert into employee values(8,'Karishma','Katwe','female',13000);
 insert into employee values(9,'Vaibhav','Shinde','male',15000);
+insert into employee values(10,'Dhani','Devdhar','female',28000);
 insert into employee values(10,'Dhani','Devdhar','female',28000);
 insert into employee values(10,'Dhani','Devdhar','female',28000);
 

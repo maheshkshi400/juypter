@@ -13,6 +13,8 @@ insert into EMPLOYEE1 values(7,'sitara,tamboli')
 
 select * from EMPLOYEE1;
 
+drop table EMPLOYEE1;
+
 
 
 select Name,LEFT(Name,CHARINDEX(',',Name)-1) AS FIRST_NAME, 
@@ -42,3 +44,5 @@ FROM NAME_CTE
 PIVOT
 (MAX(VALUE)
 for Rownum in ([1],[2])) as PVT;
+
+
