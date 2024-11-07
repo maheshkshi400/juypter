@@ -2860,3 +2860,6 @@ Nov 08, 2024 2:14:48 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notif
 INFO: Unsupported notification method: $/setTrace
 Nov 08, 2024 2:19:04 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2024.11.08 02:27:45 INFO  no build target found for C:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.08 02:27:45 INFO  no build target found for C:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2024.11.08 02:27:45 INFO  no build target found for C:\Users\User\juypter\SCALA\1.scala. Using presentation compiler with project's scala-library version: 3.3.4
