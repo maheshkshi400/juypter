@@ -1,0 +1,3 @@
+employee_name,employee_salary,manager_name,manager_salary
+Bob,80000,Charlie,75000
+Frank,78000,Bob,75000
