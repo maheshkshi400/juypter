@@ -1,11 +1,11 @@
-USE EMPLOYEE;
+USE EMPLOYEES;
 
 SELECT * FROM EMP2;
 
 -- string functions
-SELECT ename, LOWER(ename) FROM EMP2;
-SELECT ename, UPPER(ename) FROM EMP2;
-SELECT ename, LEN(ename) FROM EMP2;
+SELECT ename, LOWER(ename) as lower_name  FROM EMP2;
+SELECT ename, UPPER(ename)  as upper_name FROM EMP2;
+SELECT ename, LEN(ename) as length FROM EMP2;
 SELECT ename, SUBSTRING(ename, 2, 3) FROM EMP2;
 SELECT ename, REVERSE(ename) FROM EMP2;
 SELECT ename, REPLACE(ename, 'S', 'M') FROM EMP2;

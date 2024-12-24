@@ -1,32 +1,14 @@
-CREATE TABLE Employee (
-    emp_id INT PRIMARY KEY,
-    emp_name VARCHAR(20),
-    sal INT,
-    joining_date DATE,
-    dept_id INT FOREIGN KEY_ REFERENCES Department(dept_id)
-);
-
-Department - dept_id(PK), dept_name
 
 
-emp_id(PK),
-dpet_id(FK)
- dept_id(PK)
 
 
- CREATE TABLE Department (
-    dept_id INT PRIMARY KEY,
-    dept_name VARCHAR(20)
-);
-
-select * from emp5;
 
 SELECT *
-FROM EMP5
+FROM EMP2
 WHERE DEPTNO = 10
 AND EMPNO NOT IN (
     SELECT EMPNO
-    FROM EMP5
+    FROM EMP2
     GROUP BY EMPNO
     HAVING COUNT(EMPNO) = 1
 );
@@ -42,8 +24,8 @@ ID	 	ID
 Null	 	 
 Null
 
-USE OTHERS
-CREATE table TABLE_A(
+USE OTHERS;
+CREATE TABLE TABLE_A(
     id INT 
 );
 
@@ -83,7 +65,12 @@ udent_id	student_name	score
 4	            David	    78
 5	            Emily	    92
 
+
+
+
 USE STUDENTS;
+
+
 CREATE TABLE student_5 (
     student_id INT ,
     student_name VARCHAR(20),
@@ -95,6 +82,8 @@ INSERT INTO student_5 VALUES (2, 'Bob', 90);
 INSERT INTO student_5 VALUES (3, 'Carol', 85);
 INSERT INTO student_5 VALUES (4, 'David', 78);
 INSERT INTO student_5 VALUES (5, 'Emily', 92);
+
+SELECT * FROM student_5;
 
 SELECT * FROM(SELECT student_5.*,DENSE_RANK() over (order by score desc)as rnk from student_5 ) 
 ranked_students where rnk <=5;
