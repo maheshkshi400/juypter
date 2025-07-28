@@ -1,4 +1,4 @@
-
+ USE OTHERS
 CREATE TABLE [dbo].[Transaction_Tbl](
  [CustID] [int] ,
  [TranID] [int] ,
