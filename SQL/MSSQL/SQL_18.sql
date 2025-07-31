@@ -1,4 +1,4 @@
-USE OTHER
+USE OTHERS
 
 Create Table Trade_tbl(
 TRADE_ID varchar(20),
