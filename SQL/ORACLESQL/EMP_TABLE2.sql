@@ -68,3 +68,12 @@ ORDER BY
     deptno;
 
 
+----------
+SELECT
+    E.ename AS EmployeeName,
+    ISNULL(M.ename,NULL) AS ManagerName
+   
+FROM
+    EMP2 E
+LEFT JOIN
+    EMP2 M ON E.mgr = M.empno;

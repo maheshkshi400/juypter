@@ -1,3 +1,4 @@
+use JOINS
 create table customer_orders (
 order_id integer,
 customer_id integer,
