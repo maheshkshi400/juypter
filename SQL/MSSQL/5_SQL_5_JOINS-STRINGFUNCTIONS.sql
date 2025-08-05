@@ -22,7 +22,7 @@ SELECT * FROM EMP2 WHERE ename LIKE '%S_';
 
 --by using left right,left function 
 
-use employee
+use EMPLOYEES
 create table EMPLOYEE1(employeeId int,Name varchar(20));
 
 insert into EMPLOYEE1 values(1,'adnan,shaikh')
@@ -48,6 +48,8 @@ insert into EMPLOYEE2 values('sangita','bijave')
 insert into EMPLOYEE2 values('anand','sagar')
 
 SELECT * FROM EMPLOYEE2;
+
+DROP TABLE EMPLOYEE2
 
 SELECT FIRST_NAME,LAST_NAME,(FIRST_NAME + ' ' + LAST_NAME) AS FULL_NAME FROM EMPLOYEE2;
 

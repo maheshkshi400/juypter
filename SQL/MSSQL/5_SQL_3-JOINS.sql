@@ -19,6 +19,8 @@ insert into student_score VALUES(3,'Carol',85);
 insert into student_score VALUES(4,'David',78);
 insert into student_score VALUES(5,'Emily',92);
 
+SELECT * FROM student_score
+
 SELECT * FROM (SELECT student_score.*,DENSE_RANK() OVER(ORDER BY score DESC) AS RNK 
 FROM student_score) RANKED_STUDENTS WHERE RNK <=5;
 
@@ -100,6 +102,8 @@ insert into emp VALUES(2, 'Bob', 6000, 20);
 insert into emp VALUES(3, 'Emily', 9000, 30);
 insert into emp VALUES(3, 'Emily', 9000, 30);
 insert into emp VALUES(Null, 'David', 7000, 40);
+
+SELECT * FROM emp
 
 
 -- wether it's correct query or not that i don't know
@@ -196,7 +200,7 @@ SELECT e.id,e.name,p.project_id FROM emp_3 e LEFT OUTER JOIN project p ON e.id =
 where p.project_id is NULL;
 
 
-select * from emp5
+
 
 
 

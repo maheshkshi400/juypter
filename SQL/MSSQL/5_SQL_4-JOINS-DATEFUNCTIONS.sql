@@ -1,5 +1,5 @@
 use JOINS
-create table student_3(id int,name varchar(20),age int,salary money );
+create table student_3(id int,name varchar(20),age int,fees money );
 
 DROP TABLE student_3;
 
@@ -48,7 +48,7 @@ select id,count(id) from student_3 group by id having(count(id)) >1;
 --add single colum in table
 ALTER TABLE student_3
 ADD dob date;
-select * from  student_4;
+select * from  student_3;
 
 update student_3 set dob='13-Mar-2011' where id =1;
 update student_3 set dob='15-Mar-2013' where id =2;
@@ -58,7 +58,7 @@ update student_3 set dob='15-Mar-2013' where id =5;
 
 
 -- add multiple columns  
-alter table student_3 add dob date,location varchar(20);
+alter table student_3 add location varchar(20);
 
 --drop colmn
 ALTER TABLE student_3
@@ -75,7 +75,7 @@ EXEC sp_rename 'student_3','student_4';
 
 
 --AGGREGATE FNCTIONS
-SELECT SUM(salary) FROM student_4;
+SELECT SUM(fees) FROM student_4;
 
 --count function
 SELECT COUNT(id) from student_4;
@@ -85,18 +85,18 @@ select  count(*) from student_4;
 insert into student_4 values(null, 'Reva', 23, 25000);
 
 --MIN FUNCTION 
-SELECT MIN(salary) FROM student_4;
+SELECT MIN(fees) FROM student_4;
 
 --MAX FUNCTION
-SELECT MAX(salary) as 'Max_sal' FROM student_4;
+SELECT MAX(fees) as 'Max_fees' FROM student_4;
 
 --round command
 select round(123.456,2) as round_value;
 --add primary key on cloumn
-alter table student_3 add primary key(id);
+alter table student_4 add primary key(id);
 
 --check primary key
-select * from student_3;
+select * from student_4;
 
 
 
@@ -113,9 +113,9 @@ SELECT * FROM DEPT;
 
 --AGGREGATE FUNCTIONS
 SELECT COUNT(*) FROM DEPT;
-SELECT SUM(salary) FROM student_3;
-SELECT MIN(salry) FROM student_3;
-SELECT MAX(salary) FROM student_3;
+SELECT SUM(fees) FROM student_4;
+SELECT MIN(fees) FROM student_4;
+SELECT MAX(sfees) FROM student_4;
 SELECT round(123.456, 2) as round_value;
 
 
