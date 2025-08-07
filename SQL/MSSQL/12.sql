@@ -26,6 +26,10 @@ insert into school values(3,'savitribai phule','delhi')
 insert into school values(4,'lokmanya tilak','kolkatta')
 insert into school values(5, 'sarojini naidu', 'banglore')
 
+select * from std1
+
+SELECT * FROM school
+
 SELECT s.id, s.studentname, d.schoolname,s.marks
 FROM std1 s 
 INNER JOIN school d ON s.schoolid = d.schoolid 
@@ -39,8 +43,7 @@ AND marks = (SELECT MAX(marks) FROM std1);
 
 USE EMPLOYEES
 
-SELECT 
-*FROM EMP5
+SELECT * FROM EMP2
 
 SELECT *
 FROM (

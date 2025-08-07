@@ -1,3 +1,6 @@
+
+USE OTHERS
+
 create table entries ( 
 name varchar(20),
 address varchar(20),

@@ -25,6 +25,8 @@ insert into emp VALUES(3, 'Emily', 9000, 30);
 insert into emp VALUES(3, 'Emily', 9000, 30);
 insert into emp VALUES(Null, 'David', 7000, 40);
 
+SELECT * FROM emp;
+
 
 select empid,count(empid) from emp group by empid having(count(empid)) > 1;
 select empid,count(empid) from emp where deptno != 10 group by empid having(count(empid)) > 1;

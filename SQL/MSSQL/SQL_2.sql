@@ -1,3 +1,5 @@
+use EMPLOYEES
+
 CREATE TABLE Emp(
 [Group]  varchar(20),
 [Sequence]  int )
@@ -13,6 +15,8 @@ INSERT INTO Emp VALUES('B',11)
 INSERT INTO Emp VALUES('C',1)
 INSERT INTO Emp VALUES('C',2)
 INSERT INTO Emp VALUES('C',3)
+
+SELECT * FROM Emp;
 
 --write a sql query to find out the maximum and minimum values of continious sequence in each group.
 

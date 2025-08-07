@@ -1,3 +1,5 @@
+use OTHERS
+
 Create Table Transaction_Table
 (
 AccountNumber int,
@@ -14,6 +16,9 @@ Insert into Transaction_Table Values (460,'2020-04-30 11:29:57.320' ,1004,7000)
 Insert into Transaction_Table Values (460,'2020-04-30 12:32:44.233' ,1005,5000)
 Insert into Transaction_Table Values (640,'2020-02-18 06:29:34.420' ,1006,5000)
 Insert into Transaction_Table Values (640,'2020-02-18 06:29:37.120' ,1007,9000)
+
+
+SELECT * FROM Transaction_Table
 
 
 
@@ -34,7 +39,8 @@ ON A.AccountNumber = B.AccountNumber AND A.TransactionTime = B.TransactionTime;
 --BY USING CTE
 
 WITH
-    CTE_Tran AS
+    CTE_Tran
+    AS
     (
         SELECT AccountNumber, TransactionID, Balance, TransactionTime
         FROM Transaction_Table

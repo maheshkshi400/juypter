@@ -1,3 +1,6 @@
+
+use STUDENTS
+
 CREATE TABLE Student(
 [Student_Name]  varchar(30),
 [Total_Marks]  int ,
@@ -19,13 +22,13 @@ SELECT * FROM Student
 use OTHERS
 SELECT Student_Name, Total_Marks, Year, Prev_yrs_Marks
 FROM
-(
-    SELECT Student_Name, Total_Marks, Year, Prev_yrs_Marks,
-           CASE WHEN Total_Marks >= Prev_yrs_Marks THEN 1 ELSE 0 END AS Flag
-    FROM 
     (
+    SELECT Student_Name, Total_Marks, Year, Prev_yrs_Marks,
+        CASE WHEN Total_Marks >= Prev_yrs_Marks THEN 1 ELSE 0 END AS Flag
+    FROM
+        (
         SELECT Student_Name, Total_Marks, Year,
-               LAG(Total_Marks) OVER (PARTITION BY Student_Name ORDER BY Year) AS Prev_yrs_Marks
+            LAG(Total_Marks) OVER (PARTITION BY Student_Name ORDER BY Year) AS Prev_yrs_Marks
         FROM Student
     ) A
 ) B

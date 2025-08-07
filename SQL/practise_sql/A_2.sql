@@ -1,3 +1,5 @@
+use SALES
+
 create table customer_orders (
 order_id integer,
 customer_id integer,

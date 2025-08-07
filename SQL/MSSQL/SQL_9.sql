@@ -1,3 +1,5 @@
+USE OTHERS
+
 Create Table Match_Result (
 Team_1 Varchar(20),
 Team_2 Varchar(20),
@@ -19,19 +21,24 @@ SELECT * FROM Match_Result;
 -- TOTAL NUMBER OF MATCHES PLAYED BY EACH TEAM
 
 
-WITH CTE_Matches_played AS (
-    SELECT Team, SUM(Match_played) AS Total_Matches_Played 
-    FROM (
-        SELECT Team_1 as Team, COUNT(*) AS Match_played FROM Match_Result
-        GROUP BY Team_1
+WITH
+    CTE_Matches_played
+    AS
+    (
+        SELECT Team, SUM(Match_played) AS Total_Matches_Played
+        FROM (
+                        SELECT Team_1 as Team, COUNT(*) AS Match_played
+                FROM Match_Result
+                GROUP BY Team_1
 
-        UNION ALL
+            UNION ALL
 
-        SELECT Team_2 as Team, COUNT(*) AS Match_played FROM Match_Result
-        GROUP BY Team_2
+                SELECT Team_2 as Team, COUNT(*) AS Match_played
+                FROM Match_Result
+                GROUP BY Team_2
     ) AS A
-    GROUP BY Team
-)
+        GROUP BY Team
+    )
 
 
 

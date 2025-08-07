@@ -1,3 +1,7 @@
+
+
+USE EMPLOYEES
+
 CREATE TABLE Emp_Details (
 EMPID int,
 Gender varchar,
