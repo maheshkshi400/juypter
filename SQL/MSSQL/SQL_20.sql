@@ -1,4 +1,4 @@
-
+USE JOINS
 
 Create Table Sales_Table(
 Sales_Date Date,

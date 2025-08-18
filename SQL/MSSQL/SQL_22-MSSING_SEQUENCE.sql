@@ -1,3 +1,6 @@
+
+USE OTHERS
+
 Create Table Sample_Table(ID int);
 
 Insert into Sample_Table Values (1);

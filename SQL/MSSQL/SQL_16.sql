@@ -1,3 +1,5 @@
+USE JOINS
+
 Create Table Account_Table(
 TranDate DateTime,
 TranID Varchar(20),

@@ -1,3 +1,6 @@
+
+USE EMPLOYEES
+
 Create table Emp_Detail
 (
 EmpName Varchar(25),

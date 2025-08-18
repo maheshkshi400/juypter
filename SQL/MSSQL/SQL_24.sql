@@ -1,3 +1,5 @@
+USE OTHERS
+
 Create Table Phone_Log(
 Source_Phone_Nbr Bigint,
 Destination_Phone_Nbr Bigint,

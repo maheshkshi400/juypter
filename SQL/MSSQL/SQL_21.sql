@@ -1,3 +1,4 @@
+USE OTHERS
 
 Create Table Travel_Table(
 Start_Location Varchar(30),
