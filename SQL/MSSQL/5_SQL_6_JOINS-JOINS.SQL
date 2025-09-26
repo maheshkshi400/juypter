@@ -28,6 +28,17 @@ SELECT * FROM B;
 
 --UNION
 USE  JOINS
+        INNER   LEFT    RIGHT   FULL
+A   B   A   B   A   B   A   B   A   B
+1   1   1   1   1   1   1   1   1   1
+1   2   1   1   1   1   1   1   1   1
+2   3   2   2   2   2   2   2   2   2
+3   3   3   3   3   3   3   3   3   3
+4   NULL3   3   3   3   4   NULL3   3    
+NULL            4   NULLNULLNULL4   NULL
+NULL                    NULLNULLNULLNULL
+                                NULLNULL
+
 SELECT * FROM A UNION SELECT * FROM B;
 
 --UNION ALL
@@ -43,19 +54,59 @@ USE JOINS
 --INNER JOIN
 
 SELECT * FROM A INNER JOIN B ON A.ID = B.ID;
+        INNER   LEFT    RIGHT   FULL
+A   B   A   B   A   B   A   B   A   B
+1   1   1   1   1   1   1   1   1   1
+1   2   1   1   1   1   1   1   1   1
+2   3   2   2   2   2   2   2   2   2
+3   3   3   3   3   3   3   3   3   3
+4   NULL3   3   3   3   4   NULL3   3    
+NULL            4   NULLNULLNULL4   NULL
+NULL                    NULLNULLNULLNULL
+                                NULLNULL
 
 --RIGHT OUTER JOIN
 SELECT * FROM A;
 SELECT * FROM B;
 SELECT * FROM A RIGHT OUTER JOIN B ON A.ID = B.ID;
+        INNER   LEFT    RIGHT   FULL
+A   B   A   B   A   B   A   B   A   B
+1   1   1   1   1   1   1   1   1   1
+1   2   1   1   1   1   1   1   1   1
+2   3   2   2   2   2   2   2   2   2
+3   3   3   3   3   3   3   3   3   3
+4   NULL3   3   3   3   4   NULL3   3    
+NULL            4   NULLNULLNULL4   NULL
+NULL                    NULLNULLNULLNULL
+                                NULLNULL
 
 --LEFT OUTER JOIN
 
 SELECT * FROM A LEFT OUTER JOIN B ON A.ID = B.ID;
+        INNER   LEFT    RIGHT   FULL
+A   B   A   B   A   B   A   B   A   B
+1   1   1   1   1   1   1   1   1   1
+1   2   1   1   1   1   1   1   1   1
+2   3   2   2   2   2   2   2   2   2
+3   3   3   3   3   3   3   3   3   3
+4   NULL3   3   3   3   4   NULL3   3    
+NULL            4   NULLNULLNULL4   NULL
+NULL                    NULLNULLNULLNULL
+                                NULLNULL
 
 --full outer join
 
 SELECT * FROM A FULL OUTER JOIN B ON A.ID = B.ID;
+        INNER   LEFT    RIGHT   FULL
+A   B   A   B   A   B   A   B   A   B
+1   1   1   1   1   1   1   1   1   1
+1   2   1   1   1   1   1   1   1   1
+2   3   2   2   2   2   2   2   2   2
+3   3   3   3   3   3   3   3   3   3
+4   NULL3   3   3   3   4   NULL3   3    
+NULL            4   NULLNULLNULL4   NULL
+NULL                    NULLNULLNULLNULL
+                                NULLNULL
 
 --
 USE EMPLOYEES

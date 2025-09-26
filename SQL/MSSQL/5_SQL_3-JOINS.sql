@@ -200,6 +200,10 @@ SELECT e.id,e.name,p.project_id FROM emp_3 e LEFT OUTER JOIN project p ON e.id =
 where p.project_id is NULL;
 
 
+SELECT e.id,e.name,p.project_id FROM emp_3 e LEFT OUTER JOIN project p ON e.id = p.id 
+AND p.project_id is NULL;
+
+
 
 
 
