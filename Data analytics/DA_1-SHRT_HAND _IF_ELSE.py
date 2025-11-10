@@ -1,3 +1,0 @@
-MARKS =97
-
-print("YOU WILL GO TO TRIP") if  MARKS >= 90 else print("YOU WILL NOT GO TO TRIP")
