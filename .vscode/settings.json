@@ -13,5 +13,23 @@
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
     "python.analysis.typeCheckingMode": "basic",
-    "atlascode.bitbucket.issues.createJiraEnabled": true
+    "atlascode.bitbucket.issues.createJiraEnabled": true,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "name": "MySQL Local",
+            "database": "demo",
+            "username": "root",
+            "password": "mahadev@9096",
+            "connectionTimeout": 30
+        }
+    ]
 }

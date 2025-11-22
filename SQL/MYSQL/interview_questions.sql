@@ -201,9 +201,10 @@ ORDER BY
     order_date, rank;
 
 
-
+;
 
 --
+CREATE DATABASE OTHER;
 
 CREATE TABLE Mission_Crew (
     mission_id INT,
